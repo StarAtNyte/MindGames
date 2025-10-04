@@ -1,0 +1,64 @@
+{
+  "game_id": "game_1_20251003_141517",
+  "timestamp": "2025-10-03T14:15:17.650167",
+  "game_number": 1,
+  "observations": [
+    {
+      "turn": 0,
+      "timestamp": "2025-10-03T14:16:36.840408",
+      "player_id": 1,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 1.\nYour role: Detective\nTeam: Village\nDescription: Investigate players to find Mafia members.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to investigate.\nYou'll learn immediately if the target is Mafia.\nWin by identifying and eliminating all Mafia members.\n\n[GAME] Night phase - choose one player to investigate: [0], [2], [3], [4], [5]",
+      "length": 484
+    }
+  ],
+  "actions": [
+    {
+      "turn": 0,
+      "timestamp": "2025-10-03T14:16:43.055631",
+      "action": "[2]",
+      "processing_time": 6.218682289123535
+    }
+  ],
+  "turn_details": [
+    {
+      "turn": 0,
+      "player_id": 1,
+      "observation_length": 484,
+      "action_length": 3,
+      "processing_time": 6.218682289123535,
+      "memory_entries": 0,
+      "discussion_entries": 0
+    }
+  ],
+  "agent_memory": {
+    "investigation_results": {},
+    "role_claims": {},
+    "voting_patterns": {},
+    "discussion_history": []
+  },
+  "performance_metrics": {
+    "turns_per_minute": 0.3456829867562889,
+    "avg_turn_time": 173.5694329738617,
+    "memory_growth": 0,
+    "discussion_participation": 0,
+    "reward_per_turn": 1.256
+  },
+  "error_log": [],
+  "outcome": "win",
+  "reward": 1.256,
+  "raw_rewards": {
+    "1": 1.256
+  },
+  "total_turns": 1,
+  "game_duration": 173.5694329738617,
+  "role": "detective",
+  "player_id": 1,
+  "game_info": {
+    "1": {
+      "turn_count": 1,
+      "invalid_move": false,
+      "reason": "All Mafia were eliminated. Village wins!",
+      "outcome": "win"
+    }
+  }
+}

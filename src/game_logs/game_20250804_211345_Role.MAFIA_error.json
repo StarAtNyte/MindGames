@@ -1,0 +1,94 @@
+{
+  "game_id": "game_1_20250804_210705",
+  "timestamp": "2025-08-04T21:07:05.400101",
+  "game_number": 1,
+  "observations": [
+    {
+      "turn": 0,
+      "timestamp": "2025-08-04T21:11:35.721941",
+      "player_id": 0,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 0.\nYour role: Mafia\nTeam: Mafia\nDescription: A Mafia member. Eliminate villagers and gain majority.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nYour teammates are: Player 0, Player 2.\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to vote and eliminate a villager.\nWin by eliminating villagers until Mafia equal or outnumber them.\n\n[GAME] Night has fallen. Mafia, agree on a victim.\nValid targets: [1], [3], [4], [5]",
+      "length": 518
+    },
+    {
+      "turn": 1,
+      "timestamp": "2025-08-04T21:11:40.443199",
+      "player_id": 0,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 0.\nYour role: Mafia\nTeam: Mafia\nDescription: A Mafia member. Eliminate villagers and gain majority.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nYour teammates are: Player 0, Player 2.\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to vote and eliminate a villager.\nWin by eliminating villagers until Mafia equal or outnumber them.\n\n[GAME] Night has fallen. Mafia, agree on a victim.\nValid targets: [1], [3], [4], [5]\n[Player 0] [1]\n[Player 2] [1]\n[GAME] Player 1 was killed during the night.\n[GAME] Day breaks. Discuss for 3 rounds, then a vote will follow.",
+      "length": 659
+    },
+    {
+      "turn": 2,
+      "timestamp": "2025-08-04T21:11:54.128586",
+      "player_id": 0,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 0.\nYour role: Mafia\nTeam: Mafia\nDescription: A Mafia member. Eliminate villagers and gain majority.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nYour teammates are: Player 0, Player 2.\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to vote and eliminate a villager.\nWin by eliminating villagers until Mafia equal or outnumber them.\n\n[GAME] Night has fallen. Mafia, agree on a victim.\nValid targets: [1], [3], [4], [5]\n[Player 0] [1]\n[Player 2] [1]\n[GAME] Player 1 was killed during the night.\n[GAME] Day breaks. Discuss for 3 rounds, then a vote will follow.\n[Player 0] [1]\n[Player 3]  I'm just going to say that I think Player 1's death is suspicious. They might have been a target, but I don't know who the Mafia is. Let's keep an eye on everyone and make sure we don't vote for the wrong person.\n[Player 5] [Okay, I'm the Detective and Player 5. My priority is to find the Mafia. I now know Player 2 is Mafia. Player 1 was killed, which is unfortunate, but gives me some information \u2013 likely the Mafia targeted them.\n\nHere's my initial thought process and what I'll say in the first round of discussion:\n\nOkay, this is rough. Player 1 being killed already throws a wrench in things. Knowing Player 2 is Mafia changes everything. I need to be very careful about how I proceed. Accusing Player 2 directly might just get me killed.\n\n**My statement for Round 1:**\n\n\"Player 1's death is definitely concerning. It seems the Mafia is willing to take aggressive action early. I'd like to suggest we all be very observant of *who* is defending *who*.  Look for people who are trying to deflect attention or quickly pin the blame on someone else without much reasoning.  I want everyone to really think about who is trying to shift the focus away from themselves or Player 2.\"]\n[Player 2] [Player2] Ah, great, the Detective thinks they know so much, don't they? \n\n**My statement for Round1:**\n\n\"I'm shocked and saddened by Player1's death, of course. It's clear the killer is targeting random people, or at least trying to create chaos. I'd like to suggest we focus on finding a logical approach to identifying the Mafia rather than jumping to conclusions. Let's not accuse people without solid evidence. I think we should all work together to gather information before making any rash decisions. After all, we don't want to mistakenly eliminate an innocent person, do we?\" \n\n(I'll try to deflect attention away from myself and appear cooperative, while also planting seeds of doubt about the Detective's claims.)\n[Player 4] scussion:\n\n1. Claims.  \n   \u2013 Player 5 claims Detective and says they have a red check on Player 2.  \n   \u2013 I\u2019m claiming Doctor. (I will not repeat either claim tonight if the Mafia already believes us.)  \n   \u2013 Everyone else (0 and 3) has not yet claimed, but with six starting players the common lineup is 4 Village, 1 Doc, 1 Det, 1 Mafia, so we may already have the full suite of power roles on the table.\n\n2. Whom should we vote out?  \n   The Detective check points squarely at Player 2. If 2 flips Mafia, we\u2019ve found one scum and keep our investigative power around to check the rest tomorrow.  \n   If the check is wrong\u2014meaning a Detective false-claim\u2014that solutions almost all rest on Player 5, and we have the remaining day(s to undo that mis-lynch.  \n   Given that trade-off, eliminating the player who has been explicitly red-checked is the optimal play.\n\nSo my current stance: **unless someone presents a stronger mechanical reason to doubt the Detective, I\u2019m on Player 2 for today\u2019s vote.**]",
+      "length": 3619
+    }
+  ],
+  "actions": [
+    {
+      "turn": 0,
+      "timestamp": "2025-08-04T21:11:35.739784",
+      "action": "[1]",
+      "processing_time": 0.020901203155517578
+    },
+    {
+      "turn": 1,
+      "timestamp": "2025-08-04T21:11:40.450304",
+      "action": "[1]",
+      "processing_time": 0.008632183074951172
+    },
+    {
+      "turn": 2,
+      "timestamp": "2025-08-04T21:13:45.777740",
+      "action": "From what I can tell [1]",
+      "processing_time": 111.65025973320007
+    }
+  ],
+  "turn_details": [
+    {
+      "turn": 0,
+      "player_id": 0,
+      "observation_length": 518,
+      "action_length": 3,
+      "processing_time": 0.020901203155517578,
+      "memory_entries": 1,
+      "discussion_entries": 0
+    },
+    {
+      "turn": 1,
+      "player_id": 0,
+      "observation_length": 659,
+      "action_length": 3,
+      "processing_time": 0.008632183074951172,
+      "memory_entries": 2,
+      "discussion_entries": 0
+    },
+    {
+      "turn": 2,
+      "player_id": 0,
+      "observation_length": 3619,
+      "action_length": 24,
+      "processing_time": 111.65025973320007,
+      "memory_entries": 3,
+      "discussion_entries": 2
+    }
+  ],
+  "agent_memory": {},
+  "performance_metrics": {},
+  "error_log": [
+    {
+      "timestamp": "2025-08-04T21:13:45.992825",
+      "error": "No valid observation \u2014 server shutdown or invalid state.",
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\Projects\\Others\\MindGames\\SecretMafia\\src\\online_play_track1.py\", line 135, in <module>\n    player_id, observation = env.get_observation()\n                             ~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\khana\\AppData\\Roaming\\Python\\Python313\\site-packages\\textarena\\core.py\", line 153, in get_observation\n    return self.env.get_observation()\n           ~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\khana\\AppData\\Roaming\\Python\\Python313\\site-packages\\textarena\\core.py\", line 179, in get_observation\n    player_id, observation = self.env.get_observation()\n                             ~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\khana\\AppData\\Roaming\\Python\\Python313\\site-packages\\textarena\\api.py\", line 780, in get_observation\n    raise RuntimeError(\"No valid observation \u2014 server shutdown or invalid state.\")\nRuntimeError: No valid observation \u2014 server shutdown or invalid state.\n",
+      "turn": 3
+    }
+  ],
+  "outcome": "error",
+  "reward": 0,
+  "raw_rewards": {},
+  "total_turns": 3,
+  "game_duration": 400.5928168296814,
+  "role": "Role.MAFIA",
+  "player_id": 0
+}

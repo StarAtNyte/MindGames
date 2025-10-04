@@ -1,0 +1,50 @@
+{
+  "game_id": "game_1_20250806_003652",
+  "timestamp": "2025-08-06T00:36:52.150002",
+  "game_number": 1,
+  "observations": [
+    {
+      "turn": 0,
+      "timestamp": "2025-08-06T00:37:36.824553",
+      "player_id": 0,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 0.\nYour role: Villager\nTeam: Village\nDescription: A regular villager. Your goal is to identify and eliminate all Mafia members through voting during the day.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nThe game progresses through Day and Night phases.\n- During the Day phase, there are 3 rounds of discussion followed by voting.\n- During discussions, everything you say is automatically broadcasted to all players.\n- After discussions, all players must vote to eliminate one player.\n- During the Night phase, you have no special actions.\n\nThe game ends when either all Mafia members are eliminated (Village wins) or\nMafia members equal or outnumber Villagers (Mafia wins).\n\n[GAME] Player 2 was killed during the night.\n[GAME] Day breaks. Discuss for 3 rounds, then a vote will follow.\n[Player 3] I need to gather information. I protected Player 3 last night - a safe, neutral choice to start.\n\n**My initial thoughts and questions:**\n\n*   **Player 2's death:** Was it a random night kill (unlikely with Mafia) or a targeted hit? The Mafia might be testing the waters, or they may have targeted someone perceived as a threat.\n*   **Who seems nervous or quiet?** People acting strangely are often worth watching.\n*   **Who is aggressively accusing others early?** Sometimes genuine, sometimes a way to deflect.\n*   **Does anyone have a history in previous games (if this is a recurring group)?**\n\n**My first round of discussion:**\n\n\"Okay, a tough start with Player 2 being eliminated. I protected Player 3 last night. Let's talk about what everyone is thinking. Did anyone notice anything unusual yesterday, or see anyone acting suspiciously? I'd like to hear everyone's initial reactions to Player 2's death and why they suspect anyone.\"\n\n\n\nI will wait for responses before making any accusations.]\n[Player 5] [Player 5 here. \n\nThe death of Player 2 is strange \u2014 it wasn't a random kill. That was a targeted hit, and I believe someone on the inside is trying to shake things up. I'm not sure who yet, but I'll keep my eyes open.\n\nI trusted Player 3 last night, but I need to be careful. I'll play it cool and listen to what others say. Let's see who starts pointing fingers. \n\nI'll wait for others to speak before making any moves.]",
+      "length": 2304
+    }
+  ],
+  "actions": [
+    {
+      "turn": 0,
+      "timestamp": "2025-08-06T00:39:48.146575",
+      "action": "I think Player 5 is showing interest in gathering information, which could indicate they might be a potential ally or someone trying to understand the situation better before voting. Their comment about trusting Player 3 aligns with the previous statement where Player 3 claimed to protect them, suggesting a possible connection. However, their focus on gathering information could also be a sign they're trying to gain an edge before making a vote. Let's see how Player 3 responds, given their claim of protection.",
+      "processing_time": 131.3300700187683
+    }
+  ],
+  "turn_details": [
+    {
+      "turn": 0,
+      "player_id": 0,
+      "observation_length": 2304,
+      "action_length": 515,
+      "processing_time": 131.3300700187683,
+      "memory_entries": 1,
+      "discussion_entries": 1
+    }
+  ],
+  "agent_memory": {},
+  "performance_metrics": {},
+  "error_log": [
+    {
+      "timestamp": "2025-08-06T00:39:48.357982",
+      "error": "No valid observation \u2014 server shutdown or invalid state.",
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\Projects\\Others\\MindGames\\SecretMafia\\src\\online_play_track1.py\", line 136, in <module>\n    player_id, observation = env.get_observation()\n                             ~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\khana\\AppData\\Roaming\\Python\\Python313\\site-packages\\textarena\\core.py\", line 153, in get_observation\n    return self.env.get_observation()\n           ~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\khana\\AppData\\Roaming\\Python\\Python313\\site-packages\\textarena\\core.py\", line 179, in get_observation\n    player_id, observation = self.env.get_observation()\n                             ~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\khana\\AppData\\Roaming\\Python\\Python313\\site-packages\\textarena\\api.py\", line 780, in get_observation\n    raise RuntimeError(\"No valid observation \u2014 server shutdown or invalid state.\")\nRuntimeError: No valid observation \u2014 server shutdown or invalid state.\n",
+      "turn": 1
+    }
+  ],
+  "outcome": "error",
+  "reward": 0,
+  "raw_rewards": {},
+  "total_turns": 1,
+  "game_duration": 176.20808458328247,
+  "role": "Role.VILLAGER",
+  "player_id": 0
+}

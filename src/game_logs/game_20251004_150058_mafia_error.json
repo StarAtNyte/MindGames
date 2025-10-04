@@ -1,0 +1,50 @@
+{
+  "game_id": "game_1_20251004_145711",
+  "timestamp": "2025-10-04T14:57:11.932502",
+  "game_number": 1,
+  "observations": [
+    {
+      "turn": 0,
+      "timestamp": "2025-10-04T14:58:42.038789",
+      "player_id": 4,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 4.\nYour role: Mafia\nTeam: Mafia\nDescription: A Mafia member. Eliminate villagers and gain majority.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nYour teammates are: Player 2, Player 4.\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to vote and eliminate a villager.\nWin by eliminating villagers until Mafia equal or outnumber them.\n\n[GAME] Night has fallen. Mafia, agree on a victim.\nValid targets: [0], [1], [3], [5]\n[Player 2] I see that I need to choose a valid target to vote for. Since my teammates are Player 2 and Player 4, and following the valid targets provided (0, 1, 3, 5), I will choose one of them. Let's go with:\n\n'' to vote and eliminate a villager.\n\nThis move follows the game rules and selects one of the valid targets.",
+      "length": 838
+    }
+  ],
+  "actions": [
+    {
+      "turn": 0,
+      "timestamp": "2025-10-04T15:00:58.434981",
+      "action": "[1]",
+      "processing_time": 136.39725422859192
+    }
+  ],
+  "turn_details": [
+    {
+      "turn": 0,
+      "player_id": 4,
+      "observation_length": 838,
+      "action_length": 3,
+      "processing_time": 136.39725422859192,
+      "memory_entries": 0,
+      "discussion_entries": 0
+    }
+  ],
+  "agent_memory": {},
+  "performance_metrics": {},
+  "error_log": [
+    {
+      "timestamp": "2025-10-04T15:00:58.563808",
+      "error": "No valid observation \u2014 server shutdown or invalid state.",
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\Projects\\Others\\MindGames\\SecretMafia\\src\\online_play_streamlined.py\", line 153, in <module>\n    player_id, observation = env.get_observation()\n                             ~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\khana\\AppData\\Roaming\\Python\\Python313\\site-packages\\textarena\\core.py\", line 153, in get_observation\n    return self.env.get_observation()\n           ~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\khana\\AppData\\Roaming\\Python\\Python313\\site-packages\\textarena\\core.py\", line 179, in get_observation\n    player_id, observation = self.env.get_observation()\n                             ~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\khana\\AppData\\Roaming\\Python\\Python313\\site-packages\\textarena\\api.py\", line 780, in get_observation\n    raise RuntimeError(\"No valid observation \u2014 server shutdown or invalid state.\")\nRuntimeError: No valid observation \u2014 server shutdown or invalid state.\n",
+      "turn": 1
+    }
+  ],
+  "outcome": "error",
+  "reward": 0,
+  "raw_rewards": {},
+  "total_turns": 1,
+  "game_duration": 226.63143134117126,
+  "role": "mafia",
+  "player_id": 4
+}

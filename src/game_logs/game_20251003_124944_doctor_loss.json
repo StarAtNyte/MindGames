@@ -1,0 +1,64 @@
+{
+  "game_id": "game_1_20251003_124522",
+  "timestamp": "2025-10-03T12:45:22.808376",
+  "game_number": 1,
+  "observations": [
+    {
+      "turn": 0,
+      "timestamp": "2025-10-03T12:45:57.452423",
+      "player_id": 4,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 4.\nYour role: Doctor\nTeam: Village\nDescription: Protect one player each night from Mafia elimination.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to protect a player.\nWin by identifying and eliminating all Mafia members.\n\n[GAME] Night phase - choose one player to protect: [0], [1], [2], [3], [5]",
+      "length": 444
+    }
+  ],
+  "actions": [
+    {
+      "turn": 0,
+      "timestamp": "2025-10-03T12:47:40.854195",
+      "action": "[3]",
+      "processing_time": 103.40153098106384
+    }
+  ],
+  "turn_details": [
+    {
+      "turn": 0,
+      "player_id": 4,
+      "observation_length": 444,
+      "action_length": 3,
+      "processing_time": 103.40153098106384,
+      "memory_entries": 0,
+      "discussion_entries": 0
+    }
+  ],
+  "agent_memory": {
+    "investigation_results": {},
+    "role_claims": {},
+    "voting_patterns": {},
+    "discussion_history": []
+  },
+  "performance_metrics": {
+    "turns_per_minute": 0.2295745779445389,
+    "avg_turn_time": 261.3529796600342,
+    "memory_growth": 0,
+    "discussion_participation": 0,
+    "reward_per_turn": -0.429
+  },
+  "error_log": [],
+  "outcome": "loss",
+  "reward": -0.429,
+  "raw_rewards": {
+    "4": -0.429
+  },
+  "total_turns": 1,
+  "game_duration": 261.3529796600342,
+  "role": "doctor",
+  "player_id": 4,
+  "game_info": {
+    "4": {
+      "turn_count": 1,
+      "invalid_move": false,
+      "reason": "Mafia reached parity with villagers. Mafia wins!",
+      "outcome": "loss"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "game_id": "game_1_20250929_141439",
+  "timestamp": "2025-09-29T14:14:39.626296",
+  "game_number": 1,
+  "observations": [
+    {
+      "turn": 0,
+      "timestamp": "2025-09-29T14:15:00.748708",
+      "player_id": 3,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 3.\nYour role: Mafia\nTeam: Mafia\nDescription: A Mafia member. Eliminate villagers and gain majority.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nYour teammates are: Player 3, Player 5.\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to vote and eliminate a villager.\nWin by eliminating villagers until Mafia equal or outnumber them.\n\n[GAME] Night has fallen. Mafia, agree on a victim.\nValid targets: [0], [1], [2], [4]",
+      "length": 518
+    }
+  ],
+  "actions": [],
+  "turn_details": [],
+  "agent_memory": {},
+  "performance_metrics": {},
+  "error_log": [
+    {
+      "timestamp": "2025-09-29T14:15:00.764455",
+      "error": "BeliefState.__init__() got an unexpected keyword argument 'my_role'",
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\Projects\\Others\\MindGames\\SecretMafia\\src\\utils\\streamlined_mafia_agent.py\", line 120, in _analyze_with_tom\n    belief_state = BeliefState(\n        my_role=self.my_role or \"unknown\",\n    ...<2 lines>...\n        turn_number=self.turn_count\n    )\nTypeError: BeliefState.__init__() got an unexpected keyword argument 'my_role'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"D:\\Projects\\Others\\MindGames\\SecretMafia\\src\\online_play_streamlined.py\", line 170, in <module>\n    action = agent(observation)\n  File \"D:\\Projects\\Others\\MindGames\\SecretMafia\\src\\utils\\streamlined_mafia_agent.py\", line 71, in __call__\n    belief_state = self._analyze_with_tom(observation)\n  File \"D:\\Projects\\Others\\MindGames\\SecretMafia\\src\\utils\\streamlined_mafia_agent.py\", line 135, in _analyze_with_tom\n    return BeliefState(\n        my_role=self.my_role or \"unknown\",\n    ...<2 lines>...\n        turn_number=self.turn_count\n    )\nTypeError: BeliefState.__init__() got an unexpected keyword argument 'my_role'\n",
+      "turn": 0
+    }
+  ],
+  "outcome": "error",
+  "reward": 0,
+  "raw_rewards": {},
+  "total_turns": 0,
+  "game_duration": 21.138307094573975,
+  "role": "mafia",
+  "player_id": 3
+}

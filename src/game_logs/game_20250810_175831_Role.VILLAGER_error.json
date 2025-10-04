@@ -1,0 +1,50 @@
+{
+  "game_id": "game_1_20250810_175604",
+  "timestamp": "2025-08-10T17:56:04.666207",
+  "game_number": 1,
+  "observations": [
+    {
+      "turn": 0,
+      "timestamp": "2025-08-10T17:56:32.818209",
+      "player_id": 3,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 3.\nYour role: Villager\nTeam: Village\nDescription: A regular villager. Your goal is to identify and eliminate all Mafia members through voting during the day.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nThe game progresses through Day and Night phases.\n- During the Day phase, there are 3 rounds of discussion followed by voting.\n- During discussions, everything you say is automatically broadcasted to all players.\n- After discussions, all players must vote to eliminate one player.\n- During the Night phase, you have no special actions.\n\nThe game ends when either all Mafia members are eliminated (Village wins) or\nMafia members equal or outnumber Villagers (Mafia wins).\n\n[GAME] No one was killed tonight.\n[GAME] Day breaks. Discuss for 3 rounds, then a vote will follow.\n[Player 4] [Good morning, everyone! As we start this new day, I think it's essential to discuss and gather our thoughts about who might be among the Mafia. Since no one was killed during the night, we have a clean slate to work with.\n\nIn this first round of discussion, I'd like to ask: What are your initial thoughts about the group? Have you noticed any suspicious behavior or comments from anyone so far? \n\nLet's keep the conversation going and see if we can deduce anything. I'll start by saying that I don't have any specific suspicions yet, but I'm keeping an open mind about everyone. \n\nYour turn!]",
+      "length": 1453
+    }
+  ],
+  "actions": [
+    {
+      "turn": 0,
+      "timestamp": "2025-08-10T17:58:31.400648",
+      "action": "I think Player 4 is showing off quite a bit right off the bat. By jumping into a discussion without even considering the potential implications of their statements, they're either looking for an easy target or trying to dominate the conversation early on. Their comment about a \"clean slate\" feels a bit dismissive, as we should focus on gathering information rather than resetting the game. This could indicate they're trying to establish a strong presence or perhaps hiding something behind this opening remark.",
+      "processing_time": 118.5813729763031
+    }
+  ],
+  "turn_details": [
+    {
+      "turn": 0,
+      "player_id": 3,
+      "observation_length": 1453,
+      "action_length": 513,
+      "processing_time": 118.5813729763031,
+      "memory_entries": 1,
+      "discussion_entries": 1
+    }
+  ],
+  "agent_memory": {},
+  "performance_metrics": {},
+  "error_log": [
+    {
+      "timestamp": "2025-08-10T17:58:31.526596",
+      "error": "No valid observation \u2014 server shutdown or invalid state.",
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\Projects\\Others\\MindGames\\SecretMafia\\src\\online_play_track1.py\", line 156, in <module>\n    player_id, observation = env.get_observation()\n                             ~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\khana\\AppData\\Roaming\\Python\\Python313\\site-packages\\textarena\\core.py\", line 153, in get_observation\n    return self.env.get_observation()\n           ~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\khana\\AppData\\Roaming\\Python\\Python313\\site-packages\\textarena\\core.py\", line 179, in get_observation\n    player_id, observation = self.env.get_observation()\n                             ~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\khana\\AppData\\Roaming\\Python\\Python313\\site-packages\\textarena\\api.py\", line 780, in get_observation\n    raise RuntimeError(\"No valid observation \u2014 server shutdown or invalid state.\")\nRuntimeError: No valid observation \u2014 server shutdown or invalid state.\n",
+      "turn": 1
+    }
+  ],
+  "outcome": "error",
+  "reward": 0,
+  "raw_rewards": {},
+  "total_turns": 1,
+  "game_duration": 146.86052656173706,
+  "role": "Role.VILLAGER",
+  "player_id": 3
+}

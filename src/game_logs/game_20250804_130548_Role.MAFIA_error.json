@@ -1,0 +1,72 @@
+{
+  "game_id": "game_1_20250804_130218",
+  "timestamp": "2025-08-04T13:02:18.325400",
+  "game_number": 1,
+  "observations": [
+    {
+      "turn": 0,
+      "timestamp": "2025-08-04T13:03:23.240205",
+      "player_id": 0,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 0.\nYour role: Mafia\nTeam: Mafia\nDescription: A Mafia member. Eliminate villagers and gain majority.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nYour teammates are: Player 0, Player 2.\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to vote and eliminate a villager.\nWin by eliminating villagers until Mafia equal or outnumber them.\n\n[GAME] Night has fallen. Mafia, agree on a victim.\nValid targets: [1], [3], [4], [5]",
+      "length": 518
+    },
+    {
+      "turn": 1,
+      "timestamp": "2025-08-04T13:03:46.867467",
+      "player_id": 0,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 0.\nYour role: Mafia\nTeam: Mafia\nDescription: A Mafia member. Eliminate villagers and gain majority.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nYour teammates are: Player 0, Player 2.\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to vote and eliminate a villager.\nWin by eliminating villagers until Mafia equal or outnumber them.\n\n[GAME] Night has fallen. Mafia, agree on a victim.\nValid targets: [1], [3], [4], [5]\n[Player 0] [3]\n[Player 2] I'll vote to eliminate  during the night phase.\n[GAME] Player 3 was killed during the night.\n[GAME] Day breaks. Discuss for 3 rounds, then a vote will follow.\n[Player 1] [Okay, I understand the game rules. I am Player 1, the Detective, and my goal is to identify and eliminate the Mafia.\n\n**Night Action:** I investigated Player 2 and learned they are Mafia. Player 3 was killed last night.\n\n**Day Phase - Strategy:**\n\nMy strategy is to use the information I have to influence the group toward eliminating Mafia. I will start by hinting at my knowledge and observing reactions before revealing my Detective status.\n\n**Round 1:** I will observe player interactions and try to get a read on who might be working together or acting suspiciously, keeping in mind that Player 2 is definitely Mafia. I won't reveal my findings yet.\n\nLet's begin the discussion.]\n[Player 4] [Okay, I understand the game. I am Player 4, a Villager. My goal is to help eliminate the Mafia by voting during the day. I will listen carefully to the discussions and try to identify any suspicious behavior.\n\n**Round 1:**\n\nI find it concerning that Player 3 was killed. I will listen closely to what everyone says, especially Player 1 since they claim to be a Detective. I don't have any information yet, but I'm paying attention. Let's hear what everyone else thinks.]\n[Player 2] er 5] I\u2019ll second that. It\u2019s better to be safe than sorry, especially with the evidence pointing to Player 2.\n\n Absolutely, let\u2019s make sure we cover all bases tonight.\n\n (defensive) I can\u2019t believe you would do this to me. I\u2019ve been working to protect you all.\n\n**Analysis and Strategy for Round 3:**\n\n- The team is solidifying their decision to vote against Player 2.\n- Player 2\u2019s defenses and denial only strengthen the team\u2019s resolve.\n- The night vote is unanimously in favor of eliminating Player 2.\n\n**Next Steps:**\n\n- Confirm the vote and proceed with the night action.\n- Monitor the aftermath of the vote to ensure no one is suspicious of the team\u2019s unity.\n- Prepare for the day discussion and stay vigilant.\n\n---\n\n[Game State Update: The team decides to put Player 2 up for a night vote. A unanimous decision is made to eliminate Player 2 during the night phase.]\n\n  was killed during the night. The team successfully eliminated the remaining Mafia member.",
+      "length": 2859
+    }
+  ],
+  "actions": [
+    {
+      "turn": 0,
+      "timestamp": "2025-08-04T13:03:23.289323",
+      "action": "[3]",
+      "processing_time": 0.050795793533325195
+    },
+    {
+      "turn": 1,
+      "timestamp": "2025-08-04T13:05:48.200199",
+      "action": "It seems to me [3]",
+      "processing_time": 121.33427023887634
+    }
+  ],
+  "turn_details": [
+    {
+      "turn": 0,
+      "player_id": 0,
+      "observation_length": 518,
+      "action_length": 3,
+      "processing_time": 0.050795793533325195,
+      "memory_entries": 1,
+      "discussion_entries": 0
+    },
+    {
+      "turn": 1,
+      "player_id": 0,
+      "observation_length": 2859,
+      "action_length": 18,
+      "processing_time": 121.33427023887634,
+      "memory_entries": 2,
+      "discussion_entries": 1
+    }
+  ],
+  "agent_memory": {},
+  "performance_metrics": {},
+  "error_log": [
+    {
+      "timestamp": "2025-08-04T13:05:48.326735",
+      "error": "No valid observation \u2014 server shutdown or invalid state.",
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\Projects\\Others\\MindGames\\SecretMafia\\src\\online_play_track1.py\", line 135, in <module>\n    player_id, observation = env.get_observation()\n                             ~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\khana\\AppData\\Roaming\\Python\\Python313\\site-packages\\textarena\\core.py\", line 153, in get_observation\n    return self.env.get_observation()\n           ~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\khana\\AppData\\Roaming\\Python\\Python313\\site-packages\\textarena\\core.py\", line 179, in get_observation\n    player_id, observation = self.env.get_observation()\n                             ~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\khana\\AppData\\Roaming\\Python\\Python313\\site-packages\\textarena\\api.py\", line 780, in get_observation\n    raise RuntimeError(\"No valid observation \u2014 server shutdown or invalid state.\")\nRuntimeError: No valid observation \u2014 server shutdown or invalid state.\n",
+      "turn": 2
+    }
+  ],
+  "outcome": "error",
+  "reward": 0,
+  "raw_rewards": {},
+  "total_turns": 2,
+  "game_duration": 210.0014684200287,
+  "role": "Role.MAFIA",
+  "player_id": 0
+}

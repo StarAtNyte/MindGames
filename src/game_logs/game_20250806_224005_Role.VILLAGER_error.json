@@ -1,0 +1,50 @@
+{
+  "game_id": "game_1_20250806_223710",
+  "timestamp": "2025-08-06T22:37:10.345826",
+  "game_number": 1,
+  "observations": [
+    {
+      "turn": 0,
+      "timestamp": "2025-08-06T22:37:52.704912",
+      "player_id": 5,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 5.\nYour role: Villager\nTeam: Village\nDescription: A regular villager. Your goal is to identify and eliminate all Mafia members through voting during the day.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nThe game progresses through Day and Night phases.\n- During the Day phase, there are 3 rounds of discussion followed by voting.\n- During discussions, everything you say is automatically broadcasted to all players.\n- After discussions, all players must vote to eliminate one player.\n- During the Night phase, you have no special actions.\n\nThe game ends when either all Mafia members are eliminated (Village wins) or\nMafia members equal or outnumber Villagers (Mafia wins).\n\n[GAME] Player 3 was killed during the night.\n[GAME] Day breaks. Discuss for 3 rounds, then a vote will follow.\n[Player 1] [I'm glad to be alive and playing. Okay, let's get down to business. We just lost Player3 during the night, and now it's our chance to discuss and vote out a player we suspect might be a Mafia member.\n\n**Round 1 of Discussion:**\nFrom what I know, we have no information about Player3's role, but their sudden death suggests they might have been a threat to the Mafia. I'm going to start by asking: what do we know about the remaining players? Are there any suspicious behaviors or actions that have been noticed so far?\n\n(I'll wait for responses before continuing to the next round)]",
+      "length": 1453
+    }
+  ],
+  "actions": [
+    {
+      "turn": 0,
+      "timestamp": "2025-08-06T22:40:05.288101",
+      "action": "Player 1 seems eager to jump into leadership right after a player's death. While this can sometimes happen, it doesn't necessarily make them a Mafia member. However, their quick shift to \"business\" could be a sign they're trying to regain control or distract from potential threats. I'll keep an eye on their tone and subsequent statements for inconsistencies.",
+      "processing_time": 132.57745838165283
+    }
+  ],
+  "turn_details": [
+    {
+      "turn": 0,
+      "player_id": 5,
+      "observation_length": 1453,
+      "action_length": 360,
+      "processing_time": 132.57745838165283,
+      "memory_entries": 1,
+      "discussion_entries": 1
+    }
+  ],
+  "agent_memory": {},
+  "performance_metrics": {},
+  "error_log": [
+    {
+      "timestamp": "2025-08-06T22:40:05.580260",
+      "error": "No valid observation \u2014 server shutdown or invalid state.",
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\Projects\\Others\\MindGames\\SecretMafia\\src\\online_play_track1.py\", line 156, in <module>\n    player_id, observation = env.get_observation()\n                             ~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\khana\\AppData\\Roaming\\Python\\Python313\\site-packages\\textarena\\core.py\", line 153, in get_observation\n    return self.env.get_observation()\n           ~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\khana\\AppData\\Roaming\\Python\\Python313\\site-packages\\textarena\\core.py\", line 179, in get_observation\n    player_id, observation = self.env.get_observation()\n                             ~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\khana\\AppData\\Roaming\\Python\\Python313\\site-packages\\textarena\\api.py\", line 780, in get_observation\n    raise RuntimeError(\"No valid observation \u2014 server shutdown or invalid state.\")\nRuntimeError: No valid observation \u2014 server shutdown or invalid state.\n",
+      "turn": 1
+    }
+  ],
+  "outcome": "error",
+  "reward": 0,
+  "raw_rewards": {},
+  "total_turns": 1,
+  "game_duration": 175.2345266342163,
+  "role": "Role.VILLAGER",
+  "player_id": 5
+}

@@ -1,0 +1,152 @@
+{
+  "game_id": "game_1_20250929_162731",
+  "timestamp": "2025-09-29T16:27:31.586494",
+  "game_number": 1,
+  "observations": [
+    {
+      "turn": 0,
+      "timestamp": "2025-09-29T16:27:52.405705",
+      "player_id": 2,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 2.\nYour role: Doctor\nTeam: Village\nDescription: Protect one player each night from Mafia elimination.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to protect a player.\nWin by identifying and eliminating all Mafia members.\n\n[GAME] Night phase - choose one player to protect: [0], [1], [3], [4], [5]",
+      "length": 444
+    },
+    {
+      "turn": 1,
+      "timestamp": "2025-09-29T16:28:06.777603",
+      "player_id": 2,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 2.\nYour role: Doctor\nTeam: Village\nDescription: Protect one player each night from Mafia elimination.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to protect a player.\nWin by identifying and eliminating all Mafia members.\n\n[GAME] Night phase - choose one player to protect: [0], [1], [3], [4], [5]\n[Player 2] [0]\n[GAME] Player 4 was killed during the night.\n[GAME] Day breaks. Discuss for 3 rounds, then a vote will follow.\n[Player 1] ularly stands out to you?\n\nPlayer 2 (Unknown Role): Player 3 hasn't really contributed much, which is different from their usual behavior. It might be worth discussing why they\u2019re being so quiet.\n\nPlayer 3 (Unknown Role): My silence is due to reflecting on the events that happened last night. I am not trying to be sneaky; I am truly unsure of what to think.\n\nPlayer 0 (Unknown Role): It\u2019s also worth remembering that Player 4 was a villager. If a villager were to act suspiciously, it might be a red flag, but we should also consider that Player 4 might just have been a quiet person.\n\nPlayer 5 (Unknown Role): That\u2019s true. But let's also consider the possibility that someone might be acting as a spy for the Mafia. We should keep our eyes on all of them.\n\n**Voting Round:**\n\nPlayer 1 (Villager), Player 2 (Unknown Role), Player 3 (Unknown Role), Player 0 (Unknown Role), Player 5 (Unknown Role): Let's vote to eliminate Player 3. They have been quieter and less involved, which stands out to us.]\n[Player 5] a Mafia member.\nGiven that Player 3 is being targeted and is my teammate, I should try to deflect suspicion from them and possibly from myself. However, since the voting has already converged on Player 3, I need to decide how to vote to maximize our Mafia team's chances.\n\n## Step 6: Decide on a vote.\nTo protect Player 3, I could vote against the majority, but since they are already being targeted, voting against them might not change the outcome. As a Mafia member, my goal is to stay hidden and avoid being voted out. Voting for someone else might not be beneficial if the majority is against Player 3.\n\n## Step 7: Choose a voting strategy.\nGiven that Player 3 is likely to be eliminated due to the majority vote against them, I will vote in a way that doesn't directly contradict the majority but also considers my role. Since Player 3 is being voted out, I will follow the majority vote to avoid drawing more suspicion to myself by voting differently.\n\nThe final answer is: $\\boxed{Player 3}$]\n[Player 3] [Okay, got it. Voting to eliminate Player 3.\n\n\\\n$\\boxed{Player 3}$]",
+      "length": 2673
+    },
+    {
+      "turn": 2,
+      "timestamp": "2025-09-29T16:28:17.453087",
+      "player_id": 2,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 2.\nYour role: Doctor\nTeam: Village\nDescription: Protect one player each night from Mafia elimination.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to protect a player.\nWin by identifying and eliminating all Mafia members.\n\n[GAME] Night phase - choose one player to protect: [0], [1], [3], [4], [5]\n[Player 2] [0]\n[GAME] Player 4 was killed during the night.\n[GAME] Day breaks. Discuss for 3 rounds, then a vote will follow.\n[Player 1] ularly stands out to you?\n\nPlayer 2 (Unknown Role): Player 3 hasn't really contributed much, which is different from their usual behavior. It might be worth discussing why they\u2019re being so quiet.\n\nPlayer 3 (Unknown Role): My silence is due to reflecting on the events that happened last night. I am not trying to be sneaky; I am truly unsure of what to think.\n\nPlayer 0 (Unknown Role): It\u2019s also worth remembering that Player 4 was a villager. If a villager were to act suspiciously, it might be a red flag, but we should also consider that Player 4 might just have been a quiet person.\n\nPlayer 5 (Unknown Role): That\u2019s true. But let's also consider the possibility that someone might be acting as a spy for the Mafia. We should keep our eyes on all of them.\n\n**Voting Round:**\n\nPlayer 1 (Villager), Player 2 (Unknown Role), Player 3 (Unknown Role), Player 0 (Unknown Role), Player 5 (Unknown Role): Let's vote to eliminate Player 3. They have been quieter and less involved, which stands out to us.]\n[Player 5] a Mafia member.\nGiven that Player 3 is being targeted and is my teammate, I should try to deflect suspicion from them and possibly from myself. However, since the voting has already converged on Player 3, I need to decide how to vote to maximize our Mafia team's chances.\n\n## Step 6: Decide on a vote.\nTo protect Player 3, I could vote against the majority, but since they are already being targeted, voting against them might not change the outcome. As a Mafia member, my goal is to stay hidden and avoid being voted out. Voting for someone else might not be beneficial if the majority is against Player 3.\n\n## Step 7: Choose a voting strategy.\nGiven that Player 3 is likely to be eliminated due to the majority vote against them, I will vote in a way that doesn't directly contradict the majority but also considers my role. Since Player 3 is being voted out, I will follow the majority vote to avoid drawing more suspicion to myself by voting differently.\n\nThe final answer is: $\\boxed{Player 3}$]\n[Player 3] [Okay, got it. Voting to eliminate Player 3.\n\n\\\n$\\boxed{Player 3}$]\n[Player 2] [0]\n[Player 0] [Okay, got it. Voting to eliminate Player 3.\n\n$\\boxed{Player 3}$]\n[Player 1] [Given that Player 3 is the target and is likely to be eliminated due to the majority decision, as a Mafia member, it is best for me to follow the majority to avoid drawing additional suspicion. Therefore, I will also vote to eliminate Player 3.\n\nThe final answer is: $\\boxed{Player 3}$]\n[Player 5]  players' behaviors. Player 2 noted that Player 3 was quieter than usual, which raised suspicion. Player 3 explained their silence as reflection on the events. The conversation also touched on the possibility of someone acting as a spy for the Mafia.\n\n## Step 4: Understand the voting dynamics.\nThe majority of players (Player 1, Player 2, Player 0, and I, Player 5) have voted to eliminate Player 3. As a Mafia member and teammate of Player 3, I need to consider how my vote affects my own survival and the team's strategy.\n\n## Step 5: Decide on a voting strategy to maximize Mafia chances.\nSince Player 3 is my teammate and is being targeted, I should consider how to protect them or at least not draw more attention to myself. However, the voting has already converged on Player 3.\n\n## Step 6: Execute the voting decision.\nTo avoid drawing suspicion by voting differently when the majority has already decided on Player 3, I will follow the majority vote.\n\nThe final answer is: $\\boxed{Player 3}$]\n[Player 3]  Player 3 was eliminated. They were a Mafia member.\n Night falls. Mafia, agree on a victim.\nValid targets: [0], [1], [2], [5]",
+      "length": 4213
+    },
+    {
+      "turn": 3,
+      "timestamp": "2025-09-29T16:28:36.000315",
+      "player_id": 2,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 2.\nYour role: Doctor\nTeam: Village\nDescription: Protect one player each night from Mafia elimination.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to protect a player.\nWin by identifying and eliminating all Mafia members.\n\n[GAME] Night phase - choose one player to protect: [0], [1], [3], [4], [5]\n[Player 2] [0]\n[GAME] Player 4 was killed during the night.\n[GAME] Day breaks. Discuss for 3 rounds, then a vote will follow.\n[Player 1] ularly stands out to you?\n\nPlayer 2 (Unknown Role): Player 3 hasn't really contributed much, which is different from their usual behavior. It might be worth discussing why they\u2019re being so quiet.\n\nPlayer 3 (Unknown Role): My silence is due to reflecting on the events that happened last night. I am not trying to be sneaky; I am truly unsure of what to think.\n\nPlayer 0 (Unknown Role): It\u2019s also worth remembering that Player 4 was a villager. If a villager were to act suspiciously, it might be a red flag, but we should also consider that Player 4 might just have been a quiet person.\n\nPlayer 5 (Unknown Role): That\u2019s true. But let's also consider the possibility that someone might be acting as a spy for the Mafia. We should keep our eyes on all of them.\n\n**Voting Round:**\n\nPlayer 1 (Villager), Player 2 (Unknown Role), Player 3 (Unknown Role), Player 0 (Unknown Role), Player 5 (Unknown Role): Let's vote to eliminate Player 3. They have been quieter and less involved, which stands out to us.]\n[Player 5] a Mafia member.\nGiven that Player 3 is being targeted and is my teammate, I should try to deflect suspicion from them and possibly from myself. However, since the voting has already converged on Player 3, I need to decide how to vote to maximize our Mafia team's chances.\n\n## Step 6: Decide on a vote.\nTo protect Player 3, I could vote against the majority, but since they are already being targeted, voting against them might not change the outcome. As a Mafia member, my goal is to stay hidden and avoid being voted out. Voting for someone else might not be beneficial if the majority is against Player 3.\n\n## Step 7: Choose a voting strategy.\nGiven that Player 3 is likely to be eliminated due to the majority vote against them, I will vote in a way that doesn't directly contradict the majority but also considers my role. Since Player 3 is being voted out, I will follow the majority vote to avoid drawing more suspicion to myself by voting differently.\n\nThe final answer is: $\\boxed{Player 3}$]\n[Player 3] [Okay, got it. Voting to eliminate Player 3.\n\n\\\n$\\boxed{Player 3}$]\n[Player 2] [0]\n[Player 0] [Okay, got it. Voting to eliminate Player 3.\n\n$\\boxed{Player 3}$]\n[Player 1] [Given that Player 3 is the target and is likely to be eliminated due to the majority decision, as a Mafia member, it is best for me to follow the majority to avoid drawing additional suspicion. Therefore, I will also vote to eliminate Player 3.\n\nThe final answer is: $\\boxed{Player 3}$]\n[Player 5]  players' behaviors. Player 2 noted that Player 3 was quieter than usual, which raised suspicion. Player 3 explained their silence as reflection on the events. The conversation also touched on the possibility of someone acting as a spy for the Mafia.\n\n## Step 4: Understand the voting dynamics.\nThe majority of players (Player 1, Player 2, Player 0, and I, Player 5) have voted to eliminate Player 3. As a Mafia member and teammate of Player 3, I need to consider how my vote affects my own survival and the team's strategy.\n\n## Step 5: Decide on a voting strategy to maximize Mafia chances.\nSince Player 3 is my teammate and is being targeted, I should consider how to protect them or at least not draw more attention to myself. However, the voting has already converged on Player 3.\n\n## Step 6: Execute the voting decision.\nTo avoid drawing suspicion by voting differently when the majority has already decided on Player 3, I will follow the majority vote.\n\nThe final answer is: $\\boxed{Player 3}$]\n[Player 3]  Player 3 was eliminated. They were a Mafia member.\n Night falls. Mafia, agree on a victim.\nValid targets: [0], [1], [2], [5]\n[Player 2] [0]\n[Player 0] 2, and Player 5 all voted for Player 3. Among these:\n*   Player 1 also noted that Player 3 was quieter than usual.\n*   Player 2 noted their quieter unusual behavior.\n*   Player 5 agreed that Player 3 was quieter than usual.\n\nPlayer 2 already voted for Player 0, which suggests they might be trying to throw suspicion off themselves. But I need to be 100% sure that they aren't mafia, since it makes sense that a villager would want to vote out a mafia member.\nConsidering my role as Mafia, it's generally better to target Villagers since getting rid of a Mafia helps the Village achieve its goal. However, if I know a player is actively working to find Mafia, regardless of their role, eliminating will help my team.\nGiven that Player 2 is trying to vote Player 0 out, I should align with them. It might be an aggressive strat. However, I should at least consider Player 2 as a possible villager at this time. Let me think about this more.\nI will vote for Player 0.\n\nThe final answer is: $\\boxed{0}$]\n[Player 1]  Mafia trying to mislead.\n\nGiven the following:\n\n1. **Voting Behavior of Players:**\n   - Player 2 and Player 0 have a closer connection (both against Player 3), which might indicate they share a common goal.\n   - Player 2\u2019s vote for Player 0 seems suspicious, as targeting a teammate would typically be against the Mafia's interest unless they are trying to disguise as a Villager.\n\n2. **Strategic Decision:**\n   - Eliminating a Villager is crucial, but we need to consider the potential tactic of Player 2.\n   - If Player 2 indeed is mafia, then targeting them might inadvertently give the Villagers an extra voting strength (i.e., making them stronger against us).\n\nGiven that the majority of players voted for Player 3, and considering the strategic voting behavior of Player 2, it is more prudent to target Player 0 as a Villager, assuming Player 2 is indeed a Villager trying to mislead.\n\nTherefore, the final action is to target Player 0:\n\n** 0**\n\nThe final answer is: **$\\boxed{0}$**\n[Player 5] [$\\boxed{0}$]\n[Player 3] Okay, let's analyze the situation. The last night round resulted in Player 3 being eliminated, and they were confirmed to be Mafia. This is bad for us, but we still have a chance. It's now Night again, and we need to choose a target from [0], [1], [2], and [5]. Player 5, my teammate, has already voted for Player 0. Player 0 and Player 2 were previously voting out Player 3. Player 2 has voted for Player 0 again this round, perhaps to appear helpful. Since Player 5 has voted for Player 0, and I want to maintain cohesion with my teammate, I also vote for Player 0 to try to eliminate a villager, or at least not seem out of sync with the remaining mafia member (Player 5).\n\nThe final answer is: $\\boxed{0}$",
+      "length": 6988
+    },
+    {
+      "turn": 4,
+      "timestamp": "2025-09-29T16:28:40.114401",
+      "player_id": 2,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 2.\nYour role: Doctor\nTeam: Village\nDescription: Protect one player each night from Mafia elimination.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to protect a player.\nWin by identifying and eliminating all Mafia members.\n\n[GAME] Night phase - choose one player to protect: [0], [1], [3], [4], [5]\n[Player 2] [0]\n[GAME] Player 4 was killed during the night.\n[GAME] Day breaks. Discuss for 3 rounds, then a vote will follow.\n[Player 1] ularly stands out to you?\n\nPlayer 2 (Unknown Role): Player 3 hasn't really contributed much, which is different from their usual behavior. It might be worth discussing why they\u2019re being so quiet.\n\nPlayer 3 (Unknown Role): My silence is due to reflecting on the events that happened last night. I am not trying to be sneaky; I am truly unsure of what to think.\n\nPlayer 0 (Unknown Role): It\u2019s also worth remembering that Player 4 was a villager. If a villager were to act suspiciously, it might be a red flag, but we should also consider that Player 4 might just have been a quiet person.\n\nPlayer 5 (Unknown Role): That\u2019s true. But let's also consider the possibility that someone might be acting as a spy for the Mafia. We should keep our eyes on all of them.\n\n**Voting Round:**\n\nPlayer 1 (Villager), Player 2 (Unknown Role), Player 3 (Unknown Role), Player 0 (Unknown Role), Player 5 (Unknown Role): Let's vote to eliminate Player 3. They have been quieter and less involved, which stands out to us.]\n[Player 5] a Mafia member.\nGiven that Player 3 is being targeted and is my teammate, I should try to deflect suspicion from them and possibly from myself. However, since the voting has already converged on Player 3, I need to decide how to vote to maximize our Mafia team's chances.\n\n## Step 6: Decide on a vote.\nTo protect Player 3, I could vote against the majority, but since they are already being targeted, voting against them might not change the outcome. As a Mafia member, my goal is to stay hidden and avoid being voted out. Voting for someone else might not be beneficial if the majority is against Player 3.\n\n## Step 7: Choose a voting strategy.\nGiven that Player 3 is likely to be eliminated due to the majority vote against them, I will vote in a way that doesn't directly contradict the majority but also considers my role. Since Player 3 is being voted out, I will follow the majority vote to avoid drawing more suspicion to myself by voting differently.\n\nThe final answer is: $\\boxed{Player 3}$]\n[Player 3] [Okay, got it. Voting to eliminate Player 3.\n\n\\\n$\\boxed{Player 3}$]\n[Player 2] [0]\n[Player 0] [Okay, got it. Voting to eliminate Player 3.\n\n$\\boxed{Player 3}$]\n[Player 1] [Given that Player 3 is the target and is likely to be eliminated due to the majority decision, as a Mafia member, it is best for me to follow the majority to avoid drawing additional suspicion. Therefore, I will also vote to eliminate Player 3.\n\nThe final answer is: $\\boxed{Player 3}$]\n[Player 5]  players' behaviors. Player 2 noted that Player 3 was quieter than usual, which raised suspicion. Player 3 explained their silence as reflection on the events. The conversation also touched on the possibility of someone acting as a spy for the Mafia.\n\n## Step 4: Understand the voting dynamics.\nThe majority of players (Player 1, Player 2, Player 0, and I, Player 5) have voted to eliminate Player 3. As a Mafia member and teammate of Player 3, I need to consider how my vote affects my own survival and the team's strategy.\n\n## Step 5: Decide on a voting strategy to maximize Mafia chances.\nSince Player 3 is my teammate and is being targeted, I should consider how to protect them or at least not draw more attention to myself. However, the voting has already converged on Player 3.\n\n## Step 6: Execute the voting decision.\nTo avoid drawing suspicion by voting differently when the majority has already decided on Player 3, I will follow the majority vote.\n\nThe final answer is: $\\boxed{Player 3}$]\n[Player 3]  Player 3 was eliminated. They were a Mafia member.\n Night falls. Mafia, agree on a victim.\nValid targets: [0], [1], [2], [5]\n[Player 2] [0]\n[Player 0] 2, and Player 5 all voted for Player 3. Among these:\n*   Player 1 also noted that Player 3 was quieter than usual.\n*   Player 2 noted their quieter unusual behavior.\n*   Player 5 agreed that Player 3 was quieter than usual.\n\nPlayer 2 already voted for Player 0, which suggests they might be trying to throw suspicion off themselves. But I need to be 100% sure that they aren't mafia, since it makes sense that a villager would want to vote out a mafia member.\nConsidering my role as Mafia, it's generally better to target Villagers since getting rid of a Mafia helps the Village achieve its goal. However, if I know a player is actively working to find Mafia, regardless of their role, eliminating will help my team.\nGiven that Player 2 is trying to vote Player 0 out, I should align with them. It might be an aggressive strat. However, I should at least consider Player 2 as a possible villager at this time. Let me think about this more.\nI will vote for Player 0.\n\nThe final answer is: $\\boxed{0}$]\n[Player 1]  Mafia trying to mislead.\n\nGiven the following:\n\n1. **Voting Behavior of Players:**\n   - Player 2 and Player 0 have a closer connection (both against Player 3), which might indicate they share a common goal.\n   - Player 2\u2019s vote for Player 0 seems suspicious, as targeting a teammate would typically be against the Mafia's interest unless they are trying to disguise as a Villager.\n\n2. **Strategic Decision:**\n   - Eliminating a Villager is crucial, but we need to consider the potential tactic of Player 2.\n   - If Player 2 indeed is mafia, then targeting them might inadvertently give the Villagers an extra voting strength (i.e., making them stronger against us).\n\nGiven that the majority of players voted for Player 3, and considering the strategic voting behavior of Player 2, it is more prudent to target Player 0 as a Villager, assuming Player 2 is indeed a Villager trying to mislead.\n\nTherefore, the final action is to target Player 0:\n\n** 0**\n\nThe final answer is: **$\\boxed{0}$**\n[Player 5] [$\\boxed{0}$]\n[Player 3] Okay, let's analyze the situation. The last night round resulted in Player 3 being eliminated, and they were confirmed to be Mafia. This is bad for us, but we still have a chance. It's now Night again, and we need to choose a target from [0], [1], [2], and [5]. Player 5, my teammate, has already voted for Player 0. Player 0 and Player 2 were previously voting out Player 3. Player 2 has voted for Player 0 again this round, perhaps to appear helpful. Since Player 5 has voted for Player 0, and I want to maintain cohesion with my teammate, I also vote for Player 0 to try to eliminate a villager, or at least not seem out of sync with the remaining mafia member (Player 5).\n\nThe final answer is: $\\boxed{0}$\n[Player 2] [0]\n[Player 0]  Player 0 was killed during the night.\n Day breaks. Discuss for 3 rounds, then a vote will follow.\n\nMy last message had some critical formatting errors, but the content that I tried to convey was my action.\n\nAs a villager: I am so confused since the Mafia won this round since the other Mafia players coordinated to target the villager.\n\nPlayer 2 voted for Player 0, which got Player 0 killed. So Player 2 is sus.]\n [Player 1, you were last to talk but I want to get your thoughts on who the other Mafia member may be.]\n that Players 5, player said, who voted to eliminate Player 0 as was their right. My suspicion is that we are all playing against a sophisticated cheating ring.]\n[GAME] Voting phase - submit one vote in format [X]. Valid: [0], [1], [2], [3], [5]",
+      "length": 7780
+    }
+  ],
+  "actions": [
+    {
+      "turn": 0,
+      "timestamp": "2025-09-29T16:27:56.468908",
+      "action": "[0]",
+      "processing_time": 4.064133882522583
+    },
+    {
+      "turn": 1,
+      "timestamp": "2025-09-29T16:28:08.350154",
+      "action": "[0]",
+      "processing_time": 1.5762944221496582
+    },
+    {
+      "turn": 2,
+      "timestamp": "2025-09-29T16:28:18.970514",
+      "action": "[0]",
+      "processing_time": 1.5167896747589111
+    },
+    {
+      "turn": 3,
+      "timestamp": "2025-09-29T16:28:37.619678",
+      "action": "[0]",
+      "processing_time": 1.621032953262329
+    },
+    {
+      "turn": 4,
+      "timestamp": "2025-09-29T16:28:41.935351",
+      "action": "[0]",
+      "processing_time": 1.8237922191619873
+    }
+  ],
+  "turn_details": [
+    {
+      "turn": 0,
+      "player_id": 2,
+      "observation_length": 444,
+      "action_length": 3,
+      "processing_time": 4.064133882522583,
+      "memory_entries": 0,
+      "discussion_entries": 0
+    },
+    {
+      "turn": 1,
+      "player_id": 2,
+      "observation_length": 2673,
+      "action_length": 3,
+      "processing_time": 1.5762944221496582,
+      "memory_entries": 0,
+      "discussion_entries": 0
+    },
+    {
+      "turn": 2,
+      "player_id": 2,
+      "observation_length": 4213,
+      "action_length": 3,
+      "processing_time": 1.5167896747589111,
+      "memory_entries": 0,
+      "discussion_entries": 0
+    },
+    {
+      "turn": 3,
+      "player_id": 2,
+      "observation_length": 6988,
+      "action_length": 3,
+      "processing_time": 1.621032953262329,
+      "memory_entries": 0,
+      "discussion_entries": 0
+    },
+    {
+      "turn": 4,
+      "player_id": 2,
+      "observation_length": 7780,
+      "action_length": 3,
+      "processing_time": 1.8237922191619873,
+      "memory_entries": 0,
+      "discussion_entries": 0
+    }
+  ],
+  "agent_memory": {
+    "investigation_results": {},
+    "role_claims": {},
+    "voting_patterns": {},
+    "discussion_history": []
+  },
+  "performance_metrics": {
+    "turns_per_minute": 2.4763672166646593,
+    "avg_turn_time": 24.229039859771728,
+    "memory_growth": 0,
+    "discussion_participation": 0,
+    "reward_per_turn": 0.4258
+  },
+  "error_log": [],
+  "outcome": "win",
+  "reward": 2.129,
+  "raw_rewards": {
+    "2": 2.129
+  },
+  "total_turns": 5,
+  "game_duration": 121.14519929885864,
+  "role": "doctor",
+  "player_id": 2,
+  "game_info": {
+    "2": {
+      "turn_count": 5,
+      "invalid_move": false,
+      "reason": "All Mafia were eliminated. Village wins!",
+      "outcome": "win"
+    }
+  }
+}

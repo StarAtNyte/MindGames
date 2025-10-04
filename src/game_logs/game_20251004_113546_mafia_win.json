@@ -1,0 +1,64 @@
+{
+  "game_id": "game_1_20251004_113447",
+  "timestamp": "2025-10-04T11:34:47.954764",
+  "game_number": 1,
+  "observations": [
+    {
+      "turn": 0,
+      "timestamp": "2025-10-04T11:35:10.652550",
+      "player_id": 4,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 4.\nYour role: Mafia\nTeam: Mafia\nDescription: A Mafia member. Eliminate villagers and gain majority.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nYour teammates are: Player 0, Player 4.\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to vote and eliminate a villager.\nWin by eliminating villagers until Mafia equal or outnumber them.\n\n[GAME] Night has fallen. Mafia, agree on a victim.\nValid targets: [1], [2], [3], [5]\n[Player 0] '' to vote and eliminate a villager. Player 3 seems like a strong target as they might be a Vitalian or another important figure that the villagers are protecting. Eliminating Player 3 will help us move closer to our goal.",
+      "length": 752
+    }
+  ],
+  "actions": [
+    {
+      "turn": 0,
+      "timestamp": "2025-10-04T11:35:16.013105",
+      "action": "[0]",
+      "processing_time": 5.361187219619751
+    }
+  ],
+  "turn_details": [
+    {
+      "turn": 0,
+      "player_id": 4,
+      "observation_length": 752,
+      "action_length": 3,
+      "processing_time": 5.361187219619751,
+      "memory_entries": 0,
+      "discussion_entries": 0
+    }
+  ],
+  "agent_memory": {
+    "investigation_results": {},
+    "role_claims": {},
+    "voting_patterns": {},
+    "discussion_history": []
+  },
+  "performance_metrics": {
+    "turns_per_minute": 1.0241213852206628,
+    "avg_turn_time": 58.58680510520935,
+    "memory_growth": 0,
+    "discussion_participation": 0,
+    "reward_per_turn": 1.955
+  },
+  "error_log": [],
+  "outcome": "win",
+  "reward": 1.955,
+  "raw_rewards": {
+    "4": 1.955
+  },
+  "total_turns": 1,
+  "game_duration": 58.58680510520935,
+  "role": "mafia",
+  "player_id": 4,
+  "game_info": {
+    "4": {
+      "turn_count": 1,
+      "invalid_move": false,
+      "reason": "Mafia reached parity with villagers. Mafia wins!",
+      "outcome": "win"
+    }
+  }
+}

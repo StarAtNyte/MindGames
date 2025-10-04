@@ -1,0 +1,61 @@
+{
+  "game_id": "game_1_20251001_194935",
+  "timestamp": "2025-10-01T19:49:35.101679",
+  "game_number": 1,
+  "observations": [
+    {
+      "turn": 0,
+      "timestamp": "2025-10-01T19:53:58.878032",
+      "player_id": 1,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 1.\nYour role: Mafia\nTeam: Mafia\nDescription: A Mafia member. Eliminate villagers and gain majority.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nYour teammates are: Player 1, Player 2.\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to vote and eliminate a villager.\nWin by eliminating villagers until Mafia equal or outnumber them.\n\n[GAME] Night has fallen. Mafia, agree on a victim.\nValid targets: [0], [3], [4], [5]",
+      "length": 518
+    }
+  ],
+  "actions": [
+    {
+      "turn": 0,
+      "timestamp": "2025-10-01T19:55:37.263244",
+      "action": "[3]",
+      "processing_time": 98.38771200180054
+    }
+  ],
+  "turn_details": [
+    {
+      "turn": 0,
+      "player_id": 1,
+      "observation_length": 518,
+      "action_length": 3,
+      "processing_time": 98.38771200180054,
+      "memory_entries": 0,
+      "discussion_entries": 0
+    }
+  ],
+  "agent_memory": {
+    "investigation_results": {},
+    "role_claims": {},
+    "voting_patterns": {},
+    "discussion_history": []
+  },
+  "performance_metrics": {
+    "turns_per_minute": 0.14039148777662303,
+    "avg_turn_time": 427.3763384819031,
+    "memory_growth": 0,
+    "discussion_participation": 0,
+    "reward_per_turn": 0.0
+  },
+  "error_log": [],
+  "outcome": "loss",
+  "reward": 0,
+  "raw_rewards": {},
+  "total_turns": 1,
+  "game_duration": 427.3763384819031,
+  "role": "mafia",
+  "player_id": 1,
+  "game_info": {
+    "1": {
+      "turn_count": 1,
+      "invalid_move": false,
+      "reason": "timeout"
+    }
+  }
+}

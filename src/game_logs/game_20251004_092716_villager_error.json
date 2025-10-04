@@ -1,0 +1,50 @@
+{
+  "game_id": "game_1_20251004_092048",
+  "timestamp": "2025-10-04T09:20:48.659706",
+  "game_number": 1,
+  "observations": [
+    {
+      "turn": 0,
+      "timestamp": "2025-10-04T09:25:15.312911",
+      "player_id": 5,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 5.\nYour role: Villager\nTeam: Village\nDescription: A regular villager. Your goal is to identify and eliminate all Mafia members through voting during the day.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nThe game progresses through Day and Night phases.\n- During the Day phase, there are 3 rounds of discussion followed by voting.\n- During discussions, everything you say is automatically broadcasted to all players.\n- After discussions, all players must vote to eliminate one player.\n- During the Night phase, you have no special actions.\n\nThe game ends when either all Mafia members are eliminated (Village wins) or\nMafia members equal or outnumber Villagers (Mafia wins).\n\n[GAME] Player 4 was killed during the night.\n[GAME] Day breaks. Discuss for 3 rounds, then a vote will follow.\n[Player 2] [Round 1] I\u2019m glad we saved Player\u202f0 last night. Since Player\u202f4 was killed, we need to look at who might have been targeted. I didn\u2019t see any suspicious behavior from Player\u202f1 or Player\u202f3 during the night, but Player\u202f5 seemed unusually quiet. What do you all think?\n\n[Round 2] Considering the timing, the Mafia would want to eliminate someone who isn\u2019t a threat. Player\u202f4 wasn\u2019t vocal, which might mean the Mafia thought they'd be easy to take out. If Player\u202f5 is trying to stay under the radar, that could be a sign. I\u2019m leaning toward Player\u202f5 as a possible Mafia member.\n\n[Round 3] I\u2019ll stick with my suspicion on Player\u202f5, but I\u2019m open to hearing other perspectives. If anyone has observed odd voting patterns or secret whispers, now\u2019s the time to share. Otherwise, we should decide who to eliminate.\n\n[Vote] Player\u202f5.",
+      "length": 1692
+    }
+  ],
+  "actions": [
+    {
+      "turn": 0,
+      "timestamp": "2025-10-04T09:27:15.947122",
+      "action": "[0]",
+      "processing_time": 120.64839053153992
+    }
+  ],
+  "turn_details": [
+    {
+      "turn": 0,
+      "player_id": 5,
+      "observation_length": 1692,
+      "action_length": 3,
+      "processing_time": 120.64839053153992,
+      "memory_entries": 0,
+      "discussion_entries": 1
+    }
+  ],
+  "agent_memory": {},
+  "performance_metrics": {},
+  "error_log": [
+    {
+      "timestamp": "2025-10-04T09:27:16.252101",
+      "error": "No valid observation \u2014 server shutdown or invalid state.",
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\Projects\\Others\\MindGames\\SecretMafia\\src\\online_play_streamlined.py\", line 153, in <module>\n    player_id, observation = env.get_observation()\n                             ~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\khana\\AppData\\Roaming\\Python\\Python313\\site-packages\\textarena\\core.py\", line 153, in get_observation\n    return self.env.get_observation()\n           ~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\khana\\AppData\\Roaming\\Python\\Python313\\site-packages\\textarena\\core.py\", line 179, in get_observation\n    player_id, observation = self.env.get_observation()\n                             ~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\khana\\AppData\\Roaming\\Python\\Python313\\site-packages\\textarena\\api.py\", line 780, in get_observation\n    raise RuntimeError(\"No valid observation \u2014 server shutdown or invalid state.\")\nRuntimeError: No valid observation \u2014 server shutdown or invalid state.\n",
+      "turn": 1
+    }
+  ],
+  "outcome": "error",
+  "reward": 0,
+  "raw_rewards": {},
+  "total_turns": 1,
+  "game_duration": 387.5925278663635,
+  "role": "villager",
+  "player_id": 5
+}

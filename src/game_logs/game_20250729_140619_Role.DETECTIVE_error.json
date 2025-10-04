@@ -1,0 +1,50 @@
+{
+  "game_id": "game_1_20250729_140538",
+  "timestamp": "2025-07-29T14:05:38.240196",
+  "game_number": 1,
+  "observations": [
+    {
+      "turn": 0,
+      "timestamp": "2025-07-29T14:06:07.076620",
+      "player_id": 3,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 3.\nYour role: Detective\nTeam: Village\nDescription: Investigate players to find Mafia members.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to investigate.\nYou'll learn immediately if the target is Mafia.\nWin by identifying and eliminating all Mafia members.\n\n[GAME] Night phase - choose one player to investigate: [0], [1], [2], [4], [5]",
+      "length": 484
+    }
+  ],
+  "actions": [
+    {
+      "turn": 0,
+      "timestamp": "2025-07-29T14:06:07.081935",
+      "action": "[0]",
+      "processing_time": 0.018702268600463867
+    }
+  ],
+  "turn_details": [
+    {
+      "turn": 0,
+      "player_id": 3,
+      "observation_length": 484,
+      "action_length": 3,
+      "processing_time": 0.018702268600463867,
+      "memory_entries": 1,
+      "discussion_entries": 0
+    }
+  ],
+  "agent_memory": {},
+  "performance_metrics": {},
+  "error_log": [
+    {
+      "timestamp": "2025-07-29T14:06:19.361622",
+      "error": "No valid observation \u2014 server shutdown or invalid state.",
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\Projects\\Others\\MindGames\\SecretMafia\\src\\online_play_track1.py\", line 135, in <module>\n    player_id, observation = env.get_observation()\n                             ~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\khana\\AppData\\Roaming\\Python\\Python313\\site-packages\\textarena\\core.py\", line 153, in get_observation\n    return self.env.get_observation()\n           ~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\khana\\AppData\\Roaming\\Python\\Python313\\site-packages\\textarena\\core.py\", line 179, in get_observation\n    player_id, observation = self.env.get_observation()\n                             ~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\khana\\AppData\\Roaming\\Python\\Python313\\site-packages\\textarena\\api.py\", line 780, in get_observation\n    raise RuntimeError(\"No valid observation \u2014 server shutdown or invalid state.\")\nRuntimeError: No valid observation \u2014 server shutdown or invalid state.\n",
+      "turn": 1
+    }
+  ],
+  "outcome": "error",
+  "reward": 0,
+  "raw_rewards": {},
+  "total_turns": 1,
+  "game_duration": 41.12151646614075,
+  "role": "Role.DETECTIVE",
+  "player_id": 3
+}

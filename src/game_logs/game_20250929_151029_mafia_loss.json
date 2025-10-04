@@ -1,0 +1,105 @@
+{
+  "game_id": "game_1_20250929_150329",
+  "timestamp": "2025-09-29T15:03:29.024930",
+  "game_number": 1,
+  "observations": [
+    {
+      "turn": 0,
+      "timestamp": "2025-09-29T15:03:51.546275",
+      "player_id": 1,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 1.\nYour role: Mafia\nTeam: Mafia\nDescription: A Mafia member. Eliminate villagers and gain majority.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nYour teammates are: Player 1, Player 2.\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to vote and eliminate a villager.\nWin by eliminating villagers until Mafia equal or outnumber them.\n\n[GAME] Night has fallen. Mafia, agree on a victim.\nValid targets: [0], [3], [4], [5]\n[Player 2] ",
+      "length": 530
+    },
+    {
+      "turn": 1,
+      "timestamp": "2025-09-29T15:05:37.971452",
+      "player_id": 1,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 1.\nYour role: Mafia\nTeam: Mafia\nDescription: A Mafia member. Eliminate villagers and gain majority.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nYour teammates are: Player 1, Player 2.\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to vote and eliminate a villager.\nWin by eliminating villagers until Mafia equal or outnumber them.\n\n[GAME] Night has fallen. Mafia, agree on a victim.\nValid targets: [0], [3], [4], [5]\n[Player 2] \n[Player 1] [3]\n[GAME] Player 3 was killed during the night.\n[GAME] Day breaks. Discuss for 3 rounds, then a vote will follow.",
+      "length": 656
+    },
+    {
+      "turn": 2,
+      "timestamp": "2025-09-29T15:07:39.952931",
+      "player_id": 1,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 1.\nYour role: Mafia\nTeam: Mafia\nDescription: A Mafia member. Eliminate villagers and gain majority.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nYour teammates are: Player 1, Player 2.\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to vote and eliminate a villager.\nWin by eliminating villagers until Mafia equal or outnumber them.\n\n[GAME] Night has fallen. Mafia, agree on a victim.\nValid targets: [0], [3], [4], [5]\n[Player 2] \n[Player 1] [3]\n[GAME] Player 3 was killed during the night.\n[GAME] Day breaks. Discuss for 3 rounds, then a vote will follow.\n[Player 1] [0]\n[Player 0] [Okay, I understand. I am Player 0, a Villager. Player 3 was killed last night. We are now in the Day phase and have 3 rounds of discussion before voting.\n\nHere's my first discussion post:\nI'm Player 0. I'm sorry to see Player 3 go. Let's discuss who Player 3 might have suspected or what the last conversations were before the night phase to gather more information. I haven't been able to form any strong opinions yet.]\n[Player 5] [I'm Player 5. I'm sorry to hear about Player 3 being killed. I was protecting Player 1 last night. Let's work together to find out who could have eliminated them and get some leads on tonight's target.\nWhat do you think about Player 1's suggestion to discuss Player 3's last interactions? Are there any specific players you want to focus on for more details?\nAlso, can anyone share anything they noticed during the night phase that might help us identify tonight's target?]\n[Player 4] I\u2019m Player 4. I investigated Player 2 last night and the game confirmed: Player 2 IS Mafia. That\u2019s a lock. We must eliminate Player 2 today\u2014any other vote or a no-elim loses us the game.\n\nPlayer 1, please explain your \u201c[0]\u201d post. Was that an early vote on Player 0? Why zero context?\n\nPlayer 5, you claimed you protected Player 1. Will you commit to protecting me tonight after we lynch Player 2? Town needs its investigative power alive.\n\nEveryone else: consolidate on Player 2. No distractions, no side-wagons. VOTE: Player 2\n[Player 2] et, which is a classic Mafia tactic.\n\nThird, let\u2019s consider the night kill. Player\u202f3 was taken out, and we all know the Mafia chooses the victim. If Player\u202f4 were really an honest investigator, why didn\u2019t they point out a clear suspect right away? Instead, they immediately jump to a lynch vote with no discussion of alternative leads. That rush is typical of a Mafia trying to herd the town.\n\nSo my proposal: **let\u2019s put a hold on any immediate lynch and instead focus on identifying who truly has an investigative role, if anyone, and who might be fabricating one.** The only evidence we have is the pattern of votes and accusations. Until we have a concrete reason to lynch someone, we should keep the town\u2019s numbers intact and avoid giving the Mafia a free victory.\n\nI\u2019m willing to vote with the majority once we have a clear, reasoned target\u2014but I\u2019m not buying the claim that I\u2019m Mafia without proof. Who else can refute Player\u202f4\u2019s \u201cinvestigation\u201d or explain why they would make that claim now?]",
+      "length": 3141
+    }
+  ],
+  "actions": [
+    {
+      "turn": 0,
+      "timestamp": "2025-09-29T15:03:56.164604",
+      "action": "[3]",
+      "processing_time": 4.618352651596069
+    },
+    {
+      "turn": 1,
+      "timestamp": "2025-09-29T15:05:46.943168",
+      "action": "[0]",
+      "processing_time": 8.971803665161133
+    },
+    {
+      "turn": 2,
+      "timestamp": "2025-09-29T15:07:51.222173",
+      "action": "[0]",
+      "processing_time": 11.268895864486694
+    }
+  ],
+  "turn_details": [
+    {
+      "turn": 0,
+      "player_id": 1,
+      "observation_length": 530,
+      "action_length": 3,
+      "processing_time": 4.618352651596069,
+      "memory_entries": 0,
+      "discussion_entries": 0
+    },
+    {
+      "turn": 1,
+      "player_id": 1,
+      "observation_length": 656,
+      "action_length": 3,
+      "processing_time": 8.971803665161133,
+      "memory_entries": 0,
+      "discussion_entries": 0
+    },
+    {
+      "turn": 2,
+      "player_id": 1,
+      "observation_length": 3141,
+      "action_length": 3,
+      "processing_time": 11.268895864486694,
+      "memory_entries": 0,
+      "discussion_entries": 0
+    }
+  ],
+  "agent_memory": {
+    "investigation_results": {},
+    "role_claims": {},
+    "voting_patterns": {},
+    "discussion_history": []
+  },
+  "performance_metrics": {
+    "turns_per_minute": 0.4280011831369257,
+    "avg_turn_time": 140.1865283648173,
+    "memory_growth": 0,
+    "discussion_participation": 0,
+    "reward_per_turn": 0.0
+  },
+  "error_log": [],
+  "outcome": "loss",
+  "reward": 0,
+  "raw_rewards": {},
+  "total_turns": 3,
+  "game_duration": 420.5595850944519,
+  "role": "mafia",
+  "player_id": 1,
+  "game_info": {
+    "1": {
+      "turn_count": 3,
+      "invalid_move": false,
+      "reason": "timeout"
+    }
+  }
+}

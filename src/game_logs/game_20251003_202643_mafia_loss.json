@@ -1,0 +1,85 @@
+{
+  "game_id": "game_1_20251003_201845",
+  "timestamp": "2025-10-03T20:18:45.397692",
+  "game_number": 1,
+  "observations": [
+    {
+      "turn": 0,
+      "timestamp": "2025-10-03T20:20:29.191314",
+      "player_id": 1,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 1.\nYour role: Mafia\nTeam: Mafia\nDescription: A Mafia member. Eliminate villagers and gain majority.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nYour teammates are: Player 1, Player 3.\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to vote and eliminate a villager.\nWin by eliminating villagers until Mafia equal or outnumber them.\n\n[GAME] Night has fallen. Mafia, agree on a victim.\nValid targets: [0], [2], [4], [5]\n[Player 3] ",
+      "length": 530
+    },
+    {
+      "turn": 1,
+      "timestamp": "2025-10-03T20:24:16.486739",
+      "player_id": 1,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 1.\nYour role: Mafia\nTeam: Mafia\nDescription: A Mafia member. Eliminate villagers and gain majority.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nYour teammates are: Player 1, Player 3.\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to vote and eliminate a villager.\nWin by eliminating villagers until Mafia equal or outnumber them.\n\n[GAME] Night has fallen. Mafia, agree on a victim.\nValid targets: [0], [2], [4], [5]\n[Player 3] \n[Player 1] [2]\n[GAME] No one was killed tonight.\n[GAME] Day breaks. Discuss for 3 rounds, then a vote will follow.\n[Player 2] [Player 1 has been confirmed as a Mafia member, so we should focus our suspicions on them during the vote.]\n[Player 3]  I agree with Player 2. Player 1 is definitely a Mafia member. We should target someone else. Let's focus on Player 0 or Player 5.\n[Player 0] ht have an intention to protect someone important. Player 5 could be someone with a role that has not yet been revealed and could be a potential suspect.\n\n I suggest we first confirm if Player 0 or Player 5 could be Mafia. We should ask questions and gather more information on their recent actions or conversations to determine their allegiance.\n\n I will not discuss my role directly. However, I am willing to answer any questions based on their behavior during the day to help the investigation. Let\u2019s proceed with caution and gather more evidence before making any accusations.\n\n After 3 rounds of discussion, a vote will be held. The player with the highest number of votes will be accused of being a Mafia member.\n\n I will not discuss further without seeing the evidence and hearing from other players. I propose we continue to gather information and vote based on the most convincing arguments.\n\n The discussion phase has concluded. Voting is now open.\n[Player 4] [I vote to eliminate Player 1, given the suspicion from previous testimonies. I believe it's crucial we act against confirmed Mafia members to protect our village.]",
+      "length": 2052
+    }
+  ],
+  "actions": [
+    {
+      "turn": 0,
+      "timestamp": "2025-10-03T20:20:37.123656",
+      "action": "[2]",
+      "processing_time": 7.933043479919434
+    },
+    {
+      "turn": 1,
+      "timestamp": "2025-10-03T20:24:27.293466",
+      "action": "I think Player 0 might be trying to mislead us by suggesting Player 5 could have a hidden role. Their sudden shift in focus could be a tactic to divert suspicion away from themselves and towards Player 5, who hasn't revealed their role yet.",
+      "processing_time": 10.805638313293457
+    }
+  ],
+  "turn_details": [
+    {
+      "turn": 0,
+      "player_id": 1,
+      "observation_length": 530,
+      "action_length": 3,
+      "processing_time": 7.933043479919434,
+      "memory_entries": 0,
+      "discussion_entries": 0
+    },
+    {
+      "turn": 1,
+      "player_id": 1,
+      "observation_length": 2052,
+      "action_length": 240,
+      "processing_time": 10.805638313293457,
+      "memory_entries": 0,
+      "discussion_entries": 1
+    }
+  ],
+  "agent_memory": {
+    "investigation_results": {},
+    "role_claims": {},
+    "voting_patterns": {},
+    "discussion_history": [
+      "I think Player 0 might be trying to mislead us by suggesting Player 5 could have a hidden role. Their sudden shift in focus could be a tactic to divert suspicion away from themselves and towards Player 5, who hasn't revealed their role yet."
+    ]
+  },
+  "performance_metrics": {
+    "turns_per_minute": 0.251026854118685,
+    "avg_turn_time": 239.018252491951,
+    "memory_growth": 0,
+    "discussion_participation": 1,
+    "reward_per_turn": 0.0
+  },
+  "error_log": [],
+  "outcome": "loss",
+  "reward": 0,
+  "raw_rewards": {},
+  "total_turns": 2,
+  "game_duration": 478.036504983902,
+  "role": "mafia",
+  "player_id": 1,
+  "game_info": {
+    "1": {
+      "turn_count": 2,
+      "invalid_move": false,
+      "reason": "timeout"
+    }
+  }
+}

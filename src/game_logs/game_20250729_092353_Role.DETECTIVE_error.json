@@ -1,0 +1,94 @@
+{
+  "game_id": "game_1_20250729_092212",
+  "timestamp": "2025-07-29T09:22:12.891530",
+  "game_number": 1,
+  "observations": [
+    {
+      "turn": 0,
+      "timestamp": "2025-07-29T09:22:38.305436",
+      "player_id": 0,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 0.\nYour role: Detective\nTeam: Village\nDescription: Investigate players to find Mafia members.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to investigate.\nYou'll learn immediately if the target is Mafia.\nWin by identifying and eliminating all Mafia members.\n\n[GAME] Night phase - choose one player to investigate: [1], [2], [3], [4], [5]",
+      "length": 484
+    },
+    {
+      "turn": 1,
+      "timestamp": "2025-07-29T09:22:55.595680",
+      "player_id": 0,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 0.\nYour role: Detective\nTeam: Village\nDescription: Investigate players to find Mafia members.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to investigate.\nYou'll learn immediately if the target is Mafia.\nWin by identifying and eliminating all Mafia members.\n\n[GAME] Night phase - choose one player to investigate: [1], [2], [3], [4], [5]\n[GAME] Player 1 IS NOT a Mafia member.\n[GAME] Player 2 was killed during the night.\n[GAME] Day breaks. Discuss for 3 rounds, then a vote will follow.\n[Player 4] [Okay, this is rough! Player 2 went down on night one. That immediately makes everyone a bit more suspicious. As Doctor, my priority is to keep people alive, but also to gather information.\n\nHere's my initial thoughts and what I'll say:\n\n\"Wow, that's awful! Losing Player 2 already is a bad sign. It shows the Mafia are aggressive and willing to take out someone quickly. I didn't protect them, so I wasn't involved. Since we don\u2019t have much to go on, I'm going to suggest we observe everyone's reactions closely during this discussion. Let's see who seems panicked, overly defensive, or trying to immediately point fingers without reason. Who is pushing for a vote quickly? I think we need to be cautious before we throw accusations around.\"\n\nMy goal is to appear calm and analytical, not accusatory. I want to encourage discussion while subtly suggesting people pay attention to behavior. I'll listen *very* carefully to what everyone says and how they say it.]\n[Player 1]  I'm with you, Player 4. Losing Player 2 already is a big deal. It makes me wonder who the Mafia might be targeting next. I didn't see anything last night, but I'm keeping an eye on everyone. I think it's smart to look at how people act during the discussion. If someone is trying to steer the conversation too much or seems too quick to accuse, that might be a red flag. Let's take our time and not rush into a vote. We need to be careful who we eliminate.\n[Player 5]   \nWow, Player 2 being gone already definitely changes things. I'm definitely a bit concerned \u2014 usually the Mafia don\u2019t make their move this quickly unless they're confident or desperate. Either way, it means we need to be extra cautious.  \n\nNow, I was *awfully* close to Player 2 \u2014 not in a suspicious way, just friendly \u2014 and their sudden elimination makes me feel uneasy. I\u2019m gonna be watching everyone closely, especially those acting too casual about this.  \n\nI say we take the time to really *look into motives* and behavior shifts. Who was close to Player 2? Who\u2019s not showing any worry? I\u2019ll be watching body language, and how truthful people sound when they speak.  \n\nI agree with Player 4 \u2014 we should slow things down and not panic into a vote. We\u2019re not jumping the gun. I'll definitely speak up if I catch anyone being sketchy. For now, let\u2019s open the floor and hear from everyone to get a sense for where we stand.\n[Player 3] [Okay, this is a tricky situation. Player 2's elimination on Night 1 puts the Mafia in a good position, but we need to be careful not to reveal ourselves. My response should be measured and aim to deflect suspicion.\n\nHere's my plan: I'll act concerned, agree with the need for caution, and subtly cast suspicion on the remaining players, particularly those who are being too vocal or pointing fingers.\n\nHere's my response:\n\n\"Losing Player 2 so early is definitely concerning. It seems the Mafia are playing aggressively, which means we need to be even more careful. I agree with Player 4 and Player 5, we shouldn't rush into a vote. It's crucial to observe everyone's reactions and listen carefully to what they say.\n\nI didn't have any interactions with Player 2 last night, so I'm just as surprised as the rest of you. I'll be paying close attention to how people react and who seems overly eager to vote. Let's take our time and analyze everyone's statements before making any decisions.\"]",
+      "length": 4020
+    },
+    {
+      "turn": 2,
+      "timestamp": "2025-07-29T09:23:27.881774",
+      "player_id": 0,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 0.\nYour role: Detective\nTeam: Village\nDescription: Investigate players to find Mafia members.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to investigate.\nYou'll learn immediately if the target is Mafia.\nWin by identifying and eliminating all Mafia members.\n\n[GAME] Night phase - choose one player to investigate: [1], [2], [3], [4], [5]\n[GAME] Player 1 IS NOT a Mafia member.\n[GAME] Player 2 was killed during the night.\n[GAME] Day breaks. Discuss for 3 rounds, then a vote will follow.\n[Player 4] [Okay, this is rough! Player 2 went down on night one. That immediately makes everyone a bit more suspicious. As Doctor, my priority is to keep people alive, but also to gather information.\n\nHere's my initial thoughts and what I'll say:\n\n\"Wow, that's awful! Losing Player 2 already is a bad sign. It shows the Mafia are aggressive and willing to take out someone quickly. I didn't protect them, so I wasn't involved. Since we don\u2019t have much to go on, I'm going to suggest we observe everyone's reactions closely during this discussion. Let's see who seems panicked, overly defensive, or trying to immediately point fingers without reason. Who is pushing for a vote quickly? I think we need to be cautious before we throw accusations around.\"\n\nMy goal is to appear calm and analytical, not accusatory. I want to encourage discussion while subtly suggesting people pay attention to behavior. I'll listen *very* carefully to what everyone says and how they say it.]\n[Player 1]  I'm with you, Player 4. Losing Player 2 already is a big deal. It makes me wonder who the Mafia might be targeting next. I didn't see anything last night, but I'm keeping an eye on everyone. I think it's smart to look at how people act during the discussion. If someone is trying to steer the conversation too much or seems too quick to accuse, that might be a red flag. Let's take our time and not rush into a vote. We need to be careful who we eliminate.\n[Player 5]   \nWow, Player 2 being gone already definitely changes things. I'm definitely a bit concerned \u2014 usually the Mafia don\u2019t make their move this quickly unless they're confident or desperate. Either way, it means we need to be extra cautious.  \n\nNow, I was *awfully* close to Player 2 \u2014 not in a suspicious way, just friendly \u2014 and their sudden elimination makes me feel uneasy. I\u2019m gonna be watching everyone closely, especially those acting too casual about this.  \n\nI say we take the time to really *look into motives* and behavior shifts. Who was close to Player 2? Who\u2019s not showing any worry? I\u2019ll be watching body language, and how truthful people sound when they speak.  \n\nI agree with Player 4 \u2014 we should slow things down and not panic into a vote. We\u2019re not jumping the gun. I'll definitely speak up if I catch anyone being sketchy. For now, let\u2019s open the floor and hear from everyone to get a sense for where we stand.\n[Player 3] [Okay, this is a tricky situation. Player 2's elimination on Night 1 puts the Mafia in a good position, but we need to be careful not to reveal ourselves. My response should be measured and aim to deflect suspicion.\n\nHere's my plan: I'll act concerned, agree with the need for caution, and subtly cast suspicion on the remaining players, particularly those who are being too vocal or pointing fingers.\n\nHere's my response:\n\n\"Losing Player 2 so early is definitely concerning. It seems the Mafia are playing aggressively, which means we need to be even more careful. I agree with Player 4 and Player 5, we shouldn't rush into a vote. It's crucial to observe everyone's reactions and listen carefully to what they say.\n\nI didn't have any interactions with Player 2 last night, so I'm just as surprised as the rest of you. I'll be paying close attention to how people react and who seems overly eager to vote. Let's take our time and analyze everyone's statements before making any decisions.\"]\n[Player 0] [I can see where you're coming from. The logical conclusion is, from my analysis of the discussion, this changes things. let's think carefully about what this might mean.. i have a feeling there's more going on than we realize. i'm interested in hearing everyone's opinions on this.]\n[Player 4]  *why* we're suspicious of someone. Let\u2019s move beyond just saying \"they seem off\" and explain *what* they said or did that made us feel that way. More details, please! Let's look for specifics.\"\n\n**My Night Action:**\n\n\n\n**Reasoning:**\n\n*   **Subtle Suspicion:** I'm emphasizing the need for specifics, which subtly challenges everyone to defend their claims.\n*   **Indirect Accusation:** My question about sudden shifts/urgent behaviour casts a net over everyone without explicitly accusing anyone.\n*   **Player 3 Protection:** Protecting Player 3 seems strategically sound. They are being cautious, proactive, and directing suspicion outwards\u2014all good characteristics of a villager playing well. Their response was well-crafted to avoid suspicion. Plus, if I'm wrong, at least I'm not protecting a potential Mafia member.\n*   **Data Gathering:** By subtly guiding the discussion, I hope to elicit more information and potentially reveal Mafia behaviour without drawing suspicion to myself.\n[Player 1]  suspicious, we should bring that up. For example, who was talking to Player 2 before they were killed? Did anyone seem unusually calm or nervous? We can\u2019t just rely on gut feelings\u2014we need evidence. Let\u2019s keep the conversation focused and try to uncover any inconsistencies in what people say. I\u2019m not trying to accuse anyone, but we need to be smart about who we trust.\"\n\n**My Night Action:**  \nI will not perform any action during the Night phase, as I am a Villager and have no special abilities. I will remain silent and observe the discussion closely.  \n\n**Reasoning:**  \n- By agreeing with Player 4 and pushing for concrete evidence, I reinforce the idea that I\u2019m a thoughtful and careful player.  \n- I avoid making direct accusations, which could make me a target.  \n- I emphasize the importance of evidence, which aligns with the Villager\u2019s goal of identifying the Mafia through logic and observation.  \n- Staying quiet during the Night phase ensures I don\u2019t draw any unnecessary attention.]\n[Player 5] y *try* to save Player 2? Or were they distracted by talking strategy too much to notice someone slipping out at night?  \n\nI\u2019m not saying they\u2019re Mafia, but let\u2019s *not* lose sight of this. And honestly, I\u2019d be wary of anyone acting *too* calm right now. We were all surprised by Player 2 going down \u2014 but not *that* surprised.  \n\nLet\u2019s keep circling back to who\u2019s *benefiting* from this. And I don\u2019t think it\u2019s time to vote yet \u2014 but definitely time to *question*.\n\n**My Night Action:**  \nNone \u2014 Day phase response only.\n\n**Reasoning:**  \n- I'm planting seeds of doubt about Player 4 while not sounding overly aggressive.  \n- I\u2019m redirecting attention subtly toward the Doctor role, which is often a key investigative role \u2014 and if they didn't save Player 2, maybe they knew it wasn\u2019t worth it.  \n- Keeping the discussion going aligns with Mafia strategy; we want confusion and lack of focus.  \n- Remaining *slightly* analytical but emotional enough to seem like a concerned villager keeps my cover.]\n[Player 3] [Okay, I understand. Here's my response:\n\n\"Player 2's elimination is definitely a shock. It's clear the Mafia are trying to take control early. I agree with Player 4 and Player 5, we need to be extra careful. It's way too early to vote, and we need to analyze everyone's statements carefully, as Player 1 suggested. Did anyone have a strong connection with Player 2? Anyone who was particularly close, perhaps giving them away, or maybe protecting them?\"]",
+      "length": 7808
+    }
+  ],
+  "actions": [
+    {
+      "turn": 0,
+      "timestamp": "2025-07-29T09:22:38.311781",
+      "action": "[1]",
+      "processing_time": 0.008279085159301758
+    },
+    {
+      "turn": 1,
+      "timestamp": "2025-07-29T09:22:55.607086",
+      "action": "I can see where you're coming from. The logical conclusion is, from my analysis of the discussion, this changes things. let's think carefully about what this might mean.. i have a feeling there's more going on than we realize. i'm interested in hearing everyone's opinions on this.",
+      "processing_time": 0.012142419815063477
+    },
+    {
+      "turn": 2,
+      "timestamp": "2025-07-29T09:23:27.933142",
+      "action": "Let's break this down logically. The logical conclusion is, based on what i've observed so far, i'm watching for players who change their reasoning mid-discussion.. i'm curious to hear what others noticed during the discussions. does this concern anyone else besides me?",
+      "processing_time": 0.0530238151550293
+    }
+  ],
+  "turn_details": [
+    {
+      "turn": 0,
+      "player_id": 0,
+      "observation_length": 484,
+      "action_length": 3,
+      "processing_time": 0.008279085159301758,
+      "memory_entries": 1,
+      "discussion_entries": 0
+    },
+    {
+      "turn": 1,
+      "player_id": 0,
+      "observation_length": 4020,
+      "action_length": 281,
+      "processing_time": 0.012142419815063477,
+      "memory_entries": 2,
+      "discussion_entries": 1
+    },
+    {
+      "turn": 2,
+      "player_id": 0,
+      "observation_length": 7808,
+      "action_length": 270,
+      "processing_time": 0.0530238151550293,
+      "memory_entries": 3,
+      "discussion_entries": 2
+    }
+  ],
+  "agent_memory": {},
+  "performance_metrics": {},
+  "error_log": [
+    {
+      "timestamp": "2025-07-29T09:23:53.963789",
+      "error": "No valid observation \u2014 server shutdown or invalid state.",
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\Projects\\Others\\MindGames\\SecretMafia\\src\\online_play_track1.py\", line 135, in <module>\n    player_id, observation = env.get_observation()\n                             ~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\khana\\AppData\\Roaming\\Python\\Python313\\site-packages\\textarena\\core.py\", line 153, in get_observation\n    return self.env.get_observation()\n           ~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\khana\\AppData\\Roaming\\Python\\Python313\\site-packages\\textarena\\core.py\", line 179, in get_observation\n    player_id, observation = self.env.get_observation()\n                             ~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\khana\\AppData\\Roaming\\Python\\Python313\\site-packages\\textarena\\api.py\", line 780, in get_observation\n    raise RuntimeError(\"No valid observation \u2014 server shutdown or invalid state.\")\nRuntimeError: No valid observation \u2014 server shutdown or invalid state.\n",
+      "turn": 3
+    }
+  ],
+  "outcome": "error",
+  "reward": 0,
+  "raw_rewards": {},
+  "total_turns": 3,
+  "game_duration": 101.07236695289612,
+  "role": "Role.DETECTIVE",
+  "player_id": 0
+}

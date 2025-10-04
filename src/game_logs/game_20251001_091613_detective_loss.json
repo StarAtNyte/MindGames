@@ -1,0 +1,107 @@
+{
+  "game_id": "game_1_20251001_090832",
+  "timestamp": "2025-10-01T09:08:32.456347",
+  "game_number": 1,
+  "observations": [
+    {
+      "turn": 0,
+      "timestamp": "2025-10-01T09:12:16.902262",
+      "player_id": 4,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 4.\nYour role: Detective\nTeam: Village\nDescription: Investigate players to find Mafia members.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to investigate.\nYou'll learn immediately if the target is Mafia.\nWin by identifying and eliminating all Mafia members.\n\n[GAME] Night phase - choose one player to investigate: [0], [1], [2], [3], [5]",
+      "length": 484
+    },
+    {
+      "turn": 1,
+      "timestamp": "2025-10-01T09:14:39.340752",
+      "player_id": 4,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 4.\nYour role: Detective\nTeam: Village\nDescription: Investigate players to find Mafia members.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to investigate.\nYou'll learn immediately if the target is Mafia.\nWin by identifying and eliminating all Mafia members.\n\n[GAME] Night phase - choose one player to investigate: [0], [1], [2], [3], [5]\n[GAME] Player 3 IS NOT a Mafia member.\n[GAME] Player 1 was killed during the night.\n[GAME] Day breaks. Discuss for 3 rounds, then a vote will follow.\n[Player 3] [**Round 1**  \nI'm sad to see Player\u202f1 gone. Since the night kill was random for us villagers, we have no concrete clues yet. I think we should each share who we talked to yesterday and any odd behavior we noticed.  \n\n**Round 2**  \nFrom what I remember, Player\u202f0 was unusually quiet yesterday, while Player\u202f2 kept asking about the voting order. Player\u202f4 seemed focused on defending themselves early on, and Player\u202f5 was the only one who tried to rally everyone together. No one has given a solid alibi yet.  \n\n**Round 3**  \nGiven the limited info, my gut says we should keep an eye on the quieter players \u2013 especially Player\u202f0 \u2013 because they might be trying to stay under the radar. I\u2019m open to hearing any other suspicions before we vote. (Waiting for everyone's input before the vote.)]\n[Player 2] [0]",
+      "length": 1449
+    },
+    {
+      "turn": 2,
+      "timestamp": "2025-10-01T09:15:34.666346",
+      "player_id": 4,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 4.\nYour role: Detective\nTeam: Village\nDescription: Investigate players to find Mafia members.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to investigate.\nYou'll learn immediately if the target is Mafia.\nWin by identifying and eliminating all Mafia members.\n\n[GAME] Night phase - choose one player to investigate: [0], [1], [2], [3], [5]\n[GAME] Player 3 IS NOT a Mafia member.\n[GAME] Player 1 was killed during the night.\n[GAME] Day breaks. Discuss for 3 rounds, then a vote will follow.\n[Player 3] [**Round 1**  \nI'm sad to see Player\u202f1 gone. Since the night kill was random for us villagers, we have no concrete clues yet. I think we should each share who we talked to yesterday and any odd behavior we noticed.  \n\n**Round 2**  \nFrom what I remember, Player\u202f0 was unusually quiet yesterday, while Player\u202f2 kept asking about the voting order. Player\u202f4 seemed focused on defending themselves early on, and Player\u202f5 was the only one who tried to rally everyone together. No one has given a solid alibi yet.  \n\n**Round 3**  \nGiven the limited info, my gut says we should keep an eye on the quieter players \u2013 especially Player\u202f0 \u2013 because they might be trying to stay under the radar. I\u2019m open to hearing any other suspicions before we vote. (Waiting for everyone's input before the vote.)]\n[Player 2] [0]\n[Player 4] [I agree that Player 0 stands out as particularly quiet. However, Player 4 also exhibited defensive behavior early on, which could indicate either guilt or fear of being targeted. Given Player 1\u2019s sudden absence, it\u2019s crucial we don\u2019t overlook anyone. Let\u2019s continue observing and sharing our findings.]\n[Player 0]  that train. Player 4, same concern: while defending yourself isn\u2019t town-confessory, the me-then-not-me wording in your post (\u201chowever, Player 4\u2026\u201d) feels odd\u2014like you\u2019re narrating yourself in the third person. Player 3, your logic on low-posters is reasonable but it\u2019s still just process-of-elimination.\n\n[Round 3]  \nHere\u2019s my early sorting:  \n- Least likely Mafia at the moment: Player 3\u2014his posts contain the deepest reasoning and invite more discussion rather than shutting it down.  \n- Middle pile: Player 4 (the self-defensive posture could go either way) and Player 5 (we haven\u2019t heard from them yet).  \n- Watching: Player 2\u2014unclear herding vote; and, yes, myself\u2014though I promise any silence stemmed from caution, not scum cover.  \n\nNext step: I\u2019d like to hear Player 0 (me) talk more obviously (doing now), Player 5 speak for the first time today, and some explanation from Player 2 about what her \u201c[0]\u201d was meant to signal beyond blank shade. After that, we can lock in our vote more safely.\n[Player 5] Okay, I understand the situation. Day phase. I need to contribute to the discussion and vote strategically.\n\n**Round 1**\n\nI was observing the discussions yesterday, trying to gauge everyone's behavior. The way players reacted to Player 1's death will be critical. My main focus is to avoid suspicion and blend in.\n\n**Round 2**\n\nI haven't had time to formulate a comprehensive read on everyone's actions. I noted Player 0's silence and Player 2's focus on voting which could be seen as unusual. Player 3's analysis seems fair, and Player 4 seems defensive.\n\n**Round 3**\n\nI agree with the concerns raised about Player 0's silence and Player 4's defensiveness. Player 2's early comment on Player 0 without context seems suspicious, and I'd like to hear more from her. I also want to understand her reasoning.\n\nGiven the limited information, I'm leaning toward voting for **Player 2** . I found their initial comment a little too decisive without sufficient evidence.\n\nMy vote:  ****\n[Player 3] [My vote: Player 2]\n[Player 2] [0]",
+      "length": 3813
+    }
+  ],
+  "actions": [
+    {
+      "turn": 0,
+      "timestamp": "2025-10-01T09:14:11.759294",
+      "action": "[3]",
+      "processing_time": 114.85845565795898
+    },
+    {
+      "turn": 1,
+      "timestamp": "2025-10-01T09:14:47.362737",
+      "action": "I agree that Player 0 stands out as particularly quiet. However, Player 4 also exhibited defensive behavior early on, which could indicate either guilt or fear of being targeted. Given Player 1\u2019s sudden absence, it\u2019s crucial we don\u2019t overlook anyone. Let\u2019s continue observing and sharing our findings.",
+      "processing_time": 8.020475387573242
+    },
+    {
+      "turn": 2,
+      "timestamp": "2025-10-01T09:15:42.513275",
+      "action": "I think Player 2 is acting suspiciously because they were quick to single out Player 0 without much context, which could be a diversion tactic. Their initial decisiveness without solid evidence is concerning. Additionally, Player 0's silence and Player 4's defensive behavior warrant further observation.",
+      "processing_time": 7.8452489376068115
+    }
+  ],
+  "turn_details": [
+    {
+      "turn": 0,
+      "player_id": 4,
+      "observation_length": 484,
+      "action_length": 3,
+      "processing_time": 114.85845565795898,
+      "memory_entries": 0,
+      "discussion_entries": 0
+    },
+    {
+      "turn": 1,
+      "player_id": 4,
+      "observation_length": 1449,
+      "action_length": 301,
+      "processing_time": 8.020475387573242,
+      "memory_entries": 1,
+      "discussion_entries": 0
+    },
+    {
+      "turn": 2,
+      "player_id": 4,
+      "observation_length": 3813,
+      "action_length": 304,
+      "processing_time": 7.8452489376068115,
+      "memory_entries": 1,
+      "discussion_entries": 0
+    }
+  ],
+  "agent_memory": {
+    "investigation_results": {
+      "3": "INNOCENT"
+    },
+    "role_claims": {},
+    "voting_patterns": {},
+    "discussion_history": []
+  },
+  "performance_metrics": {
+    "turns_per_minute": 0.3906468685489107,
+    "avg_turn_time": 153.59140141805014,
+    "memory_growth": 1,
+    "discussion_participation": 0,
+    "reward_per_turn": 0.0
+  },
+  "error_log": [],
+  "outcome": "loss",
+  "reward": 0,
+  "raw_rewards": {},
+  "total_turns": 3,
+  "game_duration": 460.7742042541504,
+  "role": "detective",
+  "player_id": 4,
+  "game_info": {
+    "4": {
+      "turn_count": 3,
+      "invalid_move": false,
+      "reason": "timeout"
+    }
+  }
+}

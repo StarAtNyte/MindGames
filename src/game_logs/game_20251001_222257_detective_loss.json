@@ -1,0 +1,176 @@
+{
+  "game_id": "game_1_20251001_221757",
+  "timestamp": "2025-10-01T22:17:57.781044",
+  "game_number": 1,
+  "observations": [
+    {
+      "turn": 0,
+      "timestamp": "2025-10-01T22:21:04.636739",
+      "player_id": 1,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 1.\nYour role: Detective\nTeam: Village\nDescription: Investigate players to find Mafia members.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to investigate.\nYou'll learn immediately if the target is Mafia.\nWin by identifying and eliminating all Mafia members.\n\n[GAME] Night phase - choose one player to investigate: [0], [2], [3], [4], [5]",
+      "length": 484
+    },
+    {
+      "turn": 1,
+      "timestamp": "2025-10-01T22:21:11.422817",
+      "player_id": 1,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 1.\nYour role: Detective\nTeam: Village\nDescription: Investigate players to find Mafia members.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to investigate.\nYou'll learn immediately if the target is Mafia.\nWin by identifying and eliminating all Mafia members.\n\n[GAME] Night phase - choose one player to investigate: [0], [2], [3], [4], [5]\n[GAME] Player 2 IS NOT a Mafia member.\n[GAME] Player 2 was killed during the night.\n[GAME] Day breaks. Discuss for 3 rounds, then a vote will follow.\n[Player 4] [Round 1]  I\u2019m pretty sure something\u2019s off with Player\u202f5. They\u2019ve been silent for most of the night and seemed nervous when the bodies were announced.\n\n[Round 2]  Also, notice how Player\u202f1 kept looking over at Player\u202f5\u2019s seat during the day. It feels like they\u2019re trying to coordinate, which is exactly what we\u2019d expect from the Mafia.\n\n[Round 3]  Given the odd behavior from Player\u202f5 and the subtle cues from Player\u202f1, I think the safest choice is to eliminate Player\u202f5 today. They\u2019re the most suspicious.\n\n[Vote] Player 5",
+      "length": 1169
+    },
+    {
+      "turn": 2,
+      "timestamp": "2025-10-01T22:21:31.423978",
+      "player_id": 1,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 1.\nYour role: Detective\nTeam: Village\nDescription: Investigate players to find Mafia members.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to investigate.\nYou'll learn immediately if the target is Mafia.\nWin by identifying and eliminating all Mafia members.\n\n[GAME] Night phase - choose one player to investigate: [0], [2], [3], [4], [5]\n[GAME] Player 2 IS NOT a Mafia member.\n[GAME] Player 2 was killed during the night.\n[GAME] Day breaks. Discuss for 3 rounds, then a vote will follow.\n[Player 4] [Round 1]  I\u2019m pretty sure something\u2019s off with Player\u202f5. They\u2019ve been silent for most of the night and seemed nervous when the bodies were announced.\n\n[Round 2]  Also, notice how Player\u202f1 kept looking over at Player\u202f5\u2019s seat during the day. It feels like they\u2019re trying to coordinate, which is exactly what we\u2019d expect from the Mafia.\n\n[Round 3]  Given the odd behavior from Player\u202f5 and the subtle cues from Player\u202f1, I think the safest choice is to eliminate Player\u202f5 today. They\u2019re the most suspicious.\n\n[Vote] Player 5\n[Player 1] [5]\n[Player 0]  [5]\n[Player 5] elf and point suspicion back at Player 4 for making up a weak justification for voting me. Argue that Player 4 is trying to deflect suspicion from themselves by creating a quick and flimsy narrative.\n\n**Round 1:** Player 4 is trying to get me voted out based on silence? That's ridiculous! I was listening and observing. Projecting much, Player 4? Why are you so quick to accuse? Maybe you are the one who is nervous.\n\n**Round 2:** Player 4's reasoning is flimsy. Looking at someone's seat? Seriously? That's reaching. This feels like a desperate attempt to frame someone quickly. I bet Player 4 is the Mafia and trying to get someone eliminated before they can be found out.\n\n**Round 3:** Don't fall for Player 4's flimsy accusations! They haven't presented any real evidence other than \"vibes\" and invented interactions. They're clearly trying to deflect suspicion from themselves. Voting me out based on this is a mistake. We need to consider voting Player 4 to see how they react under pressure.]\n[Player 3] opening very aggressive for a first full day with almost nothing to go on. A Mafia member likes to look decisive early to set the narrative. I\u2019m keeping my eye on 4 for that reason.\n\nRound 2  \nWe only have one hard fact: Player 2 (who is now confirmed Town) was the night-kill.  \n\u2022 The Mafia knew 2 was unprotected because I saved 0 instead.  \n\u2022 Player 4 is already pushing hard to eliminate 5. A good scum play yesterday would have been to leave the obvious townies alive so that the loudest voice (4) can steer a mis-elimination on 5 today. That would give them another free night-kill while seeming \u201chelpful.\u201d  \n\nRound 3  \nI\u2019ll be straight: I can\u2019t clear or condemn 5 yet, but the manner in which 4 has prosecuted this wagon looks scummier to me than anything 5 has done. If 4 flips Mafia, we\u2019ll have a trail of interactions (how 1 reacted, how 0 followed) to clean up tomorrow. If 5 flips Town, we lose\u2014but at least we\u2019ll know 4 orchestrated it and can act before the next night.\n\n[Vote] Player 4\n[Player 4] [Vote] Player 1",
+      "length": 3251
+    },
+    {
+      "turn": 3,
+      "timestamp": "2025-10-01T22:21:48.588603",
+      "player_id": 1,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 1.\nYour role: Detective\nTeam: Village\nDescription: Investigate players to find Mafia members.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to investigate.\nYou'll learn immediately if the target is Mafia.\nWin by identifying and eliminating all Mafia members.\n\n[GAME] Night phase - choose one player to investigate: [0], [2], [3], [4], [5]\n[GAME] Player 2 IS NOT a Mafia member.\n[GAME] Player 2 was killed during the night.\n[GAME] Day breaks. Discuss for 3 rounds, then a vote will follow.\n[Player 4] [Round 1]  I\u2019m pretty sure something\u2019s off with Player\u202f5. They\u2019ve been silent for most of the night and seemed nervous when the bodies were announced.\n\n[Round 2]  Also, notice how Player\u202f1 kept looking over at Player\u202f5\u2019s seat during the day. It feels like they\u2019re trying to coordinate, which is exactly what we\u2019d expect from the Mafia.\n\n[Round 3]  Given the odd behavior from Player\u202f5 and the subtle cues from Player\u202f1, I think the safest choice is to eliminate Player\u202f5 today. They\u2019re the most suspicious.\n\n[Vote] Player 5\n[Player 1] [5]\n[Player 0]  [5]\n[Player 5] elf and point suspicion back at Player 4 for making up a weak justification for voting me. Argue that Player 4 is trying to deflect suspicion from themselves by creating a quick and flimsy narrative.\n\n**Round 1:** Player 4 is trying to get me voted out based on silence? That's ridiculous! I was listening and observing. Projecting much, Player 4? Why are you so quick to accuse? Maybe you are the one who is nervous.\n\n**Round 2:** Player 4's reasoning is flimsy. Looking at someone's seat? Seriously? That's reaching. This feels like a desperate attempt to frame someone quickly. I bet Player 4 is the Mafia and trying to get someone eliminated before they can be found out.\n\n**Round 3:** Don't fall for Player 4's flimsy accusations! They haven't presented any real evidence other than \"vibes\" and invented interactions. They're clearly trying to deflect suspicion from themselves. Voting me out based on this is a mistake. We need to consider voting Player 4 to see how they react under pressure.]\n[Player 3] opening very aggressive for a first full day with almost nothing to go on. A Mafia member likes to look decisive early to set the narrative. I\u2019m keeping my eye on 4 for that reason.\n\nRound 2  \nWe only have one hard fact: Player 2 (who is now confirmed Town) was the night-kill.  \n\u2022 The Mafia knew 2 was unprotected because I saved 0 instead.  \n\u2022 Player 4 is already pushing hard to eliminate 5. A good scum play yesterday would have been to leave the obvious townies alive so that the loudest voice (4) can steer a mis-elimination on 5 today. That would give them another free night-kill while seeming \u201chelpful.\u201d  \n\nRound 3  \nI\u2019ll be straight: I can\u2019t clear or condemn 5 yet, but the manner in which 4 has prosecuted this wagon looks scummier to me than anything 5 has done. If 4 flips Mafia, we\u2019ll have a trail of interactions (how 1 reacted, how 0 followed) to clean up tomorrow. If 5 flips Town, we lose\u2014but at least we\u2019ll know 4 orchestrated it and can act before the next night.\n\n[Vote] Player 4\n[Player 4] [Vote] Player 1\n[Player 1] [4]\n[Player 0]  [4]\n[Player 5] Okay, I need to follow Player 3's logic and reinforce the suspicion on Player 4. Since Player 3 already voted for Player 4 and has made a compelling argument, I need to solidify that narrative and try to get more people on board.\n\n**Round 1:** I agree with Player 3. Player 4's aggression towards me right out of the gate felt forced. They're pushing way too hard with flimsy reasoning. This is classic Mafia behavior - trying to control the narrative early!\n\n**Round 2:** Player 3 makes a great point about targeting Player 2. Player 4, if you're not Mafia, why are you SO quick to latch onto me as the suspect? Seems like you're trying to distract us from your own actions!\n\n**Round 3:** I'm following Player 3 and voting for Player 4. Their behavior is far more suspicious than anything I've done. Let's see how Player 4 reacts when the pressure is on them. Maybe Player 1 and Player 0 will see the light.\n\n[Vote] Player 4\n[Player 3]  Day ends. Votes:  \n3 \u2192 4  \n4 \u2192 1  \n1 \u2192 4  \n0 \u2192 4  \n5 \u2192 4  \n\nPlayer 4 has the most votes and is eliminated. Their role was: **Mafia Goon**.  One Mafia member remains.\n\nNight phase - choose one player to protect: [0], [1], [2], [5]\n[Player 4] [0]",
+      "length": 4476
+    },
+    {
+      "turn": 4,
+      "timestamp": "2025-10-01T22:22:12.882949",
+      "player_id": 1,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 1.\nYour role: Detective\nTeam: Village\nDescription: Investigate players to find Mafia members.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to investigate.\nYou'll learn immediately if the target is Mafia.\nWin by identifying and eliminating all Mafia members.\n\n[GAME] Night phase - choose one player to investigate: [0], [2], [3], [4], [5]\n[GAME] Player 2 IS NOT a Mafia member.\n[GAME] Player 2 was killed during the night.\n[GAME] Day breaks. Discuss for 3 rounds, then a vote will follow.\n[Player 4] [Round 1]  I\u2019m pretty sure something\u2019s off with Player\u202f5. They\u2019ve been silent for most of the night and seemed nervous when the bodies were announced.\n\n[Round 2]  Also, notice how Player\u202f1 kept looking over at Player\u202f5\u2019s seat during the day. It feels like they\u2019re trying to coordinate, which is exactly what we\u2019d expect from the Mafia.\n\n[Round 3]  Given the odd behavior from Player\u202f5 and the subtle cues from Player\u202f1, I think the safest choice is to eliminate Player\u202f5 today. They\u2019re the most suspicious.\n\n[Vote] Player 5\n[Player 1] [5]\n[Player 0]  [5]\n[Player 5] elf and point suspicion back at Player 4 for making up a weak justification for voting me. Argue that Player 4 is trying to deflect suspicion from themselves by creating a quick and flimsy narrative.\n\n**Round 1:** Player 4 is trying to get me voted out based on silence? That's ridiculous! I was listening and observing. Projecting much, Player 4? Why are you so quick to accuse? Maybe you are the one who is nervous.\n\n**Round 2:** Player 4's reasoning is flimsy. Looking at someone's seat? Seriously? That's reaching. This feels like a desperate attempt to frame someone quickly. I bet Player 4 is the Mafia and trying to get someone eliminated before they can be found out.\n\n**Round 3:** Don't fall for Player 4's flimsy accusations! They haven't presented any real evidence other than \"vibes\" and invented interactions. They're clearly trying to deflect suspicion from themselves. Voting me out based on this is a mistake. We need to consider voting Player 4 to see how they react under pressure.]\n[Player 3] opening very aggressive for a first full day with almost nothing to go on. A Mafia member likes to look decisive early to set the narrative. I\u2019m keeping my eye on 4 for that reason.\n\nRound 2  \nWe only have one hard fact: Player 2 (who is now confirmed Town) was the night-kill.  \n\u2022 The Mafia knew 2 was unprotected because I saved 0 instead.  \n\u2022 Player 4 is already pushing hard to eliminate 5. A good scum play yesterday would have been to leave the obvious townies alive so that the loudest voice (4) can steer a mis-elimination on 5 today. That would give them another free night-kill while seeming \u201chelpful.\u201d  \n\nRound 3  \nI\u2019ll be straight: I can\u2019t clear or condemn 5 yet, but the manner in which 4 has prosecuted this wagon looks scummier to me than anything 5 has done. If 4 flips Mafia, we\u2019ll have a trail of interactions (how 1 reacted, how 0 followed) to clean up tomorrow. If 5 flips Town, we lose\u2014but at least we\u2019ll know 4 orchestrated it and can act before the next night.\n\n[Vote] Player 4\n[Player 4] [Vote] Player 1\n[Player 1] [4]\n[Player 0]  [4]\n[Player 5] Okay, I need to follow Player 3's logic and reinforce the suspicion on Player 4. Since Player 3 already voted for Player 4 and has made a compelling argument, I need to solidify that narrative and try to get more people on board.\n\n**Round 1:** I agree with Player 3. Player 4's aggression towards me right out of the gate felt forced. They're pushing way too hard with flimsy reasoning. This is classic Mafia behavior - trying to control the narrative early!\n\n**Round 2:** Player 3 makes a great point about targeting Player 2. Player 4, if you're not Mafia, why are you SO quick to latch onto me as the suspect? Seems like you're trying to distract us from your own actions!\n\n**Round 3:** I'm following Player 3 and voting for Player 4. Their behavior is far more suspicious than anything I've done. Let's see how Player 4 reacts when the pressure is on them. Maybe Player 1 and Player 0 will see the light.\n\n[Vote] Player 4\n[Player 3]  Day ends. Votes:  \n3 \u2192 4  \n4 \u2192 1  \n1 \u2192 4  \n0 \u2192 4  \n5 \u2192 4  \n\nPlayer 4 has the most votes and is eliminated. Their role was: **Mafia Goon**.  One Mafia member remains.\n\nNight phase - choose one player to protect: [0], [1], [2], [5]\n[Player 4] [0]\n[Player 1] [5]\n[Player 0]  [2]\n[Player 5] tly identified and voted Player 4, and also has been very smart about reasoning so far. I trust Player 3, but there may be a reason that Player 1 want to protect me. Player 4 also targeted 0, possibly to frame them.\n*   **Player 5:** Me.\n\nI need to strongly consider who the Mafia is most likely to target tonight. Player 3 is the most obvious threat to scum, as they were clearly correct. However, the Mafia might want to eliminate me to remove someone who can deduce Mafia behavior. The votes for protections are also interesting - Player 4 protects 0 (possibly because framing purposes against them during the final stretch or to avoid the most obvious option), Player 1 protects me (an indication of trust, or a misleading one), and Player 0 protects the dead player (a misclick).\n\nSince Player 3 has been so accurate, the Mafia may target him to remove the biggest threat. I'll protect Player 3 tonight and hope Player 3 can continue to lead our thinking.\n\nNight phase - Protecting Player 3\n\n[3]\n[Player 3] Night Action: [3]\n[GAME] Voting phase - submit one vote in format [X]. Valid: [0], [1], [3], [4], [5]\n[Player 3] [1]\n[Player 4] [0]\n[Player 0]  [1]",
+      "length": 5678
+    },
+    {
+      "turn": 5,
+      "timestamp": "2025-10-01T22:22:22.858766",
+      "player_id": 1,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 1.\nYour role: Detective\nTeam: Village\nDescription: Investigate players to find Mafia members.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to investigate.\nYou'll learn immediately if the target is Mafia.\nWin by identifying and eliminating all Mafia members.\n\n[GAME] Night phase - choose one player to investigate: [0], [2], [3], [4], [5]\n[GAME] Player 2 IS NOT a Mafia member.\n[GAME] Player 2 was killed during the night.\n[GAME] Day breaks. Discuss for 3 rounds, then a vote will follow.\n[Player 4] [Round 1]  I\u2019m pretty sure something\u2019s off with Player\u202f5. They\u2019ve been silent for most of the night and seemed nervous when the bodies were announced.\n\n[Round 2]  Also, notice how Player\u202f1 kept looking over at Player\u202f5\u2019s seat during the day. It feels like they\u2019re trying to coordinate, which is exactly what we\u2019d expect from the Mafia.\n\n[Round 3]  Given the odd behavior from Player\u202f5 and the subtle cues from Player\u202f1, I think the safest choice is to eliminate Player\u202f5 today. They\u2019re the most suspicious.\n\n[Vote] Player 5\n[Player 1] [5]\n[Player 0]  [5]\n[Player 5] elf and point suspicion back at Player 4 for making up a weak justification for voting me. Argue that Player 4 is trying to deflect suspicion from themselves by creating a quick and flimsy narrative.\n\n**Round 1:** Player 4 is trying to get me voted out based on silence? That's ridiculous! I was listening and observing. Projecting much, Player 4? Why are you so quick to accuse? Maybe you are the one who is nervous.\n\n**Round 2:** Player 4's reasoning is flimsy. Looking at someone's seat? Seriously? That's reaching. This feels like a desperate attempt to frame someone quickly. I bet Player 4 is the Mafia and trying to get someone eliminated before they can be found out.\n\n**Round 3:** Don't fall for Player 4's flimsy accusations! They haven't presented any real evidence other than \"vibes\" and invented interactions. They're clearly trying to deflect suspicion from themselves. Voting me out based on this is a mistake. We need to consider voting Player 4 to see how they react under pressure.]\n[Player 3] opening very aggressive for a first full day with almost nothing to go on. A Mafia member likes to look decisive early to set the narrative. I\u2019m keeping my eye on 4 for that reason.\n\nRound 2  \nWe only have one hard fact: Player 2 (who is now confirmed Town) was the night-kill.  \n\u2022 The Mafia knew 2 was unprotected because I saved 0 instead.  \n\u2022 Player 4 is already pushing hard to eliminate 5. A good scum play yesterday would have been to leave the obvious townies alive so that the loudest voice (4) can steer a mis-elimination on 5 today. That would give them another free night-kill while seeming \u201chelpful.\u201d  \n\nRound 3  \nI\u2019ll be straight: I can\u2019t clear or condemn 5 yet, but the manner in which 4 has prosecuted this wagon looks scummier to me than anything 5 has done. If 4 flips Mafia, we\u2019ll have a trail of interactions (how 1 reacted, how 0 followed) to clean up tomorrow. If 5 flips Town, we lose\u2014but at least we\u2019ll know 4 orchestrated it and can act before the next night.\n\n[Vote] Player 4\n[Player 4] [Vote] Player 1\n[Player 1] [4]\n[Player 0]  [4]\n[Player 5] Okay, I need to follow Player 3's logic and reinforce the suspicion on Player 4. Since Player 3 already voted for Player 4 and has made a compelling argument, I need to solidify that narrative and try to get more people on board.\n\n**Round 1:** I agree with Player 3. Player 4's aggression towards me right out of the gate felt forced. They're pushing way too hard with flimsy reasoning. This is classic Mafia behavior - trying to control the narrative early!\n\n**Round 2:** Player 3 makes a great point about targeting Player 2. Player 4, if you're not Mafia, why are you SO quick to latch onto me as the suspect? Seems like you're trying to distract us from your own actions!\n\n**Round 3:** I'm following Player 3 and voting for Player 4. Their behavior is far more suspicious than anything I've done. Let's see how Player 4 reacts when the pressure is on them. Maybe Player 1 and Player 0 will see the light.\n\n[Vote] Player 4\n[Player 3]  Day ends. Votes:  \n3 \u2192 4  \n4 \u2192 1  \n1 \u2192 4  \n0 \u2192 4  \n5 \u2192 4  \n\nPlayer 4 has the most votes and is eliminated. Their role was: **Mafia Goon**.  One Mafia member remains.\n\nNight phase - choose one player to protect: [0], [1], [2], [5]\n[Player 4] [0]\n[Player 1] [5]\n[Player 0]  [2]\n[Player 5] tly identified and voted Player 4, and also has been very smart about reasoning so far. I trust Player 3, but there may be a reason that Player 1 want to protect me. Player 4 also targeted 0, possibly to frame them.\n*   **Player 5:** Me.\n\nI need to strongly consider who the Mafia is most likely to target tonight. Player 3 is the most obvious threat to scum, as they were clearly correct. However, the Mafia might want to eliminate me to remove someone who can deduce Mafia behavior. The votes for protections are also interesting - Player 4 protects 0 (possibly because framing purposes against them during the final stretch or to avoid the most obvious option), Player 1 protects me (an indication of trust, or a misleading one), and Player 0 protects the dead player (a misclick).\n\nSince Player 3 has been so accurate, the Mafia may target him to remove the biggest threat. I'll protect Player 3 tonight and hope Player 3 can continue to lead our thinking.\n\nNight phase - Protecting Player 3\n\n[3]\n[Player 3] Night Action: [3]\n[GAME] Voting phase - submit one vote in format [X]. Valid: [0], [1], [3], [4], [5]\n[Player 3] [1]\n[Player 4] [0]\n[Player 0]  [1]\n[GAME] Player 1 attempted an invalid move. Reason: Vote not in valid format or invalid target. Please resubmit a valid move and remember to follow the game rules to avoid penalties.",
+      "length": 5860
+    }
+  ],
+  "actions": [
+    {
+      "turn": 0,
+      "timestamp": "2025-10-01T22:21:09.640618",
+      "action": "[2]",
+      "processing_time": 5.00429368019104
+    },
+    {
+      "turn": 1,
+      "timestamp": "2025-10-01T22:21:19.198602",
+      "action": "[5]",
+      "processing_time": 7.775345087051392
+    },
+    {
+      "turn": 2,
+      "timestamp": "2025-10-01T22:21:37.987588",
+      "action": "[4]",
+      "processing_time": 6.564805746078491
+    },
+    {
+      "turn": 3,
+      "timestamp": "2025-10-01T22:21:58.204355",
+      "action": "[5]",
+      "processing_time": 9.623675107955933
+    },
+    {
+      "turn": 4,
+      "timestamp": "2025-10-01T22:22:22.753354",
+      "action": "I think Player 1 is acting suspiciously because they protected Player 5, who was recently accused of being Mafia. This could indicate either loyalty to Player 5 or a strategy to mislead others into thinking Player 5 is still safe. Additionally, Player 1's sudden change in stance after Player 4 was eliminated suggests they might be hiding something.",
+      "processing_time": 9.869756937026978
+    },
+    {
+      "turn": 5,
+      "timestamp": "2025-10-01T22:22:29.941826",
+      "action": "I think Player 1 is acting suspiciously because they protected Player 5, who was recently accused of being Mafia. This could indicate either loyalty to Player 5 or a strategy to mislead others into thinking Player 5 is still safe.",
+      "processing_time": 7.0839455127716064
+    }
+  ],
+  "turn_details": [
+    {
+      "turn": 0,
+      "player_id": 1,
+      "observation_length": 484,
+      "action_length": 3,
+      "processing_time": 5.00429368019104,
+      "memory_entries": 0,
+      "discussion_entries": 0
+    },
+    {
+      "turn": 1,
+      "player_id": 1,
+      "observation_length": 1169,
+      "action_length": 3,
+      "processing_time": 7.775345087051392,
+      "memory_entries": 1,
+      "discussion_entries": 0
+    },
+    {
+      "turn": 2,
+      "player_id": 1,
+      "observation_length": 3251,
+      "action_length": 3,
+      "processing_time": 6.564805746078491,
+      "memory_entries": 1,
+      "discussion_entries": 0
+    },
+    {
+      "turn": 3,
+      "player_id": 1,
+      "observation_length": 4476,
+      "action_length": 3,
+      "processing_time": 9.623675107955933,
+      "memory_entries": 1,
+      "discussion_entries": 0
+    },
+    {
+      "turn": 4,
+      "player_id": 1,
+      "observation_length": 5678,
+      "action_length": 350,
+      "processing_time": 9.869756937026978,
+      "memory_entries": 1,
+      "discussion_entries": 0
+    },
+    {
+      "turn": 5,
+      "player_id": 1,
+      "observation_length": 5860,
+      "action_length": 230,
+      "processing_time": 7.0839455127716064,
+      "memory_entries": 1,
+      "discussion_entries": 0
+    }
+  ],
+  "agent_memory": {
+    "investigation_results": {
+      "2": "INNOCENT"
+    },
+    "role_claims": {},
+    "voting_patterns": {},
+    "discussion_history": []
+  },
+  "performance_metrics": {
+    "turns_per_minute": 1.201224538748878,
+    "avg_turn_time": 49.94902956485748,
+    "memory_growth": 1,
+    "discussion_participation": 0,
+    "reward_per_turn": -0.44516666666666665
+  },
+  "error_log": [],
+  "outcome": "loss",
+  "reward": -2.671,
+  "raw_rewards": {
+    "1": -2.671
+  },
+  "total_turns": 6,
+  "game_duration": 299.6941773891449,
+  "role": "detective",
+  "player_id": 1,
+  "game_info": {
+    "1": {
+      "turn_count": 6,
+      "invalid_move": false,
+      "reason": "Mafia reached parity with villagers. Mafia wins!",
+      "outcome": "loss"
+    }
+  }
+}

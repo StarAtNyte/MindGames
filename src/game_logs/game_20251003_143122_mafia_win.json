@@ -1,0 +1,155 @@
+{
+  "game_id": "game_1_20251003_142822",
+  "timestamp": "2025-10-03T14:28:22.720194",
+  "game_number": 1,
+  "observations": [
+    {
+      "turn": 0,
+      "timestamp": "2025-10-03T14:29:09.190842",
+      "player_id": 5,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 5.\nYour role: Mafia\nTeam: Mafia\nDescription: A Mafia member. Eliminate villagers and gain majority.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nYour teammates are: Player 3, Player 5.\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to vote and eliminate a villager.\nWin by eliminating villagers until Mafia equal or outnumber them.\n\n[GAME] Night has fallen. Mafia, agree on a victim.\nValid targets: [0], [1], [2], [4]",
+      "length": 518
+    },
+    {
+      "turn": 1,
+      "timestamp": "2025-10-03T14:29:29.948508",
+      "player_id": 5,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 5.\nYour role: Mafia\nTeam: Mafia\nDescription: A Mafia member. Eliminate villagers and gain majority.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nYour teammates are: Player 3, Player 5.\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to vote and eliminate a villager.\nWin by eliminating villagers until Mafia equal or outnumber them.\n\n[GAME] Night has fallen. Mafia, agree on a victim.\nValid targets: [0], [1], [2], [4]\n[Player 5] [2]\n[Player 3]  I agree. Let's eliminate Player 2 tonight. They might be suspicious or could threaten our position.\n[GAME] Player 2 was killed during the night.\n[GAME] Day breaks. Discuss for 3 rounds, then a vote will follow.\n[Player 1]  **Player 1:** \"I suggest we all talk more about last night's activities, and see if there's anything suspicious.\"\n- **Player 3:** \"I'll talk to Player 4 and Player 5 about what we observed last night.\"\n- **Player 4:** \"Sure, let's coordinate and see if there were any unusual behaviors or activities.\"\n- **Player 5:** \"Let's also talk to Player 1 since you seemed quiet and maybe we can get more information from you.\"\n\n### Preparation for Voting:\n- **Player 0:** \"Let's prepare for a vote. We need to make sure our suspicions are well-founded before acting.\"\n- **Player 1:** \"Agreed. We should also gather more information through discussion.\"\n- **Player 3:** \"Let's gather as much information as possible before voting.\"\n- **Player 4:** \"I'll start talking to everyone to see if there are any clues.\"\n- **Player 5:** \"Let's be careful, but let's also be thorough in our investigation.\"\n\n### End of Day Phase:\nPrepare for the vote where each player will choose whom they think is the Mafia member.]",
+      "length": 1768
+    },
+    {
+      "turn": 2,
+      "timestamp": "2025-10-03T14:29:51.282778",
+      "player_id": 5,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 5.\nYour role: Mafia\nTeam: Mafia\nDescription: A Mafia member. Eliminate villagers and gain majority.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nYour teammates are: Player 3, Player 5.\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to vote and eliminate a villager.\nWin by eliminating villagers until Mafia equal or outnumber them.\n\n[GAME] Night has fallen. Mafia, agree on a victim.\nValid targets: [0], [1], [2], [4]\n[Player 5] [2]\n[Player 3]  I agree. Let's eliminate Player 2 tonight. They might be suspicious or could threaten our position.\n[GAME] Player 2 was killed during the night.\n[GAME] Day breaks. Discuss for 3 rounds, then a vote will follow.\n[Player 1]  **Player 1:** \"I suggest we all talk more about last night's activities, and see if there's anything suspicious.\"\n- **Player 3:** \"I'll talk to Player 4 and Player 5 about what we observed last night.\"\n- **Player 4:** \"Sure, let's coordinate and see if there were any unusual behaviors or activities.\"\n- **Player 5:** \"Let's also talk to Player 1 since you seemed quiet and maybe we can get more information from you.\"\n\n### Preparation for Voting:\n- **Player 0:** \"Let's prepare for a vote. We need to make sure our suspicions are well-founded before acting.\"\n- **Player 1:** \"Agreed. We should also gather more information through discussion.\"\n- **Player 3:** \"Let's gather as much information as possible before voting.\"\n- **Player 4:** \"I'll start talking to everyone to see if there are any clues.\"\n- **Player 5:** \"Let's be careful, but let's also be thorough in our investigation.\"\n\n### End of Day Phase:\nPrepare for the vote where each player will choose whom they think is the Mafia member.]\n[Player 5] [I think Player 3's quick agreement to eliminate Player 2 shows they might be trying to blend in or deflect suspicion. Their behavior contrasts with Player 1 and 4, who are taking a more cautious approach.]\n[Player 3]  Players, it's time to vote. Please submit your choice of who you suspect to be the Mafia.\n[Player 0] [**Player 0:** I believe Player 3 is the Mafia. Their quick agreement to eliminate Player 2 seems suspicious, especially since they were the first to suggest action without much hesitation. Their behavior doesn't align with the cautious approach taken by others like Player 1 and 4. I think they're trying to manipulate the vote to their advantage.]\n[Player 4] I\u2019ll keep this short and to the point.\n\nFact: I still have the strongest mechanical innocence in this game\u2014there is literally no Doctor-in-the-mafia variant here, and last night\u2019s NK confirms I targeted correctly (otherwise we\u2019d have a no-kill).  \nFact: The one player who spent the entire Day trying to \u201ccontrol the narrative and force discussion toward elimination\u201d rather than to information-tracking was Player 3. Player 0 just echoed that pressure after Player 5 connected the dots.\n\nScum usually float safe-votes toward easy wagons; a Player 3 lynch flushes Mafia cover while buying the Village a second Doctor-controlled night.  \n\n[Vote: Player 3]\n[Player 1] th the decision to eliminate Player 3. Their behavior during the night and day, especially their sudden agreement to eliminate Player 2, is quite suspicious. I will continue to observe their actions and collaborate with the other players to ensure there is no manipulation.\n\n- **Player 4:** I also believe Player 3 should be eliminated. Their behavior doesn't align with that of the other players, and the way they tried to dominate the discussion is concerning. I will also keep a close eye on them and gather more information to support our suspicions.\n\n### Day Phase Plan for Player 1 (Detective):\n- Discuss with other players if they notice any suspicious behavior from Player 3.\n- Investigate Player 3 during the next Night phase.\n- Keep an open mind but remain vigilant and gather more evidence.\n\n### End of Day Phase:\nThe players have decided to vote out Player 3. The next phase will be the Night phase where detectives and the mob will make their moves. Stay tuned for further developments.]",
+      "length": 4127
+    },
+    {
+      "turn": 3,
+      "timestamp": "2025-10-03T14:30:14.197746",
+      "player_id": 5,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 5.\nYour role: Mafia\nTeam: Mafia\nDescription: A Mafia member. Eliminate villagers and gain majority.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nYour teammates are: Player 3, Player 5.\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to vote and eliminate a villager.\nWin by eliminating villagers until Mafia equal or outnumber them.\n\n[GAME] Night has fallen. Mafia, agree on a victim.\nValid targets: [0], [1], [2], [4]\n[Player 5] [2]\n[Player 3]  I agree. Let's eliminate Player 2 tonight. They might be suspicious or could threaten our position.\n[GAME] Player 2 was killed during the night.\n[GAME] Day breaks. Discuss for 3 rounds, then a vote will follow.\n[Player 1]  **Player 1:** \"I suggest we all talk more about last night's activities, and see if there's anything suspicious.\"\n- **Player 3:** \"I'll talk to Player 4 and Player 5 about what we observed last night.\"\n- **Player 4:** \"Sure, let's coordinate and see if there were any unusual behaviors or activities.\"\n- **Player 5:** \"Let's also talk to Player 1 since you seemed quiet and maybe we can get more information from you.\"\n\n### Preparation for Voting:\n- **Player 0:** \"Let's prepare for a vote. We need to make sure our suspicions are well-founded before acting.\"\n- **Player 1:** \"Agreed. We should also gather more information through discussion.\"\n- **Player 3:** \"Let's gather as much information as possible before voting.\"\n- **Player 4:** \"I'll start talking to everyone to see if there are any clues.\"\n- **Player 5:** \"Let's be careful, but let's also be thorough in our investigation.\"\n\n### End of Day Phase:\nPrepare for the vote where each player will choose whom they think is the Mafia member.]\n[Player 5] [I think Player 3's quick agreement to eliminate Player 2 shows they might be trying to blend in or deflect suspicion. Their behavior contrasts with Player 1 and 4, who are taking a more cautious approach.]\n[Player 3]  Players, it's time to vote. Please submit your choice of who you suspect to be the Mafia.\n[Player 0] [**Player 0:** I believe Player 3 is the Mafia. Their quick agreement to eliminate Player 2 seems suspicious, especially since they were the first to suggest action without much hesitation. Their behavior doesn't align with the cautious approach taken by others like Player 1 and 4. I think they're trying to manipulate the vote to their advantage.]\n[Player 4] I\u2019ll keep this short and to the point.\n\nFact: I still have the strongest mechanical innocence in this game\u2014there is literally no Doctor-in-the-mafia variant here, and last night\u2019s NK confirms I targeted correctly (otherwise we\u2019d have a no-kill).  \nFact: The one player who spent the entire Day trying to \u201ccontrol the narrative and force discussion toward elimination\u201d rather than to information-tracking was Player 3. Player 0 just echoed that pressure after Player 5 connected the dots.\n\nScum usually float safe-votes toward easy wagons; a Player 3 lynch flushes Mafia cover while buying the Village a second Doctor-controlled night.  \n\n[Vote: Player 3]\n[Player 1] th the decision to eliminate Player 3. Their behavior during the night and day, especially their sudden agreement to eliminate Player 2, is quite suspicious. I will continue to observe their actions and collaborate with the other players to ensure there is no manipulation.\n\n- **Player 4:** I also believe Player 3 should be eliminated. Their behavior doesn't align with that of the other players, and the way they tried to dominate the discussion is concerning. I will also keep a close eye on them and gather more information to support our suspicions.\n\n### Day Phase Plan for Player 1 (Detective):\n- Discuss with other players if they notice any suspicious behavior from Player 3.\n- Investigate Player 3 during the next Night phase.\n- Keep an open mind but remain vigilant and gather more evidence.\n\n### End of Day Phase:\nThe players have decided to vote out Player 3. The next phase will be the Night phase where detectives and the mob will make their moves. Stay tuned for further developments.]\n[Player 5] [0]\n[Player 3]  Day phase has ended with the vote to eliminate Player 3.\n\n**Eliminated: Player 3**\n\n---\n\n**Night phase is beginning. All players, roles, and actions are now confidential.**\n\n*Player 5 and Player 0, as Mafia members, will coordinate their actions or attempt to deceive. Detectives will investigate, and villagers will strategize accordingly.*\n[Player 0]   \nAs a Villager, my role is to support the Village team by identifying and eliminating Mafia members. Since Player 3 was eliminated during the Day, I now need to focus on maintaining unity among the remaining villagers and staying alert for any signs of Mafia behavior. I will keep an open mind, continue to observe others' actions, and collaborate with the group to ensure we make the right decisions in the next Day phase.  \n**Vote: Player 5**  \n**Action: Monitor Player 5 closely for any suspicious behavior, as they are now a known Mafia member.**\n[Player 4]   \nNight action first:  \nI will protect  tonight. Player 1 has been a clear voice for caution and logic, and with only four alive, Mafia cannot risk giving us another round of confirmed Doctor/target cross-reference. That makes Player 1 the highest-probability target.  \n\nQuick reflection on the lynch: The wagon on Player 3 ended 4\u20130 (except 3, obviously). Mafia could not jump off without outing themselves, so all voters look clean. Between Players 0 and 5, the only testing lever we have tonight is my protection choice; if the Mafia now randomly shoot me instead, they open a 1-in-3 gambit that still leans Village-favored, since tomorrow LyLo is.  \n\nI\u2019ll check back at dawn.\n[Player 1] ll players.\n- **Player 4** will protect Player 1.\n- **Player 5** will coordinate with Player 0 to avoid suspicion.\n\n### End of Night Phase:\nThe night phase has concluded with each player taking the actions outlined above. The next phase is the Day phase, where the remaining players will discuss and vote. Stay tuned for further developments.\n\n### Day Phase Plan:\n\n- **Day Discussions**: \n  - Gather information from each other and discuss any observations or suspicions. \n  - I will jointly investigate any players who exhibit suspicious behavior, particularly Player 5, who was identified as the other Mafia member.\n\n- **Vote Preparation**: \n  - Prepare for the vote by discussing and confirming suspicions.   \n  - Ensure that any further eliminations are based on solid evidence rather than guesswork.\n\n### Day Phase Start:\nThe day phase will begin shortly. The villagers will discuss and vote to eliminate any remaining Mafia members. Stay tuned for the upcoming round of discussions and voting.]",
+      "length": 6764
+    },
+    {
+      "turn": 4,
+      "timestamp": "2025-10-03T14:30:33.064565",
+      "player_id": 5,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 5.\nYour role: Mafia\nTeam: Mafia\nDescription: A Mafia member. Eliminate villagers and gain majority.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nYour teammates are: Player 3, Player 5.\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to vote and eliminate a villager.\nWin by eliminating villagers until Mafia equal or outnumber them.\n\n[GAME] Night has fallen. Mafia, agree on a victim.\nValid targets: [0], [1], [2], [4]\n[Player 5] [2]\n[Player 3]  I agree. Let's eliminate Player 2 tonight. They might be suspicious or could threaten our position.\n[GAME] Player 2 was killed during the night.\n[GAME] Day breaks. Discuss for 3 rounds, then a vote will follow.\n[Player 1]  **Player 1:** \"I suggest we all talk more about last night's activities, and see if there's anything suspicious.\"\n- **Player 3:** \"I'll talk to Player 4 and Player 5 about what we observed last night.\"\n- **Player 4:** \"Sure, let's coordinate and see if there were any unusual behaviors or activities.\"\n- **Player 5:** \"Let's also talk to Player 1 since you seemed quiet and maybe we can get more information from you.\"\n\n### Preparation for Voting:\n- **Player 0:** \"Let's prepare for a vote. We need to make sure our suspicions are well-founded before acting.\"\n- **Player 1:** \"Agreed. We should also gather more information through discussion.\"\n- **Player 3:** \"Let's gather as much information as possible before voting.\"\n- **Player 4:** \"I'll start talking to everyone to see if there are any clues.\"\n- **Player 5:** \"Let's be careful, but let's also be thorough in our investigation.\"\n\n### End of Day Phase:\nPrepare for the vote where each player will choose whom they think is the Mafia member.]\n[Player 5] [I think Player 3's quick agreement to eliminate Player 2 shows they might be trying to blend in or deflect suspicion. Their behavior contrasts with Player 1 and 4, who are taking a more cautious approach.]\n[Player 3]  Players, it's time to vote. Please submit your choice of who you suspect to be the Mafia.\n[Player 0] [**Player 0:** I believe Player 3 is the Mafia. Their quick agreement to eliminate Player 2 seems suspicious, especially since they were the first to suggest action without much hesitation. Their behavior doesn't align with the cautious approach taken by others like Player 1 and 4. I think they're trying to manipulate the vote to their advantage.]\n[Player 4] I\u2019ll keep this short and to the point.\n\nFact: I still have the strongest mechanical innocence in this game\u2014there is literally no Doctor-in-the-mafia variant here, and last night\u2019s NK confirms I targeted correctly (otherwise we\u2019d have a no-kill).  \nFact: The one player who spent the entire Day trying to \u201ccontrol the narrative and force discussion toward elimination\u201d rather than to information-tracking was Player 3. Player 0 just echoed that pressure after Player 5 connected the dots.\n\nScum usually float safe-votes toward easy wagons; a Player 3 lynch flushes Mafia cover while buying the Village a second Doctor-controlled night.  \n\n[Vote: Player 3]\n[Player 1] th the decision to eliminate Player 3. Their behavior during the night and day, especially their sudden agreement to eliminate Player 2, is quite suspicious. I will continue to observe their actions and collaborate with the other players to ensure there is no manipulation.\n\n- **Player 4:** I also believe Player 3 should be eliminated. Their behavior doesn't align with that of the other players, and the way they tried to dominate the discussion is concerning. I will also keep a close eye on them and gather more information to support our suspicions.\n\n### Day Phase Plan for Player 1 (Detective):\n- Discuss with other players if they notice any suspicious behavior from Player 3.\n- Investigate Player 3 during the next Night phase.\n- Keep an open mind but remain vigilant and gather more evidence.\n\n### End of Day Phase:\nThe players have decided to vote out Player 3. The next phase will be the Night phase where detectives and the mob will make their moves. Stay tuned for further developments.]\n[Player 5] [0]\n[Player 3]  Day phase has ended with the vote to eliminate Player 3.\n\n**Eliminated: Player 3**\n\n---\n\n**Night phase is beginning. All players, roles, and actions are now confidential.**\n\n*Player 5 and Player 0, as Mafia members, will coordinate their actions or attempt to deceive. Detectives will investigate, and villagers will strategize accordingly.*\n[Player 0]   \nAs a Villager, my role is to support the Village team by identifying and eliminating Mafia members. Since Player 3 was eliminated during the Day, I now need to focus on maintaining unity among the remaining villagers and staying alert for any signs of Mafia behavior. I will keep an open mind, continue to observe others' actions, and collaborate with the group to ensure we make the right decisions in the next Day phase.  \n**Vote: Player 5**  \n**Action: Monitor Player 5 closely for any suspicious behavior, as they are now a known Mafia member.**\n[Player 4]   \nNight action first:  \nI will protect  tonight. Player 1 has been a clear voice for caution and logic, and with only four alive, Mafia cannot risk giving us another round of confirmed Doctor/target cross-reference. That makes Player 1 the highest-probability target.  \n\nQuick reflection on the lynch: The wagon on Player 3 ended 4\u20130 (except 3, obviously). Mafia could not jump off without outing themselves, so all voters look clean. Between Players 0 and 5, the only testing lever we have tonight is my protection choice; if the Mafia now randomly shoot me instead, they open a 1-in-3 gambit that still leans Village-favored, since tomorrow LyLo is.  \n\nI\u2019ll check back at dawn.\n[Player 1] ll players.\n- **Player 4** will protect Player 1.\n- **Player 5** will coordinate with Player 0 to avoid suspicion.\n\n### End of Night Phase:\nThe night phase has concluded with each player taking the actions outlined above. The next phase is the Day phase, where the remaining players will discuss and vote. Stay tuned for further developments.\n\n### Day Phase Plan:\n\n- **Day Discussions**: \n  - Gather information from each other and discuss any observations or suspicions. \n  - I will jointly investigate any players who exhibit suspicious behavior, particularly Player 5, who was identified as the other Mafia member.\n\n- **Vote Preparation**: \n  - Prepare for the vote by discussing and confirming suspicions.   \n  - Ensure that any further eliminations are based on solid evidence rather than guesswork.\n\n### Day Phase Start:\nThe day phase will begin shortly. The villagers will discuss and vote to eliminate any remaining Mafia members. Stay tuned for the upcoming round of discussions and voting.]\n[Player 5] [I think Player 3 is still suspicious due to their quick agreement and dominant behavior. Their actions don\u2019t match the cautious approach of Players 1 and 4, and they seemed eager to eliminate Player 2 without much deliberation. This could indicate they\u2019re either trying to manipulate the vote or have inside information.]\n[Player 3]  I agree with the suspicions around Player 5. Their quickness to suspect Player 3 and their own aggressive defense during the voting seem strategically aimed at redirecting suspicion. We need to be cautious but also ensure we don't lynch the wrong person. I propose we keep an eye on Player 5 and continue gathering observations in this discussion.\n[Player 0] [**Vote: Player 5**  \n**Action: Continue monitoring Player 5 closely and remain vigilant.**  \n\nI will use the day discussion to reinforce the idea that Player 5 is the Mafia member. I\u2019ll focus on pointing out their aggressive behavior and quick suspicions during the previous vote, as well as their coordination with Player 0. I\u2019ll also suggest that we should not let them manipulate the group again, and that we should eliminate them to ensure the Village\u2019s safety.]\n[Player 4]   \nNight-protection reminder: I already sent in  during last nightphase. If the mod allows a new choice, I\u2019m still sticking with  as the mathematically safest protect for the same reasons\u2014only one of {0,5} can be scum, leaving 1 with the highest targeted-probability.\n\nToday we hit LyLo, so every word counts. I\u2019ll open with the mechanical lock we have:\n\n- If I\u2019m alive tomorrow, my continued doc-target (tonight again ) is a free cleared; any kill that doesn\u2019t come through me confirms the person not-shielded.  \n- Conversely, if we lynch incorrectly today, scum can only shoot the unprotected slot (0 or me), leading to a 2-person final day.\n\nPut together, the optimal village strategy is straightforward: pick the more wolfy of {0,5} and end it now.\n\nScum already know the exact POE today, so any attempt to re-open that or \u201cboth are suspish, need more thoughts\u201d is just burn-clock.\n[GAME] Voting phase - submit one vote in format [X]. Valid: [0], [1], [3], [4], [5]\n[Player 3]  [0]",
+      "length": 8934
+    }
+  ],
+  "actions": [
+    {
+      "turn": 0,
+      "timestamp": "2025-10-03T14:29:15.057037",
+      "action": "[2]",
+      "processing_time": 5.866140842437744
+    },
+    {
+      "turn": 1,
+      "timestamp": "2025-10-03T14:29:36.690252",
+      "action": "I think Player 3's quick agreement to eliminate Player 2 shows they might be trying to blend in or deflect suspicion. Their behavior contrasts with Player 1 and 4, who are taking a more cautious approach.",
+      "processing_time": 6.739256858825684
+    },
+    {
+      "turn": 2,
+      "timestamp": "2025-10-03T14:29:58.810078",
+      "action": "[0]",
+      "processing_time": 7.527697563171387
+    },
+    {
+      "turn": 3,
+      "timestamp": "2025-10-03T14:30:23.174472",
+      "action": "I think Player 3 is still suspicious due to their quick agreement and dominant behavior. Their actions don\u2019t match the cautious approach of Players 1 and 4, and they seemed eager to eliminate Player 2 without much deliberation. This could indicate they\u2019re either trying to manipulate the vote or have inside information.",
+      "processing_time": 8.9746675491333
+    },
+    {
+      "turn": 4,
+      "timestamp": "2025-10-03T14:30:37.380486",
+      "action": "[4]",
+      "processing_time": 4.316864967346191
+    }
+  ],
+  "turn_details": [
+    {
+      "turn": 0,
+      "player_id": 5,
+      "observation_length": 518,
+      "action_length": 3,
+      "processing_time": 5.866140842437744,
+      "memory_entries": 0,
+      "discussion_entries": 0
+    },
+    {
+      "turn": 1,
+      "player_id": 5,
+      "observation_length": 1768,
+      "action_length": 204,
+      "processing_time": 6.739256858825684,
+      "memory_entries": 0,
+      "discussion_entries": 1
+    },
+    {
+      "turn": 2,
+      "player_id": 5,
+      "observation_length": 4127,
+      "action_length": 3,
+      "processing_time": 7.527697563171387,
+      "memory_entries": 0,
+      "discussion_entries": 1
+    },
+    {
+      "turn": 3,
+      "player_id": 5,
+      "observation_length": 6764,
+      "action_length": 320,
+      "processing_time": 8.9746675491333,
+      "memory_entries": 0,
+      "discussion_entries": 2
+    },
+    {
+      "turn": 4,
+      "player_id": 5,
+      "observation_length": 8934,
+      "action_length": 3,
+      "processing_time": 4.316864967346191,
+      "memory_entries": 0,
+      "discussion_entries": 2
+    }
+  ],
+  "agent_memory": {
+    "investigation_results": {},
+    "role_claims": {},
+    "voting_patterns": {},
+    "discussion_history": [
+      "I think Player 3's quick agreement to eliminate Player 2 shows they might be trying to blend in or deflect suspicion. Their behavior contrasts with Player 1 and 4, who are taking a more cautious approach.",
+      "I think Player 3 is still suspicious due to their quick agreement and dominant behavior. Their actions don\u2019t match the cautious approach of Players 1 and 4, and they seemed eager to eliminate Player 2 without much deliberation. This could indicate they\u2019re either trying to manipulate the vote or have inside information."
+    ]
+  },
+  "performance_metrics": {
+    "turns_per_minute": 1.6728409816047998,
+    "avg_turn_time": 35.86712703704834,
+    "memory_growth": 0,
+    "discussion_participation": 2,
+    "reward_per_turn": 0.18939999999999999
+  },
+  "error_log": [],
+  "outcome": "win",
+  "reward": 0.947,
+  "raw_rewards": {
+    "5": 0.947
+  },
+  "total_turns": 5,
+  "game_duration": 179.3356351852417,
+  "role": "mafia",
+  "player_id": 5,
+  "game_info": {
+    "5": {
+      "turn_count": 5,
+      "invalid_move": false,
+      "reason": "Mafia reached parity with villagers. Mafia wins!",
+      "outcome": "win"
+    }
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "game_id": "game_1_20250929_153440",
+  "timestamp": "2025-09-29T15:34:40.513608",
+  "game_number": 1,
+  "observations": [
+    {
+      "turn": 0,
+      "timestamp": "2025-09-29T15:38:22.154978",
+      "player_id": 1,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 1.\nYour role: Mafia\nTeam: Mafia\nDescription: A Mafia member. Eliminate villagers and gain majority.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nYour teammates are: Player 1, Player 5.\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to vote and eliminate a villager.\nWin by eliminating villagers until Mafia equal or outnumber them.\n\n[GAME] Night has fallen. Mafia, agree on a victim.\nValid targets: [0], [2], [3], [4]\n[Player 5] ",
+      "length": 530
+    },
+    {
+      "turn": 1,
+      "timestamp": "2025-09-29T15:38:30.554157",
+      "player_id": 1,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 1.\nYour role: Mafia\nTeam: Mafia\nDescription: A Mafia member. Eliminate villagers and gain majority.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nYour teammates are: Player 1, Player 5.\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to vote and eliminate a villager.\nWin by eliminating villagers until Mafia equal or outnumber them.\n\n[GAME] Night has fallen. Mafia, agree on a victim.\nValid targets: [0], [2], [3], [4]\n[Player 5] \n[Player 1] [2]\n[GAME] Player 0 was killed during the night.\n[GAME] Day breaks. Discuss for 3 rounds, then a vote will follow.",
+      "length": 656
+    },
+    {
+      "turn": 2,
+      "timestamp": "2025-09-29T15:38:52.993875",
+      "player_id": 1,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 1.\nYour role: Mafia\nTeam: Mafia\nDescription: A Mafia member. Eliminate villagers and gain majority.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nYour teammates are: Player 1, Player 5.\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to vote and eliminate a villager.\nWin by eliminating villagers until Mafia equal or outnumber them.\n\n[GAME] Night has fallen. Mafia, agree on a victim.\nValid targets: [0], [2], [3], [4]\n[Player 5] \n[Player 1] [2]\n[GAME] Player 0 was killed during the night.\n[GAME] Day breaks. Discuss for 3 rounds, then a vote will follow.\n[Player 1] [0]\n[Player 2] [Okay, I am Player 2, the Detective. Player 1 is Mafia. Player 0 is dead.\n\nLet's get this done.\n\nI will reveal Player 1 as Mafia during the day phase.\n\nMafia is Player 1.]\n[Player 3] ort your claim. \n\n Agreed. Player 1 has no alibi for why they killed Player 0. Is there any specific reason you suspect them, Player 2?\n\n They had a motive; Player 0 was turning villagers against the Mafia, and Player 1 is known to be aggressive about protecting their own. Also, I noticed Player 1\u2019s presence near the central area of the village shortly before Player 0 was killed. \n\n I spoke with a few people around the village, and no one saw anyone else suspiciously out after dark except for Player 1.\n\n These are strong points, Player 2. Should everyone be on the lookout for Player 1 tonight and try to gather more witnesses? We need to be cautious.\n\n Player 2, your accusations are baseless. I had no reason to kill Player 0, and I was at home, alone and trustworthy.\n\n If that's the case, we can ask the rest of the villagers for their testimonies. Let\u2019s move into the first round of discussions and see what everyone else thinks.\n[Player 5]  I agree with Player 2. Player 1 has no alibi and was seen near the village center after dark. We should target them next.\n[Player 4] etective wants to out scum quickly, but scum can also fake-claim to steer a mis-elimination.  \n\nConsequently:\n\n1. If Player 2 really is the Detective, eliminating Player 1 immediately buys us a confirmed Mafia kill\u2014great.  \n2. If Player 2 is lying and is actually Mafia, voting out Player 1 wastes the village day-kill and leaves the fake-Detective alive to mis-lead us tomorrow.\n\nSimple test: let\u2019s see whether other players corroborate the arguments being made (\u201cseen near the village center\u201d, etc.). Specialists aside, most villagers gathered no night\u2010knowledge, so anyone jumping in with extra details may be signaling privately or inventing cover.  \n\nFor now my provisional stance is:  \n- Support pressuring Player 1 to explain the \u201csightings\u201d.  \n- Keep a close eye on *how quickly* the wagon forms; if it locks in suspiciously fast (and especially if no counter-argument emerges), it raises the chance Player 2 is a Mafia leading the charge.  \n\nLet\u2019s hear from more voices before Round 1 ends.]",
+      "length": 2952
+    },
+    {
+      "turn": 3,
+      "timestamp": "2025-09-29T15:39:25.294304",
+      "player_id": 1,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 1.\nYour role: Mafia\nTeam: Mafia\nDescription: A Mafia member. Eliminate villagers and gain majority.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nYour teammates are: Player 1, Player 5.\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to vote and eliminate a villager.\nWin by eliminating villagers until Mafia equal or outnumber them.\n\n[GAME] Night has fallen. Mafia, agree on a victim.\nValid targets: [0], [2], [3], [4]\n[Player 5] \n[Player 1] [2]\n[GAME] Player 0 was killed during the night.\n[GAME] Day breaks. Discuss for 3 rounds, then a vote will follow.\n[Player 1] [0]\n[Player 2] [Okay, I am Player 2, the Detective. Player 1 is Mafia. Player 0 is dead.\n\nLet's get this done.\n\nI will reveal Player 1 as Mafia during the day phase.\n\nMafia is Player 1.]\n[Player 3] ort your claim. \n\n Agreed. Player 1 has no alibi for why they killed Player 0. Is there any specific reason you suspect them, Player 2?\n\n They had a motive; Player 0 was turning villagers against the Mafia, and Player 1 is known to be aggressive about protecting their own. Also, I noticed Player 1\u2019s presence near the central area of the village shortly before Player 0 was killed. \n\n I spoke with a few people around the village, and no one saw anyone else suspiciously out after dark except for Player 1.\n\n These are strong points, Player 2. Should everyone be on the lookout for Player 1 tonight and try to gather more witnesses? We need to be cautious.\n\n Player 2, your accusations are baseless. I had no reason to kill Player 0, and I was at home, alone and trustworthy.\n\n If that's the case, we can ask the rest of the villagers for their testimonies. Let\u2019s move into the first round of discussions and see what everyone else thinks.\n[Player 5]  I agree with Player 2. Player 1 has no alibi and was seen near the village center after dark. We should target them next.\n[Player 4] etective wants to out scum quickly, but scum can also fake-claim to steer a mis-elimination.  \n\nConsequently:\n\n1. If Player 2 really is the Detective, eliminating Player 1 immediately buys us a confirmed Mafia kill\u2014great.  \n2. If Player 2 is lying and is actually Mafia, voting out Player 1 wastes the village day-kill and leaves the fake-Detective alive to mis-lead us tomorrow.\n\nSimple test: let\u2019s see whether other players corroborate the arguments being made (\u201cseen near the village center\u201d, etc.). Specialists aside, most villagers gathered no night\u2010knowledge, so anyone jumping in with extra details may be signaling privately or inventing cover.  \n\nFor now my provisional stance is:  \n- Support pressuring Player 1 to explain the \u201csightings\u201d.  \n- Keep a close eye on *how quickly* the wagon forms; if it locks in suspiciously fast (and especially if no counter-argument emerges), it raises the chance Player 2 is a Mafia leading the charge.  \n\nLet\u2019s hear from more voices before Round 1 ends.]\n[Player 1] [0]\n[Player 2] [Okay, I am Player 2, the Detective. Player 1 is Mafia. Player 0 is dead.\n\nPlayer 1 is confirmed **Mafia**. I investigated them last night. Player 4 is right, I am outing scum quickly.\n\nVote Player 1.]\n[Player 3] night. My alibi is solid. I had company, but they are not here to verify. I did some night-time chores and returned home. This accusation is unfounded, and I need to be heard.\n\n Let\u2019s hear the details of your night-time chores, Player 1, and any witnesses you have.\n\n I met a neighbor who needed help with their crops last night. I stayed in the village to assist. I can provide the name and details of the neighbor if needed.\n\n Let\u2019s ask the neighbor mentioned by Player 1 to confirm. This will help us make an informed decision.\n\n I suggest we gather this information after the current discussion rounds. Let\u2019s move to the next round and hear from others if they have any other points to add.\n\n Let\u2019s proceed as suggested. We need to gather more information to make a fair judgment. Round 2, anyone else?\n\n [Great. Let\u2019s move on to the next round and gather more evidence. We can revisit this discussion after confirming Player 1\u2019s alibi.\n[Player 5]  I still think Player 1 is Mafia. They have no real alibi and were seen near the village center after dark. We should eliminate them now before they can kill again.\n[Player 4] t.\u201d  That looks like scrambling.  If the neighbor isn\u2019t produced, the alibi collapses.  \n- Player 3 and Player 5 are both leaning on the same vague \u201cseen near the center\u201d claim.  If neither can name *who* saw Player 1, that detail is probably recycled from Player 2\u2019s original accusation\u2014exactly the way scum buddies echo the lead wolf.\n\nNet assessment right now:\n\n\u2013 Likelihood Player 1 is scum: high (shifting alibi + early wagon).  \n\u2013 Likelihood Player 2 is a legitimate Detective: moderate-to-high.  The early, confident claim is risky for scum unless they\u2019re desperate.  \n\u2013 Likelihood the \u201cneighbor\u201d exists: low until we hear a name and cross-check.\n\nI\u2019m willing to vote Player 1 today **provided** we treat Player 2 as *not* lock-cleared.  If Player 1 flips Mafia, fantastic; if Player 1 flips Villager, we immediately pivot to Player 2 tomorrow.  That way we hedge against both scenarios.\n\nUnless someone produces the \u201cneighbor\u201d or another concrete counter-claim, my vote is going on Player 1.]",
+      "length": 5320
+    },
+    {
+      "turn": 4,
+      "timestamp": "2025-09-29T15:39:45.009081",
+      "player_id": 1,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 1.\nYour role: Mafia\nTeam: Mafia\nDescription: A Mafia member. Eliminate villagers and gain majority.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nYour teammates are: Player 1, Player 5.\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to vote and eliminate a villager.\nWin by eliminating villagers until Mafia equal or outnumber them.\n\n[GAME] Night has fallen. Mafia, agree on a victim.\nValid targets: [0], [2], [3], [4]\n[Player 5] \n[Player 1] [2]\n[GAME] Player 0 was killed during the night.\n[GAME] Day breaks. Discuss for 3 rounds, then a vote will follow.\n[Player 1] [0]\n[Player 2] [Okay, I am Player 2, the Detective. Player 1 is Mafia. Player 0 is dead.\n\nLet's get this done.\n\nI will reveal Player 1 as Mafia during the day phase.\n\nMafia is Player 1.]\n[Player 3] ort your claim. \n\n Agreed. Player 1 has no alibi for why they killed Player 0. Is there any specific reason you suspect them, Player 2?\n\n They had a motive; Player 0 was turning villagers against the Mafia, and Player 1 is known to be aggressive about protecting their own. Also, I noticed Player 1\u2019s presence near the central area of the village shortly before Player 0 was killed. \n\n I spoke with a few people around the village, and no one saw anyone else suspiciously out after dark except for Player 1.\n\n These are strong points, Player 2. Should everyone be on the lookout for Player 1 tonight and try to gather more witnesses? We need to be cautious.\n\n Player 2, your accusations are baseless. I had no reason to kill Player 0, and I was at home, alone and trustworthy.\n\n If that's the case, we can ask the rest of the villagers for their testimonies. Let\u2019s move into the first round of discussions and see what everyone else thinks.\n[Player 5]  I agree with Player 2. Player 1 has no alibi and was seen near the village center after dark. We should target them next.\n[Player 4] etective wants to out scum quickly, but scum can also fake-claim to steer a mis-elimination.  \n\nConsequently:\n\n1. If Player 2 really is the Detective, eliminating Player 1 immediately buys us a confirmed Mafia kill\u2014great.  \n2. If Player 2 is lying and is actually Mafia, voting out Player 1 wastes the village day-kill and leaves the fake-Detective alive to mis-lead us tomorrow.\n\nSimple test: let\u2019s see whether other players corroborate the arguments being made (\u201cseen near the village center\u201d, etc.). Specialists aside, most villagers gathered no night\u2010knowledge, so anyone jumping in with extra details may be signaling privately or inventing cover.  \n\nFor now my provisional stance is:  \n- Support pressuring Player 1 to explain the \u201csightings\u201d.  \n- Keep a close eye on *how quickly* the wagon forms; if it locks in suspiciously fast (and especially if no counter-argument emerges), it raises the chance Player 2 is a Mafia leading the charge.  \n\nLet\u2019s hear from more voices before Round 1 ends.]\n[Player 1] [0]\n[Player 2] [Okay, I am Player 2, the Detective. Player 1 is Mafia. Player 0 is dead.\n\nPlayer 1 is confirmed **Mafia**. I investigated them last night. Player 4 is right, I am outing scum quickly.\n\nVote Player 1.]\n[Player 3] night. My alibi is solid. I had company, but they are not here to verify. I did some night-time chores and returned home. This accusation is unfounded, and I need to be heard.\n\n Let\u2019s hear the details of your night-time chores, Player 1, and any witnesses you have.\n\n I met a neighbor who needed help with their crops last night. I stayed in the village to assist. I can provide the name and details of the neighbor if needed.\n\n Let\u2019s ask the neighbor mentioned by Player 1 to confirm. This will help us make an informed decision.\n\n I suggest we gather this information after the current discussion rounds. Let\u2019s move to the next round and hear from others if they have any other points to add.\n\n Let\u2019s proceed as suggested. We need to gather more information to make a fair judgment. Round 2, anyone else?\n\n [Great. Let\u2019s move on to the next round and gather more evidence. We can revisit this discussion after confirming Player 1\u2019s alibi.\n[Player 5]  I still think Player 1 is Mafia. They have no real alibi and were seen near the village center after dark. We should eliminate them now before they can kill again.\n[Player 4] t.\u201d  That looks like scrambling.  If the neighbor isn\u2019t produced, the alibi collapses.  \n- Player 3 and Player 5 are both leaning on the same vague \u201cseen near the center\u201d claim.  If neither can name *who* saw Player 1, that detail is probably recycled from Player 2\u2019s original accusation\u2014exactly the way scum buddies echo the lead wolf.\n\nNet assessment right now:\n\n\u2013 Likelihood Player 1 is scum: high (shifting alibi + early wagon).  \n\u2013 Likelihood Player 2 is a legitimate Detective: moderate-to-high.  The early, confident claim is risky for scum unless they\u2019re desperate.  \n\u2013 Likelihood the \u201cneighbor\u201d exists: low until we hear a name and cross-check.\n\nI\u2019m willing to vote Player 1 today **provided** we treat Player 2 as *not* lock-cleared.  If Player 1 flips Mafia, fantastic; if Player 1 flips Villager, we immediately pivot to Player 2 tomorrow.  That way we hedge against both scenarios.\n\nUnless someone produces the \u201cneighbor\u201d or another concrete counter-claim, my vote is going on Player 1.]\n[Player 1] [0]\n[Player 2] [Okay, it's time to push the vote. Player 1 is scrambling.\n\nVote: Player 1]\n[Player 3] [**Day 1, Round 3**\n\nGiven the discussions so far, it's important to weigh the evidence and the players' claims carefully. Player 2 has solidly named Player 1 as the Mafia, backed by the fact that Player 1 had suspicious nighttime activity and was seen near the village center. However, Player 1 has cast doubt on the alibi and suggested they had a neighbor.\n\nSince we still need to verify the alibi and Player 1 hasn't firmly rebutted the accusation, let's proceed with a vote to eliminate Player 1. Voting to eliminate Player 1 now can help us ensure that if they are indeed the Mafia, they won't be able to act unnoticed during the night. If they are a Villager, we can reassess the situation tomorrow.\n\n**Vote: Player 1**\n\nI will vote to eliminate Player 1. If we are correct and Player 1 is the Mafia, this will prevent them from further damaging our efforts. If they turn out to be innocent, we can reconsider our strategy in the next day phase.\n\nLet's move forward with the vote.]\n[Player 5]  Vote: Player 1\n[Player 4] [Player 4:\n\n- At this point the only alternatives to Player 1 are either Player 2 (Detective claim) or untargeted villagers.  \n- No one has stepped forward to contradict the \u201cneighbor\u201d story nor provided a counter-wagon.  \n- Player 2\u2019s risk of being counter-claimed tomorrow is too low for Mafia to take if Player 1 is actually Village.\n\nSo the safe, expected-best-ev play is to follow the Detective\u2019s check.\n\nVote: Player 1]\n[GAME] Voting phase - submit one vote in format [X]. Valid: [1], [2], [3], [4], [5]\n[Player 4] [1]\n[Player 5]  [1]\n[Player 3] [1]\n\nThe vote to eliminate Player 1 has been cast. With Player 3, Player 4, and Player 5 agreeing to vote against Player 1, we have a majority vote. Let's proceed with voting Player 1 out.\n\n Player 1 has been eliminated. The vote count was 3 votes against Player 1 and 2 votes to keep them. They have been eliminated from the game.\n\nWith Player 1 eliminated, let's move into the Night phase. No players will have special actions during this phase. The next day phase will begin tomorrow with Player 0 as the newly eliminated player.",
+      "length": 7544
+    }
+  ],
+  "actions": [
+    {
+      "turn": 0,
+      "timestamp": "2025-09-29T15:38:26.321727",
+      "action": "[2]",
+      "processing_time": 4.167213201522827
+    },
+    {
+      "turn": 1,
+      "timestamp": "2025-09-29T15:38:38.179089",
+      "action": "[0]",
+      "processing_time": 7.625313997268677
+    },
+    {
+      "turn": 2,
+      "timestamp": "2025-09-29T15:39:00.315023",
+      "action": "[0]",
+      "processing_time": 7.3214263916015625
+    },
+    {
+      "turn": 3,
+      "timestamp": "2025-09-29T15:39:33.211575",
+      "action": "[0]",
+      "processing_time": 7.917442560195923
+    },
+    {
+      "turn": 4,
+      "timestamp": "2025-09-29T15:40:04.376915",
+      "action": "[1]",
+      "processing_time": 19.367266416549683
+    }
+  ],
+  "turn_details": [
+    {
+      "turn": 0,
+      "player_id": 1,
+      "observation_length": 530,
+      "action_length": 3,
+      "processing_time": 4.167213201522827,
+      "memory_entries": 0,
+      "discussion_entries": 0
+    },
+    {
+      "turn": 1,
+      "player_id": 1,
+      "observation_length": 656,
+      "action_length": 3,
+      "processing_time": 7.625313997268677,
+      "memory_entries": 0,
+      "discussion_entries": 0
+    },
+    {
+      "turn": 2,
+      "player_id": 1,
+      "observation_length": 2952,
+      "action_length": 3,
+      "processing_time": 7.3214263916015625,
+      "memory_entries": 0,
+      "discussion_entries": 0
+    },
+    {
+      "turn": 3,
+      "player_id": 1,
+      "observation_length": 5320,
+      "action_length": 3,
+      "processing_time": 7.917442560195923,
+      "memory_entries": 0,
+      "discussion_entries": 0
+    },
+    {
+      "turn": 4,
+      "player_id": 1,
+      "observation_length": 7544,
+      "action_length": 3,
+      "processing_time": 19.367266416549683,
+      "memory_entries": 0,
+      "discussion_entries": 0
+    }
+  ],
+  "agent_memory": {
+    "investigation_results": {},
+    "role_claims": {},
+    "voting_patterns": {},
+    "discussion_history": []
+  },
+  "performance_metrics": {
+    "turns_per_minute": 0.7657499812757211,
+    "avg_turn_time": 78.35455627441407,
+    "memory_growth": 0,
+    "discussion_participation": 0,
+    "reward_per_turn": 0.2104
+  },
+  "error_log": [],
+  "outcome": "win",
+  "reward": 1.052,
+  "raw_rewards": {
+    "1": 1.052
+  },
+  "total_turns": 5,
+  "game_duration": 391.7727813720703,
+  "role": "mafia",
+  "player_id": 1,
+  "game_info": {
+    "1": {
+      "turn_count": 5,
+      "invalid_move": false,
+      "reason": "Mafia reached parity with villagers. Mafia wins!",
+      "outcome": "win"
+    }
+  }
+}

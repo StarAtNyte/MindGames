@@ -1,0 +1,63 @@
+{
+  "game_id": "game_1_20251003_093014",
+  "timestamp": "2025-10-03T09:30:14.458712",
+  "game_number": 1,
+  "observations": [
+    {
+      "turn": 0,
+      "timestamp": "2025-10-03T09:33:39.103979",
+      "player_id": 2,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 2.\nYour role: Villager\nTeam: Village\nDescription: A regular villager. Your goal is to identify and eliminate all Mafia members through voting during the day.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nThe game progresses through Day and Night phases.\n- During the Day phase, there are 3 rounds of discussion followed by voting.\n- During discussions, everything you say is automatically broadcasted to all players.\n- After discussions, all players must vote to eliminate one player.\n- During the Night phase, you have no special actions.\n\nThe game ends when either all Mafia members are eliminated (Village wins) or\nMafia members equal or outnumber Villagers (Mafia wins).\n\n[GAME] Player 4 was killed during the night.\n[GAME] Day breaks. Discuss for 3 rounds, then a vote will follow.\n[Player 1]  I think Player 4 was killed because they were suspicious. Let's focus on who might be the Mafia. I'll vote for Player 2.",
+      "length": 991
+    }
+  ],
+  "actions": [
+    {
+      "turn": 0,
+      "timestamp": "2025-10-03T09:33:50.059591",
+      "action": "I think Player 5 has been unusually quiet since Player 4's death. Their lack of contribution could be a strategy to avoid suspicion, but it also makes them a prime suspect. Let\u2019s see if anyone else noticed any unusual behavior from them last night.",
+      "processing_time": 10.954485177993774
+    }
+  ],
+  "turn_details": [
+    {
+      "turn": 0,
+      "player_id": 2,
+      "observation_length": 991,
+      "action_length": 248,
+      "processing_time": 10.954485177993774,
+      "memory_entries": 0,
+      "discussion_entries": 1
+    }
+  ],
+  "agent_memory": {
+    "investigation_results": {},
+    "role_claims": {},
+    "voting_patterns": {},
+    "discussion_history": [
+      "I think Player 5 has been unusually quiet since Player 4's death. Their lack of contribution could be a strategy to avoid suspicion, but it also makes them a prime suspect. Let\u2019s see if anyone else noticed any unusual behavior from them last night."
+    ]
+  },
+  "performance_metrics": {
+    "turns_per_minute": 0.17167157780241696,
+    "avg_turn_time": 349.5045642852783,
+    "memory_growth": 0,
+    "discussion_participation": 1,
+    "reward_per_turn": 0.0
+  },
+  "error_log": [],
+  "outcome": "loss",
+  "reward": 0,
+  "raw_rewards": {},
+  "total_turns": 1,
+  "game_duration": 349.5045642852783,
+  "role": "villager",
+  "player_id": 2,
+  "game_info": {
+    "2": {
+      "turn_count": 1,
+      "invalid_move": false,
+      "reason": "timeout"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "game_id": "game_1_20251001_181727",
+  "timestamp": "2025-10-01T18:17:27.200723",
+  "game_number": 1,
+  "observations": [
+    {
+      "turn": 0,
+      "timestamp": "2025-10-01T18:17:44.967632",
+      "player_id": 2,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 2.\nYour role: Mafia\nTeam: Mafia\nDescription: A Mafia member. Eliminate villagers and gain majority.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nYour teammates are: Player 2, Player 3.\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to vote and eliminate a villager.\nWin by eliminating villagers until Mafia equal or outnumber them.\n\n[GAME] Night has fallen. Mafia, agree on a victim.\nValid targets: [0], [1], [4], [5]\n[Player 3] Since I'm Player 3 and my teammate is Player 2, I will coordinate with them by following the game format. To agree on a victim, I will make a decision and provide it in the required format.\n\n''",
+      "length": 723
+    }
+  ],
+  "actions": [
+    {
+      "turn": 0,
+      "timestamp": "2025-10-01T18:19:27.555421",
+      "action": "[4]",
+      "processing_time": 102.58806777000427
+    }
+  ],
+  "turn_details": [
+    {
+      "turn": 0,
+      "player_id": 2,
+      "observation_length": 723,
+      "action_length": 3,
+      "processing_time": 102.58806777000427,
+      "memory_entries": 0,
+      "discussion_entries": 0
+    }
+  ],
+  "agent_memory": {
+    "investigation_results": {},
+    "role_claims": {},
+    "voting_patterns": {},
+    "discussion_history": []
+  },
+  "performance_metrics": {
+    "turns_per_minute": 0.18148214085662157,
+    "avg_turn_time": 330.61104369163513,
+    "memory_growth": 0,
+    "discussion_participation": 0,
+    "reward_per_turn": 0.0
+  },
+  "error_log": [],
+  "outcome": "loss",
+  "reward": 0,
+  "raw_rewards": {},
+  "total_turns": 1,
+  "game_duration": 330.61104369163513,
+  "role": "mafia",
+  "player_id": 2,
+  "game_info": {
+    "2": {
+      "turn_count": 1,
+      "invalid_move": false,
+      "reason": "timeout"
+    }
+  }
+}

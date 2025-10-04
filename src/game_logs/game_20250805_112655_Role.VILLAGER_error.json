@@ -1,0 +1,50 @@
+{
+  "game_id": "game_1_20250805_112038",
+  "timestamp": "2025-08-05T11:20:38.039243",
+  "game_number": 1,
+  "observations": [
+    {
+      "turn": 0,
+      "timestamp": "2025-08-05T11:24:40.749692",
+      "player_id": 4,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 4.\nYour role: Villager\nTeam: Village\nDescription: A regular villager. Your goal is to identify and eliminate all Mafia members through voting during the day.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nThe game progresses through Day and Night phases.\n- During the Day phase, there are 3 rounds of discussion followed by voting.\n- During discussions, everything you say is automatically broadcasted to all players.\n- After discussions, all players must vote to eliminate one player.\n- During the Night phase, you have no special actions.\n\nThe game ends when either all Mafia members are eliminated (Village wins) or\nMafia members equal or outnumber Villagers (Mafia wins).\n\n[GAME] Player 0 was killed during the night.\n[GAME] Day breaks. Discuss for 3 rounds, then a vote will follow.\n[Player 5] [**Day Discussion - Round 1**\n\nWell, well, first night and we already lost someone. That was fast. Player 0 is out, and from what I can tell, they were a villager. Not surprising \u2014 they were quiet last night. Still, we should be careful not to jump to conclusions.\n\nWe need to start discussing who could be suspicious. I saw that Player 1 and Player 5 were the last ones talking before the night phase. Anything you two want to share? I'm not accusing, just saying we need transparency.\n\nPlayer 2 seemed eager to start talking early today. Maybe just excited or maybe something more?\n\nLet's go around and hear everyone's thoughts: Player 0 is gone \u2014 who do you suspect? Who do you think needs to be looked at more closely?\n\nI'll vote last \u2014 I want to hear everyone else's opinions first. Let's keep this productive.]\n[Player 2]  Player 5's call for transparency and discussion. As a Detective, my role is to investigate and help the Village identify Mafia members. Last night, I investigated Player 1 and confirmed that they are indeed a Mafia member.\n\nGiven that Player 0 was killed during the night, I think it's essential to consider their position and potential targets. Since Player 0 was a villager and not particularly active, their death might be a random or strategic move by the Mafia.\n\nAs for suspicions, I do find it interesting that Player 1 was confirmed as a Mafia member after being investigated. However, I also notice that Player 4 hasn't spoken up yet, and it's possible they might have some information or insights.\n\nBefore we proceed, I'd like to ask: Does anyone have any information about Player 4's actions or behavior during the Night phase? Have they been quiet, or is there something that might raise suspicions about them?\n\nLet's keep the discussion going and gather more information before we vote.]\n[Player 1] [I\u2019m the real Detective, everyone. Round 1 post is **mine**\u2014anyone else claiming it is ridiculous.\n\n- I inspected **Player 5** last night and they came back **Guilty** (Mafia).  \n- Every other living player (0,1,2,3,4) has **never been claimed** by an actual Detective; we can trust my result on 5.\n\n**Plan for today**: We vote out the confirmed Mafia (Player 5). That flips the board to exactly 1 Mafia vs 3 Villagers at sundown, giving us firm control of the lynch squad. If any \u201cother\u201d Detective tries to contest this, take it as desperate scum theatre.\n\nI repeat: **unvote anybody you had lined up and lock onto Player 5.**]",
+      "length": 3338
+    }
+  ],
+  "actions": [
+    {
+      "turn": 0,
+      "timestamp": "2025-08-05T11:26:55.856776",
+      "action": "Player 1 is acting very much like a Mafia leader, making bold claims and trying to dominate the conversation. They immediately claim guilt over Player 5, which is highly suspicious given the transparency approach you initiated. This could be a ploy to distract from the real investigation or to set up a false accusation. Player 1's eagerness to accuse someone right off the bat raises red flags. While Player 5's guilt is intriguing, their quick accusation by Player 1 feels staged. I still believe Player 5 is guilty, but I need more evidence and clarity before committing to that. I need to see if other players can corroborate or provide more details about Player 1's...",
+      "processing_time": 135.10875177383423
+    }
+  ],
+  "turn_details": [
+    {
+      "turn": 0,
+      "player_id": 4,
+      "observation_length": 3338,
+      "action_length": 674,
+      "processing_time": 135.10875177383423,
+      "memory_entries": 1,
+      "discussion_entries": 1
+    }
+  ],
+  "agent_memory": {},
+  "performance_metrics": {},
+  "error_log": [
+    {
+      "timestamp": "2025-08-05T11:26:55.994526",
+      "error": "No valid observation \u2014 server shutdown or invalid state.",
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\Projects\\Others\\MindGames\\SecretMafia\\src\\online_play_track1.py\", line 135, in <module>\n    player_id, observation = env.get_observation()\n                             ~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\khana\\AppData\\Roaming\\Python\\Python313\\site-packages\\textarena\\core.py\", line 153, in get_observation\n    return self.env.get_observation()\n           ~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\khana\\AppData\\Roaming\\Python\\Python313\\site-packages\\textarena\\core.py\", line 179, in get_observation\n    player_id, observation = self.env.get_observation()\n                             ~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\khana\\AppData\\Roaming\\Python\\Python313\\site-packages\\textarena\\api.py\", line 780, in get_observation\n    raise RuntimeError(\"No valid observation \u2014 server shutdown or invalid state.\")\nRuntimeError: No valid observation \u2014 server shutdown or invalid state.\n",
+      "turn": 1
+    }
+  ],
+  "outcome": "error",
+  "reward": 0,
+  "raw_rewards": {},
+  "total_turns": 1,
+  "game_duration": 377.95547556877136,
+  "role": "Role.VILLAGER",
+  "player_id": 4
+}

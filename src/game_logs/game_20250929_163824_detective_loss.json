@@ -1,0 +1,86 @@
+{
+  "game_id": "game_1_20250929_163535",
+  "timestamp": "2025-09-29T16:35:35.082834",
+  "game_number": 1,
+  "observations": [
+    {
+      "turn": 0,
+      "timestamp": "2025-09-29T16:37:43.428514",
+      "player_id": 2,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 2.\nYour role: Detective\nTeam: Village\nDescription: Investigate players to find Mafia members.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to investigate.\nYou'll learn immediately if the target is Mafia.\nWin by identifying and eliminating all Mafia members.\n\n[GAME] Night phase - choose one player to investigate: [0], [1], [3], [4], [5]",
+      "length": 484
+    },
+    {
+      "turn": 1,
+      "timestamp": "2025-09-29T16:37:52.160271",
+      "player_id": 2,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 2.\nYour role: Detective\nTeam: Village\nDescription: Investigate players to find Mafia members.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to investigate.\nYou'll learn immediately if the target is Mafia.\nWin by identifying and eliminating all Mafia members.\n\n[GAME] Night phase - choose one player to investigate: [0], [1], [3], [4], [5]\n[GAME] Player 2 attempted an invalid move. Reason: Invalid investigation target. Please resubmit a valid move and remember to follow the game rules to avoid penalties.",
+      "length": 652
+    }
+  ],
+  "actions": [
+    {
+      "turn": 0,
+      "timestamp": "2025-09-29T16:37:51.936115",
+      "action": "I think Player 3 has been quite active but also somewhat evasive in recent discussions. Their behavior doesn't align perfectly with typical villager patterns, making them a prime candidate for further investigation. Let\u2019s check Player 3 tonight to see what we can uncover.",
+      "processing_time": 8.506454706192017
+    },
+    {
+      "turn": 1,
+      "timestamp": "2025-09-29T16:37:56.450755",
+      "action": "I think Player 3 has been quite active but also somewhat evasive in conversations. They might be trying to mislead us about their true intentions.",
+      "processing_time": 4.290213584899902
+    }
+  ],
+  "turn_details": [
+    {
+      "turn": 0,
+      "player_id": 2,
+      "observation_length": 484,
+      "action_length": 272,
+      "processing_time": 8.506454706192017,
+      "memory_entries": 0,
+      "discussion_entries": 0
+    },
+    {
+      "turn": 1,
+      "player_id": 2,
+      "observation_length": 652,
+      "action_length": 146,
+      "processing_time": 4.290213584899902,
+      "memory_entries": 0,
+      "discussion_entries": 0
+    }
+  ],
+  "agent_memory": {
+    "investigation_results": {},
+    "role_claims": {},
+    "voting_patterns": {},
+    "discussion_history": []
+  },
+  "performance_metrics": {
+    "turns_per_minute": 0.7103522616366656,
+    "avg_turn_time": 84.46513545513153,
+    "memory_growth": 0,
+    "discussion_participation": 0,
+    "reward_per_turn": -1.1415
+  },
+  "error_log": [],
+  "outcome": "loss",
+  "reward": -2.283,
+  "raw_rewards": {
+    "2": -2.283
+  },
+  "total_turns": 2,
+  "game_duration": 168.93027091026306,
+  "role": "detective",
+  "player_id": 2,
+  "game_info": {
+    "2": {
+      "turn_count": 2,
+      "invalid_move": false,
+      "reason": "Mafia reached parity with villagers. Mafia wins!",
+      "outcome": "loss"
+    }
+  }
+}

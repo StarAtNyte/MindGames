@@ -1,0 +1,116 @@
+{
+  "game_id": "game_1_20250929_122129",
+  "timestamp": "2025-09-29T12:21:29.248273",
+  "game_number": 1,
+  "observations": [
+    {
+      "turn": 0,
+      "timestamp": "2025-09-29T12:21:49.580217",
+      "player_id": 3,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 3.\nYour role: Doctor\nTeam: Village\nDescription: Protect one player each night from Mafia elimination.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to protect a player.\nWin by identifying and eliminating all Mafia members.\n\n[GAME] Night phase - choose one player to protect: [0], [1], [2], [4], [5]",
+      "length": 444
+    },
+    {
+      "turn": 1,
+      "timestamp": "2025-09-29T12:21:58.013769",
+      "player_id": 3,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 3.\nYour role: Doctor\nTeam: Village\nDescription: Protect one player each night from Mafia elimination.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to protect a player.\nWin by identifying and eliminating all Mafia members.\n\n[GAME] Night phase - choose one player to protect: [0], [1], [2], [4], [5]\n[Player 3] [5]\n[GAME] Player 4 was killed during the night.\n[GAME] Day breaks. Discuss for 3 rounds, then a vote will follow.\n[Player 1] [Round 1:  \nPlayer 4\u2019s death is unfortunate, but it gives us information. Since the Mafia chose to eliminate Player 4, they likely saw Player 4 as a threat\u2014either because Player 4 was vocal and leading town discussion or because Player 4 was onto someone. Let\u2019s look at yesterday\u2019s discussion (if any) and see who Player 4 suspected or who pushed back hardest against them.  \n\nI\u2019m a plain Villager, so I have no night action. I\u2019ll be watching for anyone who seems overly eager to shift suspicion or who avoids forming concrete reads.]\n[Player 5] [Round 1: \nAs the Detective, I have some information to share. Last night, I investigated Player 2, and it turns out they are indeed a Mafia member. This confirms our first Mafia member. \n\nPlayer 4's death is a significant loss, but it also gives us a clue. Since Player 4 was killed, it's likely they were getting close to uncovering something or someone. I'd like to know more about Player 4's thoughts and discussions from the previous day, as Player 1 suggested. \n\nLet's be cautious and gather as much information as possible before we vote. I'll be paying close attention to everyone's reactions and alibis. I propose we all share our initial thoughts and observations from the previous day to piece together what happened.]",
+      "length": 1857
+    },
+    {
+      "turn": 2,
+      "timestamp": "2025-09-29T12:23:02.509719",
+      "player_id": 3,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 3.\nYour role: Doctor\nTeam: Village\nDescription: Protect one player each night from Mafia elimination.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to protect a player.\nWin by identifying and eliminating all Mafia members.\n\n[GAME] Night phase - choose one player to protect: [0], [1], [2], [4], [5]\n[Player 3] [5]\n[GAME] Player 4 was killed during the night.\n[GAME] Day breaks. Discuss for 3 rounds, then a vote will follow.\n[Player 1] [Round 1:  \nPlayer 4\u2019s death is unfortunate, but it gives us information. Since the Mafia chose to eliminate Player 4, they likely saw Player 4 as a threat\u2014either because Player 4 was vocal and leading town discussion or because Player 4 was onto someone. Let\u2019s look at yesterday\u2019s discussion (if any) and see who Player 4 suspected or who pushed back hardest against them.  \n\nI\u2019m a plain Villager, so I have no night action. I\u2019ll be watching for anyone who seems overly eager to shift suspicion or who avoids forming concrete reads.]\n[Player 5] [Round 1: \nAs the Detective, I have some information to share. Last night, I investigated Player 2, and it turns out they are indeed a Mafia member. This confirms our first Mafia member. \n\nPlayer 4's death is a significant loss, but it also gives us a clue. Since Player 4 was killed, it's likely they were getting close to uncovering something or someone. I'd like to know more about Player 4's thoughts and discussions from the previous day, as Player 1 suggested. \n\nLet's be cautious and gather as much information as possible before we vote. I'll be paying close attention to everyone's reactions and alibis. I propose we all share our initial thoughts and observations from the previous day to piece together what happened.]\n[Player 3] [I think Player 2 is acting suspiciously because they avoided discussing their activities last night and seem evasive when questioned. Their behavior contrasts sharply with Player 4\u2019s assertiveness, making them a prime suspect for being targeted.]\n[Player 0]  [Round 1:  \nIt\u2019s definitely strange that Player 4 was killed. I think they had some good ideas about who the Mafia might be. I agree with Player 1 about looking back at what Player 4 said. Maybe they gave us a clue about who to trust.  \n\nPlayer 5, as the Detective, your information about Player 2 being Mafia is important. If that\u2019s true, then we need to be extra careful. Player 3 brings up a good point about Player 2 avoiding discussion. That seems fishy.  \n\nI think we should focus on who might be the next target and who is acting strangely. Let\u2019s not rush into voting until we have more info. I\u2019m going to listen carefully to everyone and see who seems to be hiding something.]\n[Player 2] town.  \n\nFirst, I want to address the claim from Player\u202f5 about a Mafia investigation. I have no night role, so there\u2019s nothing for a detective to find on me. If Player\u202f5 truly investigated me, the result must have been a mistake or a lie. It\u2019s possible someone is trying to steer suspicion onto an innocent player to protect the real threat.  \n\nI also notice Player\u202f3 jumped on me quite quickly without offering any concrete evidence, which feels a bit aggressive. Meanwhile, Player\u202f1 and Player\u202f0 are both pleading for more information rather than pointing fingers.  \n\nMy suggestion is that we keep an eye on Player\u202f5\u2019s statements. If the detective is correct, they would have shared this info openly tonight, which they did\u2014but it\u2019s the only direct accusation we have, and it could be a bluff. Let\u2019s watch how Player\u202f5 handles the pressure and whether they can back up their claim with any other observations.  \n\nI\u2019m leaning toward giving everyone a chance to speak more before we lock in a vote.]\n[Player 1] atively correct fact, we can\u2019t rule out that Player 5 themselves is Mafia faking a guilty on a villager.  \n\nTherefore let\u2019s treat the claim neutrally:\n\n1. If Player 5\u2019s investigation somehow confirmed Mafia on Player 2 (quite rare against a pure Villager role-list), the theory that the host would allow that needs explaining. Far more likely is the Mafia lying to clear themselves.  \n\n2. Either way Player 2 is now the focal discussion point. I want to see two things next:\n\n   \u2022 What Player 2 does with the spotlight, and  \n   \u2022 Whether any of the unclaimed players suddenly jump on 2 purely because of the claim (looking for easy wagon momentum).  \n\nPlayer 2\u2019s \u201cI\u2019m town, just have no night actions\u201d is textbook truth from a villager, but also the same line every ma fioso gives when caught. The only real test is wagon construction.  \n\nI\u2019m not voting yet, but I\u2019m already soft-watching: Player 3 for the quick OMGUS on 2, and Player 5 for the bare-handed claim without any corroborating reasons.]\n[Player 5]  and investigate further tonight to gather more information. For now, let's be cautious and not rush to conclusions.]\n\n [Round 3: \nBefore we move to voting, I want to summarize what we know and what we need to focus on. We have confirmed that Player 2 is a Mafia member. We need to continue discussing and gathering information to identify the other Mafia member(s).\n\nLet's review the behavior and statements of all players, including those who have been quiet so far. It's crucial to understand the dynamics and potential alliances or suspicions that might have led to Player 4's death.\n\nI'm still open to hearing more thoughts and observations from everyone before we vote. Let's make sure we're making an informed decision.]\n\nNow that the discussion rounds are over, it's time to vote. Who would you like to vote for? \n\nAvailable voting options: , , ,  \n\nPlease respond with '[Player X]' where X is the number of the player you'd like to vote for.",
+      "length": 5799
+    },
+    {
+      "turn": 3,
+      "timestamp": "2025-09-29T12:23:22.092592",
+      "player_id": 3,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 3.\nYour role: Doctor\nTeam: Village\nDescription: Protect one player each night from Mafia elimination.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to protect a player.\nWin by identifying and eliminating all Mafia members.\n\n[GAME] Night phase - choose one player to protect: [0], [1], [2], [4], [5]\n[Player 3] [5]\n[GAME] Player 4 was killed during the night.\n[GAME] Day breaks. Discuss for 3 rounds, then a vote will follow.\n[Player 1] [Round 1:  \nPlayer 4\u2019s death is unfortunate, but it gives us information. Since the Mafia chose to eliminate Player 4, they likely saw Player 4 as a threat\u2014either because Player 4 was vocal and leading town discussion or because Player 4 was onto someone. Let\u2019s look at yesterday\u2019s discussion (if any) and see who Player 4 suspected or who pushed back hardest against them.  \n\nI\u2019m a plain Villager, so I have no night action. I\u2019ll be watching for anyone who seems overly eager to shift suspicion or who avoids forming concrete reads.]\n[Player 5] [Round 1: \nAs the Detective, I have some information to share. Last night, I investigated Player 2, and it turns out they are indeed a Mafia member. This confirms our first Mafia member. \n\nPlayer 4's death is a significant loss, but it also gives us a clue. Since Player 4 was killed, it's likely they were getting close to uncovering something or someone. I'd like to know more about Player 4's thoughts and discussions from the previous day, as Player 1 suggested. \n\nLet's be cautious and gather as much information as possible before we vote. I'll be paying close attention to everyone's reactions and alibis. I propose we all share our initial thoughts and observations from the previous day to piece together what happened.]\n[Player 3] [I think Player 2 is acting suspiciously because they avoided discussing their activities last night and seem evasive when questioned. Their behavior contrasts sharply with Player 4\u2019s assertiveness, making them a prime suspect for being targeted.]\n[Player 0]  [Round 1:  \nIt\u2019s definitely strange that Player 4 was killed. I think they had some good ideas about who the Mafia might be. I agree with Player 1 about looking back at what Player 4 said. Maybe they gave us a clue about who to trust.  \n\nPlayer 5, as the Detective, your information about Player 2 being Mafia is important. If that\u2019s true, then we need to be extra careful. Player 3 brings up a good point about Player 2 avoiding discussion. That seems fishy.  \n\nI think we should focus on who might be the next target and who is acting strangely. Let\u2019s not rush into voting until we have more info. I\u2019m going to listen carefully to everyone and see who seems to be hiding something.]\n[Player 2] town.  \n\nFirst, I want to address the claim from Player\u202f5 about a Mafia investigation. I have no night role, so there\u2019s nothing for a detective to find on me. If Player\u202f5 truly investigated me, the result must have been a mistake or a lie. It\u2019s possible someone is trying to steer suspicion onto an innocent player to protect the real threat.  \n\nI also notice Player\u202f3 jumped on me quite quickly without offering any concrete evidence, which feels a bit aggressive. Meanwhile, Player\u202f1 and Player\u202f0 are both pleading for more information rather than pointing fingers.  \n\nMy suggestion is that we keep an eye on Player\u202f5\u2019s statements. If the detective is correct, they would have shared this info openly tonight, which they did\u2014but it\u2019s the only direct accusation we have, and it could be a bluff. Let\u2019s watch how Player\u202f5 handles the pressure and whether they can back up their claim with any other observations.  \n\nI\u2019m leaning toward giving everyone a chance to speak more before we lock in a vote.]\n[Player 1] atively correct fact, we can\u2019t rule out that Player 5 themselves is Mafia faking a guilty on a villager.  \n\nTherefore let\u2019s treat the claim neutrally:\n\n1. If Player 5\u2019s investigation somehow confirmed Mafia on Player 2 (quite rare against a pure Villager role-list), the theory that the host would allow that needs explaining. Far more likely is the Mafia lying to clear themselves.  \n\n2. Either way Player 2 is now the focal discussion point. I want to see two things next:\n\n   \u2022 What Player 2 does with the spotlight, and  \n   \u2022 Whether any of the unclaimed players suddenly jump on 2 purely because of the claim (looking for easy wagon momentum).  \n\nPlayer 2\u2019s \u201cI\u2019m town, just have no night actions\u201d is textbook truth from a villager, but also the same line every ma fioso gives when caught. The only real test is wagon construction.  \n\nI\u2019m not voting yet, but I\u2019m already soft-watching: Player 3 for the quick OMGUS on 2, and Player 5 for the bare-handed claim without any corroborating reasons.]\n[Player 5]  and investigate further tonight to gather more information. For now, let's be cautious and not rush to conclusions.]\n\n [Round 3: \nBefore we move to voting, I want to summarize what we know and what we need to focus on. We have confirmed that Player 2 is a Mafia member. We need to continue discussing and gathering information to identify the other Mafia member(s).\n\nLet's review the behavior and statements of all players, including those who have been quiet so far. It's crucial to understand the dynamics and potential alliances or suspicions that might have led to Player 4's death.\n\nI'm still open to hearing more thoughts and observations from everyone before we vote. Let's make sure we're making an informed decision.]\n\nNow that the discussion rounds are over, it's time to vote. Who would you like to vote for? \n\nAvailable voting options: , , ,  \n\nPlease respond with '[Player X]' where X is the number of the player you'd like to vote for.\n[Player 3] [I think Player 2 is acting suspiciously because they\u2019ve been evasive and avoidant since the start, especially after Player 4\u2019s death. Their behavior contrasts sharply with Player 4\u2019s assertiveness, making them a prime suspect. Additionally, Player 5\u2019s sudden claim about Player 2 being Mafia feels rushed and lacks corroboration, which is concerning.]\n[Player 0]  \n[Player 2] \n[Player 1] \n[Player 5] )**: As the Detective, I have a role that involves investigating. My claim about Player2 could be seen as either genuine or a bluff if I were Mafia.\n\nGiven the information and discussions:\n- **Player2** is already identified as Mafia, so voting for them again won't add new information.\n- There's no clear evidence against Player1, Player3, or Player0 that links them directly to being Mafia besides their reactions and comments.\n\nHowever, considering the dynamics and the need to be cautious, **Player3** was very quick to jump on Player2 and also made a comment that could be seen as questioning my role as Detective indirectly. While this isn't definitive proof, it's a behavior worth noting.\n\nSince we need to vote, and considering the available information and discussion dynamics, I will vote for **Player3** because they were quick to accuse and their behavior was somewhat aggressive towards Player2, and also they didn't heavily question my claim which could be a tactic.\n\nMy vote: [Player3]",
+      "length": 7212
+    }
+  ],
+  "actions": [
+    {
+      "turn": 0,
+      "timestamp": "2025-09-29T12:21:53.544808",
+      "action": "[5]",
+      "processing_time": 3.966615676879883
+    },
+    {
+      "turn": 1,
+      "timestamp": "2025-09-29T12:22:26.088512",
+      "action": "I think Player 2 is acting suspiciously because they avoided discussing their activities last night and seem evasive when questioned. Their behavior contrasts sharply with Player 4\u2019s assertiveness, making them a prime suspect for being targeted.",
+      "processing_time": 28.07465124130249
+    },
+    {
+      "turn": 2,
+      "timestamp": "2025-09-29T12:23:13.524277",
+      "action": "I think Player 2 is acting suspiciously because they\u2019ve been evasive and avoidant since the start, especially after Player 4\u2019s death. Their behavior contrasts sharply with Player 4\u2019s assertiveness, making them a prime suspect. Additionally, Player 5\u2019s sudden claim about Player 2 being Mafia feels rushed and lacks corroboration, which is concerning.",
+      "processing_time": 11.01381540298462
+    },
+    {
+      "turn": 3,
+      "timestamp": "2025-09-29T12:23:50.264943",
+      "action": "I think Player 3 is acting suspiciously because they quickly accused Player 2 without substantial evidence and seemed eager to shift blame away from themselves. Their behavior contrasts with the cautious approach taken by others, particularly Player 5, who has provided a specific lead.",
+      "processing_time": 28.158871173858643
+    }
+  ],
+  "turn_details": [
+    {
+      "turn": 0,
+      "player_id": 3,
+      "observation_length": 444,
+      "action_length": 3,
+      "processing_time": 3.966615676879883,
+      "memory_entries": 1,
+      "discussion_entries": 0
+    },
+    {
+      "turn": 1,
+      "player_id": 3,
+      "observation_length": 1857,
+      "action_length": 245,
+      "processing_time": 28.07465124130249,
+      "memory_entries": 2,
+      "discussion_entries": 1
+    },
+    {
+      "turn": 2,
+      "player_id": 3,
+      "observation_length": 5799,
+      "action_length": 350,
+      "processing_time": 11.01381540298462,
+      "memory_entries": 3,
+      "discussion_entries": 2
+    },
+    {
+      "turn": 3,
+      "player_id": 3,
+      "observation_length": 7212,
+      "action_length": 286,
+      "processing_time": 28.158871173858643,
+      "memory_entries": 4,
+      "discussion_entries": 3
+    }
+  ],
+  "agent_memory": {},
+  "performance_metrics": {},
+  "error_log": [
+    {
+      "timestamp": "2025-09-29T12:28:17.646332",
+      "error": "No valid observation \u2014 server shutdown or invalid state.",
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\Projects\\Others\\MindGames\\SecretMafia\\src\\online_play_track1.py\", line 155, in <module>\n    player_id, observation = env.get_observation()\n                             ~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\khana\\AppData\\Roaming\\Python\\Python313\\site-packages\\textarena\\core.py\", line 153, in get_observation\n    return self.env.get_observation()\n           ~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\khana\\AppData\\Roaming\\Python\\Python313\\site-packages\\textarena\\core.py\", line 179, in get_observation\n    player_id, observation = self.env.get_observation()\n                             ~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\khana\\AppData\\Roaming\\Python\\Python313\\site-packages\\textarena\\api.py\", line 780, in get_observation\n    raise RuntimeError(\"No valid observation \u2014 server shutdown or invalid state.\")\nRuntimeError: No valid observation \u2014 server shutdown or invalid state.\n",
+      "turn": 4
+    }
+  ],
+  "outcome": "error",
+  "reward": 0,
+  "raw_rewards": {},
+  "total_turns": 4,
+  "game_duration": 408.3981902599335,
+  "role": "Role.DOCTOR",
+  "player_id": 3
+}

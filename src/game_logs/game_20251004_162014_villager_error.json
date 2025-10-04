@@ -1,0 +1,50 @@
+{
+  "game_id": "game_1_20251004_161752",
+  "timestamp": "2025-10-04T16:17:52.757653",
+  "game_number": 1,
+  "observations": [
+    {
+      "turn": 0,
+      "timestamp": "2025-10-04T16:18:29.493824",
+      "player_id": 4,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 4.\nYour role: Villager\nTeam: Village\nDescription: A regular villager. Your goal is to identify and eliminate all Mafia members through voting during the day.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nThe game progresses through Day and Night phases.\n- During the Day phase, there are 3 rounds of discussion followed by voting.\n- During discussions, everything you say is automatically broadcasted to all players.\n- After discussions, all players must vote to eliminate one player.\n- During the Night phase, you have no special actions.\n\nThe game ends when either all Mafia members are eliminated (Village wins) or\nMafia members equal or outnumber Villagers (Mafia wins).\n\n[GAME] No one was killed tonight.\n[GAME] Day breaks. Discuss for 3 rounds, then a vote will follow.\n[Player 5] [Round 1]  \nPlayer\u202f5: \u201cWell, nobody was killed last night. That\u2019s odd \u2013 maybe the town is trying to protect someone. I think we should look at who was quiet during the night. Player\u202f2 didn\u2019t say a word, which is a bit suspicious.\u201d\n\n[Round 2]  \nPlayer\u202f5: \u201cAlso, if you remember, Player\u202f2 voted for Player\u202f4 in the last round, which seemed like a random choice. It could be a misdirection, but it\u2019s worth noting. We need to keep an eye on anyone who\u2019s not contributing much to the discussion.\u201d\n\n[Round 3]  \nPlayer\u202f5: \u201cGiven the lack of a kill and the odd voting pattern, I\u2019m leaning toward targeting Player\u202f2. It would reduce the number of active villagers and give the Mafia more leverage.\u201d\n\n[Vote 2]\n[Player 1] Okay, I understand the situation. I am the Doctor and I protected Player 2 last night, so the fact no one was killed is a good sign. However, Player 5 is suspicious of Player 2. I need to be careful here and try to understand the situation, while remaining as subtle as possible.\n\nI will vote for Player 5, since the actions of Player 5 lead me to think that they could be Mafia.\n\nVote: \\[5]\n[Player 3] Okay, I've carefully read the game instructions. I am Player 3, Mafia, and my teammate is Player 5. Our goal is to eliminate villagers until we have the majority. It is currently DAY.\n\nPlayer 5 is trying to manipulate the game. I have to act normal here to not seem suspicious.\n\nVote: [5]\n[Player 2] Player 2 (Detective):\n\nI\u2019ve been quiet because Night actions are silent for the Detective\u2014I simply send in an investigation.  \nLast night I checked Player 4 and confirmed they\u2019re NOT Mafia (as announced in the feed).  \nThat means the pool of possible Mafia is {0, 1, 3, 5}.\n\nPlayer 5\u2019s entire Day 1 push has been a tunnel on me without any new evidence. That feels like scum trying to create a mis-elimination.  \nPlayer 1 claims Doctor and says they protected me; if that\u2019s true, no kill makes perfect sense and clears neither side yet.  \nPlayer 3 just voted Player 5, but a Mafia bussing their partner early isn\u2019t unheard-of if they think it\u2019ll buy town-cred.\n\nRight now Player 5 is the common denominator in the suspicion chain.  \nVote: [5]\n[Player 0] Considering all the discussion and observations:\n\n- Player 5 has been pushing suspicion on Player 2 without strong evidence.\n- Player 1, the Doctor, voted for Player 5 to protect themselves from suspicion.\n- Player 3, Mafia, voted for Player 5 as well.\n- Player 2, Detective, suspects Player 5 strongly and notes that Player 4 is confirmed innocent.\n\nPlayer 5 seems to be a central figure with mounting suspicion from multiple players, including a Mafia member. Given the votes and the suspicion chain, I will follow the consensus and vote to eliminate Player 5.\n\n**My vote:** [5]",
+      "length": 3607
+    }
+  ],
+  "actions": [
+    {
+      "turn": 0,
+      "timestamp": "2025-10-04T16:20:14.634294",
+      "action": "Given the lack of new developments in the first turn, my initial suspicion leans towards Player 5 based on the high confidence score provided. However, it\u2019s crucial to remain observant of any early signs of coordination among players. So far, no one has made a claim or vote, which could mean they are trying to blend in or might be waiting for more information before acting. The high confidence in",
+      "processing_time": 105.14045906066895
+    }
+  ],
+  "turn_details": [
+    {
+      "turn": 0,
+      "player_id": 4,
+      "observation_length": 3607,
+      "action_length": 399,
+      "processing_time": 105.14045906066895,
+      "memory_entries": 0,
+      "discussion_entries": 1
+    }
+  ],
+  "agent_memory": {},
+  "performance_metrics": {},
+  "error_log": [
+    {
+      "timestamp": "2025-10-04T16:20:14.758650",
+      "error": "No valid observation \u2014 server shutdown or invalid state.",
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\Projects\\Others\\MindGames\\SecretMafia\\src\\online_play_streamlined.py\", line 156, in <module>\n    player_id, observation = env.get_observation()\n                             ~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\khana\\AppData\\Roaming\\Python\\Python313\\site-packages\\textarena\\core.py\", line 153, in get_observation\n    return self.env.get_observation()\n           ~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\khana\\AppData\\Roaming\\Python\\Python313\\site-packages\\textarena\\core.py\", line 179, in get_observation\n    player_id, observation = self.env.get_observation()\n                             ~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\khana\\AppData\\Roaming\\Python\\Python313\\site-packages\\textarena\\api.py\", line 780, in get_observation\n    raise RuntimeError(\"No valid observation \u2014 server shutdown or invalid state.\")\nRuntimeError: No valid observation \u2014 server shutdown or invalid state.\n",
+      "turn": 1
+    }
+  ],
+  "outcome": "error",
+  "reward": 0,
+  "raw_rewards": {},
+  "total_turns": 1,
+  "game_duration": 142.0011007785797,
+  "role": "villager",
+  "player_id": 4
+}

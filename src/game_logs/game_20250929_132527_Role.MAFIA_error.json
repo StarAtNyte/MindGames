@@ -1,0 +1,72 @@
+{
+  "game_id": "game_1_20250929_131710",
+  "timestamp": "2025-09-29T13:17:10.124885",
+  "game_number": 1,
+  "observations": [
+    {
+      "turn": 0,
+      "timestamp": "2025-09-29T13:20:48.517279",
+      "player_id": 0,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 0.\nYour role: Mafia\nTeam: Mafia\nDescription: A Mafia member. Eliminate villagers and gain majority.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nYour teammates are: Player 0, Player 1.\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to vote and eliminate a villager.\nWin by eliminating villagers until Mafia equal or outnumber them.\n\n[GAME] Night has fallen. Mafia, agree on a victim.\nValid targets: [2], [3], [4], [5]",
+      "length": 518
+    },
+    {
+      "turn": 1,
+      "timestamp": "2025-09-29T13:22:40.708253",
+      "player_id": 0,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 0.\nYour role: Mafia\nTeam: Mafia\nDescription: A Mafia member. Eliminate villagers and gain majority.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nYour teammates are: Player 0, Player 1.\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to vote and eliminate a villager.\nWin by eliminating villagers until Mafia equal or outnumber them.\n\n[GAME] Night has fallen. Mafia, agree on a victim.\nValid targets: [2], [3], [4], [5]\n[Player 0] [0]\n[Player 1] Okay, I understand the game rules and my role. I am Player 1, a member of the Mafia, and my teammate is Player 0. Our goal is to eliminate villagers until we have the majority. It is currently the NIGHT phase, and we need to agree on a victim. Player 0 has already cast their vote: [0], which I assume must be a typo given their name. They probably meant to vote for a player between 2 and 5.\n\nSince Player 0 seems to have made a mistake or is waiting for my input, I will suggest a target. Let's target Player 2 for now.\n\n [2]\n[GAME] No one was killed tonight.\n[GAME] Day breaks. Discuss for 3 rounds, then a vote will follow.\n[Player 2] ayer 2 to protect Player 3.\n\nNow, let's proceed with the discussion phase. Here's a starting point for the conversation:\n\n---\n\n**Player 0:** Good night, fellow villagers! No one was killed last night. Let's discuss who we think might be the Mafia to narrow it down. It's crucial we catch them early!\n\n**Player 1:** Agreed. Player 3 is protected, right? That means they shouldn't be the target unless there's a reason to suspect them now.\n\n**Player 2:** Yes, Player 3 is safe. No one was killed. We need to focus on the others.\n\n**Player 3:** Same here, I feel safe tonight. Let's quickly discuss the other players to see if anyone stands out as suspicious.\n\n**Player 4:** I noticed Player 0 seemed a bit quiet last night. Maybe they were thinking about something significant.\n\n**Player 5:** Could be, Player 0. But let's also not jump to conclusions too quickly. We need more information before pointing fingers.\n\n---\n\nNow, the villagers can continue the discussion for three rounds before the vote.]\n[Player 3] **Player 0** initiated the discussion, which is a neutral and expected action. **Player 1** mentioned that I (**Player 3**) was protected, which **Player 2** confirmed. This protection implies that **Player 2** might have a role that involves protecting or has some insight, but as a Villager, I don't have more information about this.\n\nLet's analyze the statements:\n- **Player 4** pointed out that **Player 0** was quiet last night. This could be a legitimate observation but might also be a tactic to deflect or create suspicion.\n- **Player 5** advised caution, which is a reasonable stance given the early stage of the game.\n\nFor my first response, I'll keep it neutral and inquiring:\n\"I appreciate **Player 4**'s observation about **Player 0**. It's a good point to consider. **Player 0**, can you tell us more about your thoughts last night? Was there anything specific on your mind?\"\n\nThis aims to gather more information and understand **Player 0**'s actions without directly accusing anyone.]\n[Player 4] [Certainly! Here's my response to continue the discussion as Player 3:\n\n**Player 3:** Thanks, **Player 0**. I didn't have any particular thoughts last night; I was just trying to stay alert. It\u2019s true I was a bit quiet, maybe because I was waiting to see who might step up with suspicions. I agree we need more info to figure out who might be acting suspiciously. Let's keep an eye on everyone's behavior moving forward.]",
+      "length": 3629
+    }
+  ],
+  "actions": [
+    {
+      "turn": 0,
+      "timestamp": "2025-09-29T13:22:24.324748",
+      "action": "[0]",
+      "processing_time": 95.80927228927612
+    },
+    {
+      "turn": 1,
+      "timestamp": "2025-09-29T13:25:26.106621",
+      "action": "Error calling Modal endpoint: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))",
+      "processing_time": 165.39739727973938
+    }
+  ],
+  "turn_details": [
+    {
+      "turn": 0,
+      "player_id": 0,
+      "observation_length": 518,
+      "action_length": 3,
+      "processing_time": 95.80927228927612,
+      "memory_entries": 1,
+      "discussion_entries": 0
+    },
+    {
+      "turn": 1,
+      "player_id": 0,
+      "observation_length": 3629,
+      "action_length": 166,
+      "processing_time": 165.39739727973938,
+      "memory_entries": 2,
+      "discussion_entries": 0
+    }
+  ],
+  "agent_memory": {},
+  "performance_metrics": {},
+  "error_log": [
+    {
+      "timestamp": "2025-09-29T13:25:27.041496",
+      "error": "No valid observation \u2014 server shutdown or invalid state.",
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\Projects\\Others\\MindGames\\SecretMafia\\src\\online_play_track1.py\", line 155, in <module>\n    player_id, observation = env.get_observation()\n                             ~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\khana\\AppData\\Roaming\\Python\\Python313\\site-packages\\textarena\\core.py\", line 153, in get_observation\n    return self.env.get_observation()\n           ~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\khana\\AppData\\Roaming\\Python\\Python313\\site-packages\\textarena\\core.py\", line 179, in get_observation\n    player_id, observation = self.env.get_observation()\n                             ~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\khana\\AppData\\Roaming\\Python\\Python313\\site-packages\\textarena\\api.py\", line 780, in get_observation\n    raise RuntimeError(\"No valid observation \u2014 server shutdown or invalid state.\")\nRuntimeError: No valid observation \u2014 server shutdown or invalid state.\n",
+      "turn": 2
+    }
+  ],
+  "outcome": "error",
+  "reward": 0,
+  "raw_rewards": {},
+  "total_turns": 2,
+  "game_duration": 496.91675758361816,
+  "role": "Role.MAFIA",
+  "player_id": 0
+}

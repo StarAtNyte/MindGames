@@ -1,0 +1,69 @@
+{
+  "game_id": "game_1_20250928_233054",
+  "timestamp": "2025-09-28T23:30:54.720071",
+  "game_number": 1,
+  "observations": [
+    {
+      "turn": 0,
+      "timestamp": "2025-09-28T23:31:22.805862",
+      "player_id": 5,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 5.\nYour role: Detective\nTeam: Village\nDescription: Investigate players to find Mafia members.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to investigate.\nYou'll learn immediately if the target is Mafia.\nWin by identifying and eliminating all Mafia members.\n\n[GAME] Night phase - choose one player to investigate: [0], [1], [2], [3], [4]",
+      "length": 484
+    }
+  ],
+  "actions": [
+    {
+      "turn": 0,
+      "timestamp": "2025-09-28T23:31:27.384628",
+      "action": "[2]",
+      "processing_time": 4.580099582672119
+    }
+  ],
+  "turn_details": [
+    {
+      "turn": 0,
+      "player_id": 5,
+      "observation_length": 484,
+      "action_length": 3,
+      "processing_time": 4.580099582672119,
+      "memory_entries": 1,
+      "discussion_entries": 0
+    }
+  ],
+  "agent_memory": {
+    "observational": [
+      "Turn 1: \n[GAME] Welcome to Secret Mafia! You are Player 5.\nYour role: Detective\nDescription: Investigate players to find Mafia members.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to investigate.\nYou'll learn immediately if the target is Mafia.\nWin by identifying and eliminating all Mafia members.\n\n[GAME] Night phase - choose one player to investigate: [0], [1], [2], [3], [4]"
+    ],
+    "reflective": [
+      "Round Summary: {\n  \"turn_count\": 1,\n  \"role\": \"Detective\",\n  \"performance_metrics\": {\n    \"total_rewards\": -2.352,\n    \"successful_deflections\": 0,\n    \"information_contributions\": 0,\n    \"strategic_decisions\": 0,\n    \"belief_accuracy\": 0.0\n  },\n  \"suspicion_levels\": {\n    \"4\": 0.5,\n    \"0\": 0.5,\n    \"1\": 0.5,\n    \"3\": 0.5,\n    \"5\": 0.5,\n    \"2\": 0.5\n  },\n  \"behavioral_insights\": {\n    \"4\": {},\n    \"0\": {},\n    \"1\": {},\n    \"3\": {},\n    \"5\": {},\n    \"2\": {}\n  },\n  \"memory_stats\": {\n    \"observations\": 1,\n    \"discussions\": 0,\n    \"investigations\": 0,\n    \"role_claims\": 0\n  },\n  \"strategic_analysis\": {\n    \"most_suspicious\": [\n      [\n        4,\n        0.5\n      ],\n      [\n        0,\n        0.5\n      ],\n      [\n        1,\n        0.5\n      ]\n    ],\n    \"trust_network\": {},\n    \"bidding_stats\": {\n      \"message\": \"No bidding history available\"\n    },\n    \"mcts_stats\": {\n      \"disabled\": true,\n      \"single_response_mode\": true\n    }\n  },\n  \"decision_reasoning\": {\n    \"last_discussion_reasoning\": {},\n    \"last_vote_reasoning\": {},\n    \"last_night_reasoning\": {},\n    \"decision_confidence_scores\": {},\n    \"alternative_options_considered\": [],\n    \"risk_assessment\": {},\n    \"strategic_priority\": \"unknown\"\n  },\n  \"counterfactual_analysis\": {\n    \"hypothetical_eliminations\": {\n      \"4\": {\n        \"impact_on_village_win_rate\": 0.5\n      },\n      \"0\": {\n        \"impact_on_village_win_rate\": 0.5\n      },\n      \"1\": {\n        \"impact_on_village_win_rate\": 0.5\n      },\n      \"3\": {\n        \"impact_on_village_win_rate\": 0.5\n      },\n      \"5\": {\n        \"impact_on_village_win_rate\": 0.5\n      },\n      \"2\": {\n        \"impact_on_village_win_rate\": 0.5\n      }\n    }\n  },\n  \"communication_effectiveness\": {\n    \"total_statements\": 0,\n    \"avg_suspicion_reduction\": 0.0,\n    \"information_density\": 0.0,\n    \"trust_building_rate\": 0.0,\n    \"persuasion_success\": 0.5,\n    \"response_adaptation\": 0.5\n  },\n  \"theory_of_mind_accuracy\": {\n    \"suspicion_prediction_accuracy\": 0.5,\n    \"behavior_prediction_accuracy\": 0.0,\n    \"alliance_detection_accuracy\": 0.0,\n    \"role_prediction_accuracy\": 0.0\n  },\n  \"alliance_detection\": {},\n  \"temporal_patterns\": {\n    \"suspicion_evolution\": {\n      \"4\": [\n        0.5\n      ],\n      \"0\": [\n        0.5\n      ],\n      \"1\": [\n        0.5\n      ],\n      \"3\": [\n        0.5\n      ],\n      \"5\": [\n        0.5\n      ],\n      \"2\": [\n        0.5\n      ]\n    },\n    \"behavioral_drift\": {\n      \"4\": 0.1,\n      \"0\": 0.1,\n      \"1\": 0.1,\n      \"3\": 0.1,\n      \"5\": 0.1,\n      \"2\": 0.1\n    },\n    \"phase_transitions\": {\n      \"day_to_night\": {},\n      \"night_to_day\": {}\n    },\n    \"pressure_response_patterns\": {\n      \"4\": {\n        \"defensive_increase\": 0.1\n      },\n      \"0\": {\n        \"defensive_increase\": 0.1\n      },\n      \"1\": {\n        \"defensive_increase\": 0.1\n      },\n      \"3\": {\n        \"defensive_increase\": 0.1\n      },\n      \"5\": {\n        \"defensive_increase\": 0.1\n      },\n      \"2\": {\n        \"defensive_increase\": 0.1\n      }\n    },\n    \"timing_of_accusations\": {\n      \"early_accusers\": [],\n      \"late_accusers\": [],\n      \"consistent_accusers\": []\n    },\n    \"late_game_behavior_shifts\": {\n      \"players_with_shifts\": [],\n      \"shift_magnitude\": {}\n    }\n  },\n  \"linguistic_features\": {\n    \"vocabulary_diversity\": {},\n    \"sentence_complexity\": {},\n    \"emotional_markers\": {},\n    \"deception_indicators\": {},\n    \"persuasion_techniques\": {},\n    \"cognitive_load_indicators\": {}\n  },\n  \"meta_game_analysis\": {\n    \"strategy_shifts\": {\n      \"strategy_shift_turns\": [],\n      \"strategy_types\": []\n    },\n    \"opponent_modeling\": {\n      \"modeling_accuracy\": 0.5,\n      \"adaptation_speed\": 0.3\n    },\n    \"exploitation_attempts\": {\n      \"successful_exploits\": 0,\n      \"failed_exploits\": 0\n    },\n    \"bluff_detection\": {\n      \"bluff_attempts\": 0,\n      \"bluff_success_rate\": 0.0\n    },\n    \"information_management\": {\n      \"information_revealed\": 0.3,\n      \"information_concealed\": 0.7\n    },\n    \"risk_tolerance_evolution\": {\n      \"risk_level_over_time\": [\n        0.5\n      ]\n    }\n  },\n  \"confidence_calibration\": {\n    \"prediction_confidence_accuracy\": 0.6,\n    \"overconfidence_bias\": 0.1,\n    \"uncertainty_quantification\": {\n      \"uncertainty_level\": 0.4,\n      \"uncertainty_change\": 0.05\n    },\n    \"confidence_decision_correlation\": 0.7\n  },\n  \"exploration_exploitation\": {\n    \"information_gathering_vs_action\": {\n      \"exploration_ratio\": 0.4,\n      \"exploitation_ratio\": 0.6\n    },\n    \"novel_strategy_attempts\": 2,\n    \"safe_vs_risky_moves\": {\n      \"safe_moves\": 5,\n      \"risky_moves\": 2,\n      \"risk_reward_ratio\": 0.4\n    },\n    \"adaptation_to_feedback\": 0.3\n  },\n  \"information_leak_analysis\": {\n    \"total_leaks_detected\": 0,\n    \"leaks_by_type\": {},\n    \"leaks_by_player\": {},\n    \"exploitation_success_rate\": 0.0,\n    \"leak_detection_confidence\": [],\n    \"avg_detection_confidence\": 0.0\n  },\n  \"exploitation_opportunities\": {\n    \"total_opportunities\": 0,\n    \"opportunities_by_strategy\": {},\n    \"risk_assessment_distribution\": {\n      \"low_risk\": 0,\n      \"medium_risk\": 0,\n      \"high_risk\": 0\n    },\n    \"exploitation_timing_patterns\": {},\n    \"success_predictions\": {\n      \"predicted_successes\": 0,\n      \"high_confidence_predictions\": 0\n    }\n  }\n}"
+    ],
+    "voting_patterns": {},
+    "suspicion_tracker": {},
+    "discussion_history": []
+  },
+  "performance_metrics": {
+    "turns_per_minute": 0.4661529428716534,
+    "avg_turn_time": 128.71312069892883,
+    "memory_growth": 1,
+    "discussion_participation": 0,
+    "reward_per_turn": -2.352
+  },
+  "error_log": [],
+  "outcome": "loss",
+  "reward": -2.352,
+  "raw_rewards": {
+    "5": -2.352
+  },
+  "total_turns": 1,
+  "game_duration": 128.71312069892883,
+  "role": "Role.DETECTIVE",
+  "player_id": 5,
+  "game_info": {
+    "5": {
+      "turn_count": 1,
+      "invalid_move": false,
+      "reason": "Mafia reached parity with villagers. Mafia wins!",
+      "outcome": "loss"
+    }
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "game_id": "game_1_20251001_163644",
+  "timestamp": "2025-10-01T16:36:44.517818",
+  "game_number": 1,
+  "observations": [
+    {
+      "turn": 0,
+      "timestamp": "2025-10-01T16:38:13.011685",
+      "player_id": 2,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 2.\nYour role: Mafia\nTeam: Mafia\nDescription: A Mafia member. Eliminate villagers and gain majority.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nYour teammates are: Player 0, Player 2.\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to vote and eliminate a villager.\nWin by eliminating villagers until Mafia equal or outnumber them.\n\n[GAME] Night has fallen. Mafia, agree on a victim.\nValid targets: [1], [3], [4], [5]\n[Player 0] Okay, I understand. During the night phase, I, as a Mafia member (Player 0), need to vote to eliminate a villager. My valid targets are Player 1, Player 3, Player 4, and Player 5.\n\nI will vote to eliminate: **[1]**",
+      "length": 744
+    },
+    {
+      "turn": 1,
+      "timestamp": "2025-10-01T16:39:07.688595",
+      "player_id": 2,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 2.\nYour role: Mafia\nTeam: Mafia\nDescription: A Mafia member. Eliminate villagers and gain majority.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nYour teammates are: Player 0, Player 2.\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to vote and eliminate a villager.\nWin by eliminating villagers until Mafia equal or outnumber them.\n\n[GAME] Night has fallen. Mafia, agree on a victim.\nValid targets: [1], [3], [4], [5]\n[Player 0] Okay, I understand. During the night phase, I, as a Mafia member (Player 0), need to vote to eliminate a villager. My valid targets are Player 1, Player 3, Player 4, and Player 5.\n\nI will vote to eliminate: **[1]**\n[Player 2] [1]\n[GAME] Player 1 was killed during the night.\n[GAME] Day breaks. Discuss for 3 rounds, then a vote will follow.",
+      "length": 870
+    },
+    {
+      "turn": 2,
+      "timestamp": "2025-10-01T16:39:55.720295",
+      "player_id": 2,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 2.\nYour role: Mafia\nTeam: Mafia\nDescription: A Mafia member. Eliminate villagers and gain majority.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nYour teammates are: Player 0, Player 2.\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to vote and eliminate a villager.\nWin by eliminating villagers until Mafia equal or outnumber them.\n\n[GAME] Night has fallen. Mafia, agree on a victim.\nValid targets: [1], [3], [4], [5]\n[Player 0] Okay, I understand. During the night phase, I, as a Mafia member (Player 0), need to vote to eliminate a villager. My valid targets are Player 1, Player 3, Player 4, and Player 5.\n\nI will vote to eliminate: **[1]**\n[Player 2] [1]\n[GAME] Player 1 was killed during the night.\n[GAME] Day breaks. Discuss for 3 rounds, then a vote will follow.\n[Player 2] [1]\n[Player 0] [Okay, I understand the situation. Player 1 has been eliminated. The game is in the DAY phase. I need to discuss with the other players for three rounds before the vote.\n\nSince the last message from Player 2 was also voting for Player 1 (before night time), I think they are suggesting we stick to our original plan. I will start the discussion.\n\nI'll say: **We should consider who is suspicious. Player 1 was eliminated, so let's try to figure out who the villagers think is suspicious.**]\n[Player 3] [Player 2's immediate vote after the night kill seems suspicious\u2014Mafia often target villagers quickly to avoid elimination. We should be cautious of aggressive moves and look for contradictions in statements.]\n[Player 5]  I agree with Player 3. Also, since Player 1 was killed, and our Doctor protected Player 2 last night, it might be worth discussing whether Player 2's role is clear\u2014are they trustworthy? We need to keep an eye on players who are acting suspicious or pushing for certain votes. Let's gather more information in these upcoming rounds.\n[Player 4]  I agree with Player 3 and Player 5. Player 2\u2019s quick vote for Player 1 before the night kill seems a bit too hasty, especially since Player 1 was already eliminated. It\u2019s possible that Player 2 is trying to manipulate the vote. We should focus on getting more clarity from others and avoid jumping to conclusions. Let\u2019s keep an eye on who is acting overly confident or trying to steer the discussion.",
+      "length": 2365
+    },
+    {
+      "turn": 3,
+      "timestamp": "2025-10-01T16:40:33.085917",
+      "player_id": 2,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 2.\nYour role: Mafia\nTeam: Mafia\nDescription: A Mafia member. Eliminate villagers and gain majority.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nYour teammates are: Player 0, Player 2.\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to vote and eliminate a villager.\nWin by eliminating villagers until Mafia equal or outnumber them.\n\n[GAME] Night has fallen. Mafia, agree on a victim.\nValid targets: [1], [3], [4], [5]\n[Player 0] Okay, I understand. During the night phase, I, as a Mafia member (Player 0), need to vote to eliminate a villager. My valid targets are Player 1, Player 3, Player 4, and Player 5.\n\nI will vote to eliminate: **[1]**\n[Player 2] [1]\n[GAME] Player 1 was killed during the night.\n[GAME] Day breaks. Discuss for 3 rounds, then a vote will follow.\n[Player 2] [1]\n[Player 0] [Okay, I understand the situation. Player 1 has been eliminated. The game is in the DAY phase. I need to discuss with the other players for three rounds before the vote.\n\nSince the last message from Player 2 was also voting for Player 1 (before night time), I think they are suggesting we stick to our original plan. I will start the discussion.\n\nI'll say: **We should consider who is suspicious. Player 1 was eliminated, so let's try to figure out who the villagers think is suspicious.**]\n[Player 3] [Player 2's immediate vote after the night kill seems suspicious\u2014Mafia often target villagers quickly to avoid elimination. We should be cautious of aggressive moves and look for contradictions in statements.]\n[Player 5]  I agree with Player 3. Also, since Player 1 was killed, and our Doctor protected Player 2 last night, it might be worth discussing whether Player 2's role is clear\u2014are they trustworthy? We need to keep an eye on players who are acting suspicious or pushing for certain votes. Let's gather more information in these upcoming rounds.\n[Player 4]  I agree with Player 3 and Player 5. Player 2\u2019s quick vote for Player 1 before the night kill seems a bit too hasty, especially since Player 1 was already eliminated. It\u2019s possible that Player 2 is trying to manipulate the vote. We should focus on getting more clarity from others and avoid jumping to conclusions. Let\u2019s keep an eye on who is acting overly confident or trying to steer the discussion.\n[Player 2] [2]\n[Player 0] [Okay, I'll respond in the next round of discussion. It seems like the other players are suspicious of Player 2. That could be good for us.\n\nMy response will be: **I'm not sure about Player 2. They did vote for player 1 before the night kill, and now they haven't said anything. Let's see what their reasoning is? Player 2, can you explain your earlier vote?**]\n[Player 3] [Player 2's immediate vote for Player 1 feels rushed\u2014Mafia often target villagers early to avoid elimination. We should watch for contradictions in statements and consider everyone's reasoning carefully before the vote.]\n[Player 5]  [I voted for Player 1 because I thought they were acting suspiciously during the day. Their behavior seemed off, and I wanted to get to the bottom of it. Now that Player 1 is eliminated, I believe we should focus on other players' actions and claims to find the mafia. Let's keep discussing and watching for inconsistencies.]\n[Player 4]  I'm not sure about Player 2. They did vote for player 1 before the night kill, and now they haven't said anything. Let's see what their reasoning is? Player 2, can you explain your earlier vote?",
+      "length": 3530
+    },
+    {
+      "turn": 4,
+      "timestamp": "2025-10-01T16:41:46.641680",
+      "player_id": 2,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 2.\nYour role: Mafia\nTeam: Mafia\nDescription: A Mafia member. Eliminate villagers and gain majority.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nYour teammates are: Player 0, Player 2.\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to vote and eliminate a villager.\nWin by eliminating villagers until Mafia equal or outnumber them.\n\n[GAME] Night has fallen. Mafia, agree on a victim.\nValid targets: [1], [3], [4], [5]\n[Player 0] Okay, I understand. During the night phase, I, as a Mafia member (Player 0), need to vote to eliminate a villager. My valid targets are Player 1, Player 3, Player 4, and Player 5.\n\nI will vote to eliminate: **[1]**\n[Player 2] [1]\n[GAME] Player 1 was killed during the night.\n[GAME] Day breaks. Discuss for 3 rounds, then a vote will follow.\n[Player 2] [1]\n[Player 0] [Okay, I understand the situation. Player 1 has been eliminated. The game is in the DAY phase. I need to discuss with the other players for three rounds before the vote.\n\nSince the last message from Player 2 was also voting for Player 1 (before night time), I think they are suggesting we stick to our original plan. I will start the discussion.\n\nI'll say: **We should consider who is suspicious. Player 1 was eliminated, so let's try to figure out who the villagers think is suspicious.**]\n[Player 3] [Player 2's immediate vote after the night kill seems suspicious\u2014Mafia often target villagers quickly to avoid elimination. We should be cautious of aggressive moves and look for contradictions in statements.]\n[Player 5]  I agree with Player 3. Also, since Player 1 was killed, and our Doctor protected Player 2 last night, it might be worth discussing whether Player 2's role is clear\u2014are they trustworthy? We need to keep an eye on players who are acting suspicious or pushing for certain votes. Let's gather more information in these upcoming rounds.\n[Player 4]  I agree with Player 3 and Player 5. Player 2\u2019s quick vote for Player 1 before the night kill seems a bit too hasty, especially since Player 1 was already eliminated. It\u2019s possible that Player 2 is trying to manipulate the vote. We should focus on getting more clarity from others and avoid jumping to conclusions. Let\u2019s keep an eye on who is acting overly confident or trying to steer the discussion.\n[Player 2] [2]\n[Player 0] [Okay, I'll respond in the next round of discussion. It seems like the other players are suspicious of Player 2. That could be good for us.\n\nMy response will be: **I'm not sure about Player 2. They did vote for player 1 before the night kill, and now they haven't said anything. Let's see what their reasoning is? Player 2, can you explain your earlier vote?**]\n[Player 3] [Player 2's immediate vote for Player 1 feels rushed\u2014Mafia often target villagers early to avoid elimination. We should watch for contradictions in statements and consider everyone's reasoning carefully before the vote.]\n[Player 5]  [I voted for Player 1 because I thought they were acting suspiciously during the day. Their behavior seemed off, and I wanted to get to the bottom of it. Now that Player 1 is eliminated, I believe we should focus on other players' actions and claims to find the mafia. Let's keep discussing and watching for inconsistencies.]\n[Player 4]  I'm not sure about Player 2. They did vote for player 1 before the night kill, and now they haven't said anything. Let's see what their reasoning is? Player 2, can you explain your earlier vote?\n[Player 2] [2]\n[Player 0] [Okay, I'm Player 0, a Mafia member. I need to use the discussion to my advantage.\n\nThe villagers are clearly suspicious of Player 2, which is perfect. We should capitalize on this. I've also noticed that Player 4 is asking questions about Player 2's vote to eliminate Player 1, and Player 5 said they voted for Player 1 for suspicious reasons.\n\nHere's my plan: I'll keep the heat on Player 2 and try to portray that I also think that Player 2 maybe suspicious. Since Player 2 has remained silent. The other villagers will be pressured to vote out Player 2, and we want exactly that.\n\nMy next statement during the day phase will be: **\"I agree with everyone that Player 2's silence is suspicious. It is unusual for someone who had such strong conviction to remain silent after the kill. If Player 2 is a villager, their quick earlier response indicates they're being proactive in finding mafia, which is a risky move for them. I will cast my vote for Player 2.\"**]\n[Player 3] [Player 2's silence after being called out is telling. If they truly had no information, they'd have no excuse for such a quick, unexplained vote. I'm watching closely to see if they can produce a credible reason for targeting Player 1.]\n[Player 5] [Your move during the next day phase should be to solidify your suspicion on Player 2 and rally support for voting them out. Here's a suggested statement: \n\n**\"I agree with the concerns raised about Player 2's silence and their quick vote for Player 1. Their lack of explanation after the night kill makes them highly suspicious. As a Mafia member, I think we should press on this and eliminate Player 2 to secure our victory. I'm going to cast my vote for Player 2.\"** \n\nRemember, as a Mafia member, your goal is to create doubt about an innocent villager while subtly pushing the group to eliminate Player 2. Good luck!**\n[Player 4]  **I agree with the concerns raised about Player 2's silence and their quick vote for Player 1. Their lack of explanation after the night kill makes them highly suspicious. As a Mafia member, I think we should press on this and eliminate Player 2 to secure our victory. I'm going to cast my vote for Player 2.**\n[GAME] Voting phase - submit one vote in format [X]. Valid: [0], [2], [3], [4], [5]\n[Player 4] [4]\n[Player 0] Okay, I am Player 0, a Mafia member. My strategy, based on the previous rounds, is to eliminate Player 2 by capitalizing on the other players' suspicions. My vote must be in the correct format.\n\nI vote: **[2]**\n[Player 5]  The vote has been submitted: [2]\n\nAs a Mafia member, I have successfully contributed to the suspicion against Player 2, aligning with the group's reasoning. Now, let's see if Player 2 is eliminated and how the villagers react.",
+      "length": 6288
+    }
+  ],
+  "actions": [
+    {
+      "turn": 0,
+      "timestamp": "2025-10-01T16:38:19.717652",
+      "action": "[1]",
+      "processing_time": 6.702687978744507
+    },
+    {
+      "turn": 1,
+      "timestamp": "2025-10-01T16:39:15.441136",
+      "action": "[1]",
+      "processing_time": 7.757956504821777
+    },
+    {
+      "turn": 2,
+      "timestamp": "2025-10-01T16:40:04.096382",
+      "action": "[2]",
+      "processing_time": 8.377188205718994
+    },
+    {
+      "turn": 3,
+      "timestamp": "2025-10-01T16:40:41.882062",
+      "action": "[2]",
+      "processing_time": 8.797957181930542
+    },
+    {
+      "turn": 4,
+      "timestamp": "2025-10-01T16:41:55.761755",
+      "action": "[2]",
+      "processing_time": 9.120883464813232
+    }
+  ],
+  "turn_details": [
+    {
+      "turn": 0,
+      "player_id": 2,
+      "observation_length": 744,
+      "action_length": 3,
+      "processing_time": 6.702687978744507,
+      "memory_entries": 0,
+      "discussion_entries": 0
+    },
+    {
+      "turn": 1,
+      "player_id": 2,
+      "observation_length": 870,
+      "action_length": 3,
+      "processing_time": 7.757956504821777,
+      "memory_entries": 0,
+      "discussion_entries": 0
+    },
+    {
+      "turn": 2,
+      "player_id": 2,
+      "observation_length": 2365,
+      "action_length": 3,
+      "processing_time": 8.377188205718994,
+      "memory_entries": 0,
+      "discussion_entries": 0
+    },
+    {
+      "turn": 3,
+      "player_id": 2,
+      "observation_length": 3530,
+      "action_length": 3,
+      "processing_time": 8.797957181930542,
+      "memory_entries": 0,
+      "discussion_entries": 0
+    },
+    {
+      "turn": 4,
+      "player_id": 2,
+      "observation_length": 6288,
+      "action_length": 3,
+      "processing_time": 9.120883464813232,
+      "memory_entries": 0,
+      "discussion_entries": 0
+    }
+  ],
+  "agent_memory": {
+    "investigation_results": {},
+    "role_claims": {},
+    "voting_patterns": {},
+    "discussion_history": []
+  },
+  "performance_metrics": {
+    "turns_per_minute": 0.6427143488132653,
+    "avg_turn_time": 93.35406951904297,
+    "memory_growth": 0,
+    "discussion_participation": 0,
+    "reward_per_turn": 0.2846
+  },
+  "error_log": [],
+  "outcome": "win",
+  "reward": 1.423,
+  "raw_rewards": {
+    "2": 1.423
+  },
+  "total_turns": 5,
+  "game_duration": 466.77034759521484,
+  "role": "mafia",
+  "player_id": 2,
+  "game_info": {
+    "2": {
+      "turn_count": 5,
+      "invalid_move": false,
+      "reason": "Mafia reached parity with villagers. Mafia wins!",
+      "outcome": "win"
+    }
+  }
+}

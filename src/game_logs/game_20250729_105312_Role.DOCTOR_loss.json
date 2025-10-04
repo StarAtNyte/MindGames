@@ -1,0 +1,112 @@
+{
+  "game_id": "game_1_20250729_105156",
+  "timestamp": "2025-07-29T10:51:56.978438",
+  "game_number": 1,
+  "observations": [
+    {
+      "turn": 0,
+      "timestamp": "2025-07-29T10:52:43.756230",
+      "player_id": 1,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 1.\nYour role: Doctor\nTeam: Village\nDescription: Protect one player each night from Mafia elimination.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to protect a player.\nWin by identifying and eliminating all Mafia members.\n\n[GAME] Night phase - choose one player to protect: [0], [2], [3], [4], [5]",
+      "length": 444
+    },
+    {
+      "turn": 1,
+      "timestamp": "2025-07-29T10:52:43.878468",
+      "player_id": 1,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 1.\nYour role: Doctor\nTeam: Village\nDescription: Protect one player each night from Mafia elimination.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to protect a player.\nWin by identifying and eliminating all Mafia members.\n\n[GAME] Night phase - choose one player to protect: [0], [2], [3], [4], [5]\n[GAME] Player 1 attempted an invalid move. Reason: Invalid protection target. Please resubmit a valid move and remember to follow the game rules to avoid penalties.",
+      "length": 609
+    }
+  ],
+  "actions": [
+    {
+      "turn": 0,
+      "timestamp": "2025-07-29T10:52:43.760236",
+      "action": "PROTECT: 0",
+      "processing_time": 0.005762577056884766
+    },
+    {
+      "turn": 1,
+      "timestamp": "2025-07-29T10:52:43.878813",
+      "action": "PROTECT: 0",
+      "processing_time": 0.0009963512420654297
+    }
+  ],
+  "turn_details": [
+    {
+      "turn": 0,
+      "player_id": 1,
+      "observation_length": 444,
+      "action_length": 10,
+      "processing_time": 0.005762577056884766,
+      "game_state_turn": 2,
+      "alive_players_count": 6,
+      "suspicion_level": 0.2,
+      "conversation_entries": 0
+    },
+    {
+      "turn": 1,
+      "player_id": 1,
+      "observation_length": 609,
+      "action_length": 10,
+      "processing_time": 0.0009963512420654297,
+      "game_state_turn": 3,
+      "alive_players_count": 6,
+      "suspicion_level": 0.3,
+      "conversation_entries": 0
+    }
+  ],
+  "agent_memory": {
+    "game_state": {
+      "turn_number": 3,
+      "alive_players": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "suspicion_on_me": 0.3,
+      "recent_deaths": false
+    },
+    "conversation_history": [],
+    "performance_metrics": {
+      "communication_variety_score": 0.0,
+      "village_coordination_attempts": 0,
+      "strategic_timing_decisions": 0,
+      "alliance_formation_attempts": 0,
+      "information_gathering_success": 0.0,
+      "mcts_decisions": 0,
+      "mcts_confidence_scores": [],
+      "response_optimization_time": 0.0,
+      "candidate_generation_success": 0.0
+    }
+  },
+  "performance_metrics": {
+    "turns_per_minute": 1.5787772856550257,
+    "avg_turn_time": 38.00409376621246,
+    "communication_variety": 0.0,
+    "strategic_decisions": 0,
+    "village_coordination": 0,
+    "reward_per_turn": -0.2845
+  },
+  "error_log": [],
+  "outcome": "loss",
+  "reward": -0.569,
+  "raw_rewards": {
+    "1": -0.569
+  },
+  "total_turns": 2,
+  "game_duration": 76.00818753242493,
+  "role": "Role.DOCTOR",
+  "player_id": 1,
+  "game_info": {
+    "1": {
+      "turn_count": 2,
+      "invalid_move": false,
+      "reason": "Mafia reached parity with villagers. Mafia wins!",
+      "outcome": "loss"
+    }
+  }
+}

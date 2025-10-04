@@ -1,0 +1,33 @@
+{
+  "game_id": "game_1_20250806_161839",
+  "timestamp": "2025-08-06T16:18:39.758290",
+  "game_number": 1,
+  "observations": [
+    {
+      "turn": 0,
+      "timestamp": "2025-08-06T16:20:47.763679",
+      "player_id": 4,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 4.\nYour role: Mafia\nTeam: Mafia\nDescription: A Mafia member. Eliminate villagers and gain majority.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nYour teammates are: Player 3, Player 4.\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to vote and eliminate a villager.\nWin by eliminating villagers until Mafia equal or outnumber them.\n\n[GAME] Night has fallen. Mafia, agree on a victim.\nValid targets: [0], [1], [2], [5]",
+      "length": 518
+    }
+  ],
+  "actions": [],
+  "turn_details": [],
+  "agent_memory": {},
+  "performance_metrics": {},
+  "error_log": [
+    {
+      "timestamp": "2025-08-06T16:20:52.643398",
+      "error": "name 'turn_duration' is not defined",
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\Projects\\Others\\MindGames\\SecretMafia\\src\\online_play_track1.py\", line 178, in <module>\n    print(f\"\u2502 \u23f0 Time: {current_time}    Duration: {turn_duration:.1f}s{' '*15}\u2502\")\n                                                    ^^^^^^^^^^^^^\nNameError: name 'turn_duration' is not defined\n",
+      "turn": 0
+    }
+  ],
+  "outcome": "error",
+  "reward": 0,
+  "raw_rewards": {},
+  "total_turns": 0,
+  "game_duration": 132.8851935863495,
+  "role": "Role.MAFIA",
+  "player_id": 4
+}

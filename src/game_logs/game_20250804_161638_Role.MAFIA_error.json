@@ -1,0 +1,50 @@
+{
+  "game_id": "game_1_20250804_161110",
+  "timestamp": "2025-08-04T16:11:10.800411",
+  "game_number": 1,
+  "observations": [
+    {
+      "turn": 0,
+      "timestamp": "2025-08-04T16:14:40.738803",
+      "player_id": 3,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 3.\nYour role: Mafia\nTeam: Mafia\nDescription: A Mafia member. Eliminate villagers and gain majority.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nYour teammates are: Player 1, Player 3.\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to vote and eliminate a villager.\nWin by eliminating villagers until Mafia equal or outnumber them.\n\n[GAME] Night has fallen. Mafia, agree on a victim.\nValid targets: [0], [2], [4], [5]\n[Player 1] Let's discuss and agree on a target to eliminate.\n\nAs a Mafia member, my goal is to take out villagers and gain the upper hand. I see that there are 4 villagers and 2 Mafia members, including myself.\n\nPlayer 3 is my teammate, so I'll discuss with them to decide on a target. Since we can't directly communicate, I'll make a suggestion.\n\nI think we should target Player 0. They're a villager, and taking them out would be a good start.\n\nTeammate, are you okay with targeting [0]?",
+      "length": 1008
+    }
+  ],
+  "actions": [
+    {
+      "turn": 0,
+      "timestamp": "2025-08-04T16:16:38.043976",
+      "action": "From what I can tell [0]",
+      "processing_time": 117.30662059783936
+    }
+  ],
+  "turn_details": [
+    {
+      "turn": 0,
+      "player_id": 3,
+      "observation_length": 1008,
+      "action_length": 24,
+      "processing_time": 117.30662059783936,
+      "memory_entries": 1,
+      "discussion_entries": 1
+    }
+  ],
+  "agent_memory": {},
+  "performance_metrics": {},
+  "error_log": [
+    {
+      "timestamp": "2025-08-04T16:16:38.196195",
+      "error": "No valid observation \u2014 server shutdown or invalid state.",
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\Projects\\Others\\MindGames\\SecretMafia\\src\\online_play_track1.py\", line 135, in <module>\n    player_id, observation = env.get_observation()\n                             ~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\khana\\AppData\\Roaming\\Python\\Python313\\site-packages\\textarena\\core.py\", line 153, in get_observation\n    return self.env.get_observation()\n           ~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\khana\\AppData\\Roaming\\Python\\Python313\\site-packages\\textarena\\core.py\", line 179, in get_observation\n    player_id, observation = self.env.get_observation()\n                             ~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\khana\\AppData\\Roaming\\Python\\Python313\\site-packages\\textarena\\api.py\", line 780, in get_observation\n    raise RuntimeError(\"No valid observation \u2014 server shutdown or invalid state.\")\nRuntimeError: No valid observation \u2014 server shutdown or invalid state.\n",
+      "turn": 1
+    }
+  ],
+  "outcome": "error",
+  "reward": 0,
+  "raw_rewards": {},
+  "total_turns": 1,
+  "game_duration": 327.39588356018066,
+  "role": "Role.MAFIA",
+  "player_id": 3
+}

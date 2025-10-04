@@ -1,0 +1,50 @@
+{
+  "game_id": "game_1_20250930_233913",
+  "timestamp": "2025-09-30T23:39:13.482687",
+  "game_number": 1,
+  "observations": [
+    {
+      "turn": 0,
+      "timestamp": "2025-09-30T23:41:54.796323",
+      "player_id": 4,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 4.\nYour role: Villager\nTeam: Village\nDescription: A regular villager. Your goal is to identify and eliminate all Mafia members through voting during the day.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nThe game progresses through Day and Night phases.\n- During the Day phase, there are 3 rounds of discussion followed by voting.\n- During discussions, everything you say is automatically broadcasted to all players.\n- After discussions, all players must vote to eliminate one player.\n- During the Night phase, you have no special actions.\n\nThe game ends when either all Mafia members are eliminated (Village wins) or\nMafia members equal or outnumber Villagers (Mafia wins).\n\n[GAME] Player 5 was killed during the night.\n[GAME] Day breaks. Discuss for 3 rounds, then a vote will follow.\n[Player 0] [Okay, I understand the game. I am a Villager and my goal is to help eliminate the Mafia by discussing and voting during the day. Player 5 was killed last night, so we need to figure out who the Mafia is.\n\n**Round 1 Discussion:**\n\nMy initial thought is that since Player 5 was killed, we should focus on who might have seemed suspicious in the previous day's discussions. I will carefully listen to what everyone says. I don't have any immediate suspicions, but I'll be looking for any inconsistencies or defensive behavior. I will be trying to glean what happened in the prior day if that has been recorded anywhere.]\n[Player 2]   \nI agree with Player 0\u2014let\u2019s look for anything that felt off yesterday.  \nSince I\u2019m new to the table, I\u2019ll start by asking: did anyone notice Player 5 acting unusually before the night kill? Any last-minute defenses or accusations that might have painted a target on them?  \n\nRight now I\u2019m reading everyone as neutral, but I\u2019ll be watching who jumps on bandwagons too quickly or tries to steer the conversation away from themselves.\n[Player 1] [**Round 1 Discussion:**\n\nAs the Detective, I have some information that might help us. Last night, I investigated Player 3 and found out that they are indeed a Mafia member. I'll keep this information to myself for now and continue to observe the discussions.\n\nI agree with Player 0 and Player 2 that we should look for any suspicious behavior or inconsistencies. Since Player 5 was killed, it's likely that the Mafia targeted them for a reason. I'll be paying close attention to how everyone reacts to this information.\n\nTo Player 2's question, I'm not sure if there's a record of the previous day's discussions, but we can try to piece together what happened. Let's focus on the present and see if we can gather any new information. I'll ask: Has anyone noticed anything unusual about Player 3's behavior so far?]",
+      "length": 2762
+    }
+  ],
+  "actions": [
+    {
+      "turn": 0,
+      "timestamp": "2025-09-30T23:45:36.284543",
+      "action": "I think Player 3 is a strong suspect because they were recently investigated by the Detective and found to be Mafia. Their behavior today could give us clues about their true intentions. Additionally, Player 5's sudden elimination might make them more defensive or aggressive. We should pay close attention to how they interact with others.",
+      "processing_time": 221.5245578289032
+    }
+  ],
+  "turn_details": [
+    {
+      "turn": 0,
+      "player_id": 4,
+      "observation_length": 2762,
+      "action_length": 340,
+      "processing_time": 221.5245578289032,
+      "memory_entries": 0,
+      "discussion_entries": 0
+    }
+  ],
+  "agent_memory": {},
+  "performance_metrics": {},
+  "error_log": [
+    {
+      "timestamp": "2025-09-30T23:45:36.415250",
+      "error": "No valid observation \u2014 server shutdown or invalid state.",
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\Projects\\Others\\MindGames\\SecretMafia\\src\\online_play_streamlined.py\", line 153, in <module>\n    player_id, observation = env.get_observation()\n                             ~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\khana\\AppData\\Roaming\\Python\\Python313\\site-packages\\textarena\\core.py\", line 153, in get_observation\n    return self.env.get_observation()\n           ~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\khana\\AppData\\Roaming\\Python\\Python313\\site-packages\\textarena\\core.py\", line 179, in get_observation\n    player_id, observation = self.env.get_observation()\n                             ~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\khana\\AppData\\Roaming\\Python\\Python313\\site-packages\\textarena\\api.py\", line 780, in get_observation\n    raise RuntimeError(\"No valid observation \u2014 server shutdown or invalid state.\")\nRuntimeError: No valid observation \u2014 server shutdown or invalid state.\n",
+      "turn": 1
+    }
+  ],
+  "outcome": "error",
+  "reward": 0,
+  "raw_rewards": {},
+  "total_turns": 1,
+  "game_duration": 382.93272948265076,
+  "role": "villager",
+  "player_id": 4
+}

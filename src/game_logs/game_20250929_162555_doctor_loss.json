@@ -1,0 +1,83 @@
+{
+  "game_id": "game_1_20250929_162157",
+  "timestamp": "2025-09-29T16:21:57.347191",
+  "game_number": 1,
+  "observations": [
+    {
+      "turn": 0,
+      "timestamp": "2025-09-29T16:23:29.251643",
+      "player_id": 1,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 1.\nYour role: Doctor\nTeam: Village\nDescription: Protect one player each night from Mafia elimination.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to protect a player.\nWin by identifying and eliminating all Mafia members.\n\n[GAME] Night phase - choose one player to protect: [0], [2], [3], [4], [5]",
+      "length": 444
+    },
+    {
+      "turn": 1,
+      "timestamp": "2025-09-29T16:23:41.387165",
+      "player_id": 1,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 1.\nYour role: Doctor\nTeam: Village\nDescription: Protect one player each night from Mafia elimination.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to protect a player.\nWin by identifying and eliminating all Mafia members.\n\n[GAME] Night phase - choose one player to protect: [0], [2], [3], [4], [5]\n[GAME] Player 1 attempted an invalid move. Reason: Invalid protection target. Please resubmit a valid move and remember to follow the game rules to avoid penalties.",
+      "length": 609
+    }
+  ],
+  "actions": [
+    {
+      "turn": 0,
+      "timestamp": "2025-09-29T16:23:41.182368",
+      "action": "I've noticed that Player A has been unusually quiet tonight. This is out of character for them, as they usually try to influence votes through their silence. Additionally, Player B has been very active in accusing others, which could be a red herring to distract from their own suspicious behavior. I think we should investigate Player A further before making any moves.",
+      "processing_time": 11.930381298065186
+    },
+    {
+      "turn": 1,
+      "timestamp": "2025-09-29T16:23:50.706320",
+      "action": "I've noticed that Player A has been unusually quiet tonight, which is out of character. This could indicate they're either nervous about their role or trying to avoid suspicion. Given this observation, I'm leaning towards them being a Doctor since they might be protecting someone. However, I need more data points before making a definitive call.",
+      "processing_time": 9.317049264907837
+    }
+  ],
+  "turn_details": [
+    {
+      "turn": 0,
+      "player_id": 1,
+      "observation_length": 444,
+      "action_length": 370,
+      "processing_time": 11.930381298065186,
+      "memory_entries": 0,
+      "discussion_entries": 0
+    },
+    {
+      "turn": 1,
+      "player_id": 1,
+      "observation_length": 609,
+      "action_length": 347,
+      "processing_time": 9.317049264907837,
+      "memory_entries": 0,
+      "discussion_entries": 0
+    }
+  ],
+  "agent_memory": {
+    "investigation_results": {},
+    "role_claims": {},
+    "voting_patterns": {},
+    "discussion_history": []
+  },
+  "performance_metrics": {
+    "turns_per_minute": 0.5029534652891721,
+    "avg_turn_time": 119.29533076286316,
+    "memory_growth": 0,
+    "discussion_participation": 0,
+    "reward_per_turn": 0.0
+  },
+  "error_log": [],
+  "outcome": "loss",
+  "reward": 0,
+  "raw_rewards": {},
+  "total_turns": 2,
+  "game_duration": 238.59066152572632,
+  "role": "doctor",
+  "player_id": 1,
+  "game_info": {
+    "1": {
+      "turn_count": 2,
+      "invalid_move": false,
+      "reason": "timeout"
+    }
+  }
+}
