@@ -1,0 +1,50 @@
+{
+  "game_id": "game_1_20251005_172123",
+  "timestamp": "2025-10-05T17:21:23.092922",
+  "game_number": 1,
+  "observations": [
+    {
+      "turn": 0,
+      "timestamp": "2025-10-05T17:29:26.577397",
+      "player_id": 5,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 5.\nYour role: Villager\nTeam: Village\nDescription: A regular villager. Your goal is to identify and eliminate all Mafia members through voting during the day.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nThe game progresses through Day and Night phases.\n- During the Day phase, there are 3 rounds of discussion followed by voting.\n- During discussions, everything you say is automatically broadcasted to all players.\n- After discussions, all players must vote to eliminate one player.\n- During the Night phase, you have no special actions.\n\nThe game ends when either all Mafia members are eliminated (Village wins) or\nMafia members equal or outnumber Villagers (Mafia wins).\n\n[GAME] Player 4 was killed during the night.\n[GAME] Day breaks. Discuss for 3 rounds, then a vote will follow.\n[Player 1] [Player 1: I think eliminating Player 0 was a good move. It’ll help us thin out the villagers. Let’s see how they react today.]\n[Player 3] [Player 1 is trying to throw suspicion off the Mafia by pretending to act in the village's interest. However, their comment about \"thinning out the villagers\" is suspicious and could be a sign they are part of the Mafia. Since I am a villager, my goal is to identify and eliminate the Mafia members. I need to be careful and observe who is acting strangely or making inconsistent statements. I will listen to the other players' comments and try to figure out who might be the Mafia. I will also try to build trust with other villagers to work together in the vote. Let's see what others have to say.]\n[Player 0]  I protected Player 3 last night, which means they must be a villager—mafia wouldn't target their own. Seeing Player 4 die instead suggests the Mafia guessed wrong or intentionally hit an ally for cover. Both of you have good points: Player 1's phrasing (\"thin out the villagers\") does sound like it came from a Mafia perspective, not a villager's. Player 3, thanks for stepping up with analysis.\n\nLet's keep our logic crisp:\n- Player 3 stayed alive because I shielded them ⇒ likely village.\n- Player 1's early-game distancing language is suspicious; typical mafia deflection.\n- Player 2 and Player 5 haven't spoken yet—their silence or first statements will be telling.\n\nFor now, I'm leaning toward Player 1 as our first target, but we should hear from Player 2 and Player 5 next round before locking in votes.\n[Player 2] Okay, I understand. I am the Detective and I know that Player 1 is Mafia. Player 0 and Player 3 have already done a great job analyzing the situation. I will vote for Player 1.\n\nLet's analyze the situation:\n\n*   **Mafia:** Player 1 (Confirmed)\n*   **Innocent:** Player 0, Player 3\n*   **Dead:** Player 4\n*   **Unspoken:** Player 2, Player 5\n\nI will vote for Player 1.\n\n**My Vote:** I vote for \\.",
+      "length": 2839
+    }
+  ],
+  "actions": [
+    {
+      "turn": 0,
+      "timestamp": "2025-10-05T17:31:23.267777",
+      "action": "Alright, let's get started. Player 1, as the confirmed Mafia, we need to be extra cautious about your motives. Why were you so silent last night? And Player 2, you seemed quite passive too. Did you know anything about what happened to Player 4? Also, Player 0, can you confirm if you saw anyone suspicious around midnight? Any unusual activities? My",
+      "processing_time": 116.69255065917969
+    }
+  ],
+  "turn_details": [
+    {
+      "turn": 0,
+      "player_id": 5,
+      "observation_length": 2839,
+      "action_length": 349,
+      "processing_time": 116.69255065917969,
+      "memory_entries": 0,
+      "discussion_entries": 1
+    }
+  ],
+  "agent_memory": {},
+  "performance_metrics": {},
+  "error_log": [
+    {
+      "timestamp": "2025-10-05T17:31:23.449012",
+      "error": "No valid observation — server shutdown or invalid state.",
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\Projects\\Others\\MindGames\\SecretMafia\\src\\online_play_streamlined.py\", line 192, in <module>\n    player_id, observation = env.get_observation()\n                             ~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\khana\\AppData\\Roaming\\Python\\Python313\\site-packages\\textarena\\core.py\", line 153, in get_observation\n    return self.env.get_observation()\n           ~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\khana\\AppData\\Roaming\\Python\\Python313\\site-packages\\textarena\\core.py\", line 179, in get_observation\n    player_id, observation = self.env.get_observation()\n                             ~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\khana\\AppData\\Roaming\\Python\\Python313\\site-packages\\textarena\\api.py\", line 780, in get_observation\n    raise RuntimeError(\"No valid observation — server shutdown or invalid state.\")\nRuntimeError: No valid observation — server shutdown or invalid state.\n",
+      "turn": 1
+    }
+  ],
+  "outcome": "error",
+  "reward": 0,
+  "raw_rewards": {},
+  "total_turns": 1,
+  "game_duration": 600.356213092804,
+  "role": "villager",
+  "player_id": 5
+}

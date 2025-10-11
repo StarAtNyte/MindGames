@@ -1,0 +1,50 @@
+{
+  "game_id": "game_1_20251006_181326",
+  "timestamp": "2025-10-06T18:13:26.178601",
+  "game_number": 1,
+  "observations": [
+    {
+      "turn": 0,
+      "timestamp": "2025-10-06T18:16:40.094662",
+      "player_id": 2,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 2.\nYour role: Villager\nTeam: Village\nDescription: A regular villager. Your goal is to identify and eliminate all Mafia members through voting during the day.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nThe game progresses through Day and Night phases.\n- During the Day phase, there are 3 rounds of discussion followed by voting.\n- During discussions, everything you say is automatically broadcasted to all players.\n- After discussions, all players must vote to eliminate one player.\n- During the Night phase, you have no special actions.\n\nThe game ends when either all Mafia members are eliminated (Village wins) or\nMafia members equal or outnumber Villagers (Mafia wins).\n\n[GAME] No one was killed tonight.\n[GAME] Day breaks. Discuss for 3 rounds, then a vote will follow.\n[Player 5] [Okay, I understand the situation. I am Player 5, a Mafia member. During the night phase, I tried to eliminate Player 1, but my move wasn't in the correct format. I will make sure my next move is correct and follows the rules.\n\nLooking back, we targeted Player 1 last night, and no one was killed. That could mean a few things: either the target was protected (by a doctor or a similar role), or the vote didn't go through properly. We know they might have some role, so we still should avoid being suspicious during the daytime.\n\nNow, to get back on track, let's focus the day's discussion. What do you all think? Any thoughts on who to target for the next night? I think we can discuss and plan accordingly to avoid drawing suspicion on us during the day phase.]\n[Player 4] [Okay, I am Player 4, a Mafia member. I agree with Player 5 about staying calm during the day. I think we should act normal and not be too aggressive in suggesting who to vote for, especially early on. Let's see what other players say first.\n\nIf we want to stick with targeting Player 1, we need to make sure our nighttime vote is in the correct format this time, and be aware that there might be a doctor protecting them. Maybe we wait to see if anyone acts suspicious during the day and then suggest them as a target for tonight.\n\nI'll follow the other players' discussions to see who they suspect.]",
+      "length": 2236
+    }
+  ],
+  "actions": [
+    {
+      "turn": 0,
+      "timestamp": "2025-10-06T18:19:07.674250",
+      "action": "I'm Player 2, and I've been observing everyone closely. Given that Player 5 admitted to being Mafia and mentioned issues with the previous night's vote, it raises a red flag. Here’s what I’m thinking: 1. If any player has been investigated and found to be Mafia, we should strongly consider voting for them. The Detective’s word carries weight",
+      "processing_time": 147.57753014564514
+    }
+  ],
+  "turn_details": [
+    {
+      "turn": 0,
+      "player_id": 2,
+      "observation_length": 2236,
+      "action_length": 343,
+      "processing_time": 147.57753014564514,
+      "memory_entries": 0,
+      "discussion_entries": 1
+    }
+  ],
+  "agent_memory": {},
+  "performance_metrics": {},
+  "error_log": [
+    {
+      "timestamp": "2025-10-06T18:19:07.815603",
+      "error": "No valid observation — server shutdown or invalid state.",
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\Projects\\Others\\MindGames\\SecretMafia\\src\\online_play_streamlined.py\", line 192, in <module>\n    player_id, observation = env.get_observation()\n                             ~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\khana\\AppData\\Roaming\\Python\\Python313\\site-packages\\textarena\\core.py\", line 153, in get_observation\n    return self.env.get_observation()\n           ~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\khana\\AppData\\Roaming\\Python\\Python313\\site-packages\\textarena\\core.py\", line 179, in get_observation\n    player_id, observation = self.env.get_observation()\n                             ~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\khana\\AppData\\Roaming\\Python\\Python313\\site-packages\\textarena\\api.py\", line 780, in get_observation\n    raise RuntimeError(\"No valid observation — server shutdown or invalid state.\")\nRuntimeError: No valid observation — server shutdown or invalid state.\n",
+      "turn": 1
+    }
+  ],
+  "outcome": "error",
+  "reward": 0,
+  "raw_rewards": {},
+  "total_turns": 1,
+  "game_duration": 341.63712453842163,
+  "role": "villager",
+  "player_id": 2
+}

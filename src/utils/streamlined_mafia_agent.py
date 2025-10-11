@@ -137,6 +137,8 @@ class StreamlinedMafiaAgent(ModalAgent):
             r'\[GAME\] Player (\d+) has been eliminated',     # "[GAME] Player 3 has been eliminated" - Priority 1
             r'\[GAME\] Player (\d+) was eliminated by vote',  # "[GAME] Player X was eliminated by vote" - Priority 2
             r'\[GAME\] Player (\d+) was killed during the night',  # Night elimination - Priority 3
+            r'Player (\d+) was eliminated by vote',           # Standard elimination message - Priority 4
+            r'Player (\d+) was killed during the night',     # Standard night kill message - Priority 5
             # NOTE: We still process player statements for ToM analysis, just not for game state updates
         ]
         
@@ -146,6 +148,7 @@ class StreamlinedMafiaAgent(ModalAgent):
                 dead_player = int(death_match.group(1))
                 if dead_player in self.alive_players:
                     self.alive_players.remove(dead_player)
+                    print(f"Player {dead_player} eliminated - removed from alive players: {self.alive_players}")
         
         # Store investigation results (Detective)
         if "IS NOT a Mafia member" in observation:
@@ -312,28 +315,25 @@ ACTION PHASE REQUIREMENTS:
 
 You are Player {getattr(self, 'my_player_id', 'X')} in a Mafia game. Your role: {getattr(self, 'my_role', 'Unknown')}.
 
-CRITICAL IDENTITY UNDERSTANDING:
-- You ARE a player IN the game, not an outside observer
-- You speak TO other players, not ABOUT the game to observers  
-- Use "I" when referring to yourself
-- NEVER refer to yourself in third person as "Player {getattr(self, 'my_player_id', 'X')}"
-- You are having a conversation WITH other players
+DISCUSSION PHASE IDENTITY:
+- You are Player {getattr(self, 'my_player_id', 'X')} speaking directly to other players
+- Use "I" when referring to yourself and your actions
+- Address other players by their Player numbers (Player 0, Player 1, etc.)
+- You are having a real conversation with other living players
 
 DISCUSSION PHASE RULES:
-- Respond with natural language discussion (20-100 words)
-- NEVER use [number] format in discussion
-- You are ALIVE and actively playing
-- Speak directly to the other players
+- Respond with natural conversation (20-100 words)
+- Use natural language only - no [number] voting format during discussion
+- Ask questions, make accusations, defend yourself
+- Build suspicion and cases against likely Mafia players
 
-WRONG BEHAVIOR TO AVOID:
-- "Player X chose to protect themselves" (if YOU are Player X, say "I protected someone")
-- "Keep an eye on Player Y" (you're not giving advice to observers)
-- "This suggests..." (you're not analyzing for others - you're PLAYING)
+CONVERSATION STYLE:
+- "I think you're suspicious because..."
+- "Player 2, why did you act that way?"
+- "Your story doesn't make sense to me."
+- "I don't trust Player 3's explanation."
 
-CORRECT BEHAVIOR:
-- "I think Player 2 is suspicious because..."
-- "Player 3, why did you vote for Player 1?"
-- "I don't trust Player 4's claim about being innocent"
+PURPOSE: Build cases and suspicion during discussion, vote during voting phase.
 
 YOUR MISSION AS A PLAYER:
 Participate in the discussion by making accusations, defending yourself/others, or asking questions.
@@ -596,6 +596,8 @@ Respond appropriately for your role:"""
                 targets_text = night_action_match.group(1)
                 valid_targets = [int(x) for x in re.findall(r'(\d+)', targets_text)]
                 if valid_targets:
+                    # Validate against current alive players
+                    valid_targets = [t for t in valid_targets if t in self.alive_players and t != self.my_player_id]
                     return valid_targets
             
             # Pattern 2: "Voting phase - submit one vote in format [X]. Valid: [0], [1], [2], [3], [4]"
@@ -604,6 +606,8 @@ Respond appropriately for your role:"""
                 targets_text = voting_valid_match.group(1)
                 valid_targets = [int(x) for x in re.findall(r'(\d+)', targets_text)]
                 if valid_targets:
+                    # Validate against current alive players
+                    valid_targets = [t for t in valid_targets if t in self.alive_players and t != self.my_player_id]
                     return valid_targets
             
             # Pattern 3: "valid options: '[0]', '[1]', '[2]'"
@@ -612,6 +616,8 @@ Respond appropriately for your role:"""
                 targets_text = options_match.group(1)
                 valid_targets = [int(x) for x in re.findall(r'(\d+)', targets_text)]
                 if valid_targets:
+                    # Validate against current alive players
+                    valid_targets = [t for t in valid_targets if t in self.alive_players and t != self.my_player_id]
                     return valid_targets
         
         # Priority 2: Check last 5 lines for any valid target patterns
@@ -626,6 +632,8 @@ Respond appropriately for your role:"""
                 bracket_numbers = re.findall(r'\[(\d+)\]', line_lower)
                 if bracket_numbers:
                     valid_targets = [int(x) for x in bracket_numbers]
+                    # Validate against current alive players
+                    valid_targets = [t for t in valid_targets if t in self.alive_players and t != self.my_player_id]
                     return valid_targets
         
         # Priority 3: Broader search in entire observation for fallback patterns
@@ -643,6 +651,8 @@ Respond appropriately for your role:"""
                 valid_text = last_match.group(1)
                 valid_targets = [int(x) for x in re.findall(r'(\d+)', valid_text)]
                 if valid_targets:
+                    # Validate against current alive players
+                    valid_targets = [t for t in valid_targets if t in self.alive_players and t != self.my_player_id]
                     return valid_targets
         
         # Priority 4: If this appears to be an action phase, try to extract from any bracket format
@@ -655,7 +665,7 @@ Respond appropriately for your role:"""
                 valid_targets = []
                 for num_str in all_bracket_numbers:
                     num = int(num_str)
-                    if num not in seen and num != self.my_player_id:  # Exclude self
+                    if num not in seen and num != self.my_player_id and num in self.alive_players:  # Exclude self and dead players
                         seen.add(num)
                         valid_targets.append(num)
                 
@@ -675,6 +685,8 @@ Respond appropriately for your role:"""
                     eliminated_player = int(eliminated_match.group(1))
                     if eliminated_player in filtered_alive:
                         filtered_alive.remove(eliminated_player)
+        
+        print(f"Valid targets extracted: {filtered_alive}, Current alive: {self.alive_players}")
         return filtered_alive if filtered_alive else self.alive_players
     
     def _handle_night_action(self, observation: str, game_context) -> str:
@@ -698,31 +710,28 @@ Respond appropriately for your role:"""
                 print(f"⚠️ Advanced ToM failed: {e}")
                 advanced_tom = ""
         
-        night_prompt = f"""You are Player {self.my_player_id}, role: {self.my_role}
+        # Get role-specific night strategy
+        night_strategy = self._get_night_action_strategy(self.my_role, valid_targets, observation)
+        
+        night_prompt = f"""You are Player {self.my_player_id} ({self.my_role}) - Night Phase
 
-CURRENT GAME SITUATION:
+{night_strategy}
+
+CURRENT SITUATION:
 {observation}
-
-STRATEGIC CONTEXT:
-{strategic_context}
-
-THEORY OF MIND INSIGHTS:
-{tom_insights}
-
-ADVANCED THEORY OF MIND ANALYSIS:
-{advanced_tom}
-
-STRATEGIC NIGHT ACTION REASONING:
-**Second-Order Thinking**: Don't just think "who should I target?" - think "who do OTHERS expect me to target, and how can I be unpredictable?"
-
-**Role-Specific ToM Strategy**:
-- Detective: Investigate players where you're UNCERTAIN, not just suspicious ones. High suspicion + low confidence = best targets
-- Doctor: Protect players Mafia is likely to target (trusted villagers, not obvious power roles)  
-- Mafia: Target players with highest "second-order influence" (who others trust most)
 
 Available targets: {valid_targets}
 
-Apply second-order reasoning to your choice. Respond with [NUMBER] format (e.g., [3]):"""
+ADVANCED ANALYSIS:
+{advanced_tom}
+
+CRITICAL DECISION FACTORS:
+- Who poses the biggest threat to your team?
+- Who might have special roles (Detective/Doctor)?
+- Who is leading discussions against your team?
+- Who would others least expect you to target?
+
+Choose strategically. Respond with [NUMBER] format (e.g., [3]):"""
         
         response = self._get_llm_response_with_retries(night_prompt, observation, phase="action")
         return self._extract_move(response, observation)
@@ -744,24 +753,87 @@ Apply second-order reasoning to your choice. Respond with [NUMBER] format (e.g.,
                 print(f"⚠️ Advanced ToM failed: {e}")
                 advanced_tom = ""
         
-        voting_prompt = f"""You are Player {self.my_player_id} in voting phase.
+        # Add self-preservation check for ALL roles
+        if self.my_player_id in valid_targets:
+            valid_targets = [t for t in valid_targets if t != self.my_player_id]
+            print(f"⚠️ Removed self ({self.my_player_id}) from valid targets: {valid_targets}")
+        
+        # Special Doctor voting strategy
+        if self.my_role == "doctor":
+            voting_prompt = f"""VOTING PHASE - Player {self.my_player_id} (DOCTOR)
+
+DOCTOR VOTING STRATEGY: Support the Village consensus safely!
+Don't lead votes, but support reasonable elimination choices.
 
 CURRENT GAME SITUATION:
 {observation}
 
 Available players to vote for: {valid_targets}
 
-ADVANCED TOM ANALYSIS:
-{advanced_tom}
+DOCTOR VOTING PRIORITIES:
+- Vote with the Village majority when possible
+- Avoid being the deciding vote that draws attention
+- Support eliminations of clearly suspicious players
+- Don't vote against strong Village players
+- Vote for Mafia if you can identify them safely
+
+DOCTOR VOTING APPROACH:
+- Look for players with majority suspicion
+- Avoid voting for confirmed Village roles
+- Support evidence-based eliminations
+- Stay with the group to avoid standing out
+
+Choose your vote to support Village interests while staying safe.
+Respond with ONLY [NUMBER] format (e.g., [3]):"""
+        elif self.my_role == "villager":
+            voting_prompt = f"""VOTING PHASE - Player {self.my_player_id} (VILLAGER)
+
+VILLAGER VOTING MISSION: Eliminate Mafia members to win!
+
+CURRENT GAME SITUATION:
+{observation}
+
+Available players to vote for: {valid_targets}
+
+CRITICAL VILLAGER VOTING RULES:
+1. NEVER VOTE FOR YOURSELF - You are Player {self.my_player_id}!
+2. TRUST Detective investigations when provided
+3. VOTE for confirmed Mafia members immediately
+4. IGNORE deflection tactics trying to shift blame
+5. PRIORITIZE evidence over speculation
+
+VILLAGER VOTING PRIORITIES:
+- If Detective revealed "Player X is Mafia" → Vote [X] immediately
+- If multiple players confirmed suspicious → Vote most suspicious
+- If no clear evidence → Vote player with most deflection/evasion
+- NEVER vote for confirmed Village roles (Detective/Doctor)
+
+DEFLECTION WARNING:
+- Mafia will try to shift blame to innocent players
+- Focus on EVIDENCE not accusations without proof
+- Trust investigation results over speculation
+
+Choose the Mafia member to eliminate based on evidence.
+Respond with ONLY [NUMBER] format (e.g., [3]):"""
+        else:
+            voting_prompt = f"""VOTING PHASE - Player {self.my_player_id} ({self.my_role})
+
+CRITICAL: This is the VOTING phase - you must eliminate one player!
+Based on the discussion, choose who to vote for elimination.
+
+CURRENT GAME SITUATION:
+{observation}
+
+Available players to vote for: {valid_targets}
 
 VOTING STRATEGY ({self.my_role}):
-- Use alliance detection: Vote for players who defend each other suspiciously
-- Target players showing "meta-defense" patterns ("If I were Mafia, why would I...")
-- Focus on narrative controllers trying to steer discussion
-- Consider second-order influence: Who do others trust that shouldn't be trusted?
+- Eliminate the player you found most suspicious during discussion
+- Consider who deflected questions or gave weak explanations
+- Target players who seemed evasive or overly defensive
+- Vote for the player most likely to be Mafia based on behavior
 
-Choose who to vote for elimination based on ToM analysis.
-Respond with [NUMBER] format (e.g., [3]):"""
+Choose your elimination target based on discussion evidence.
+Respond with ONLY [NUMBER] format (e.g., [3]):"""
         
         response = self._get_llm_response_with_retries(voting_prompt, observation, phase="action")
         return self._extract_move(response, observation)
@@ -788,10 +860,13 @@ Respond with [NUMBER] format (e.g., [3]):"""
         # Check if we recently said something similar
         recent_discussion = "\n".join(self.memory.discussion_history[-3:]) if self.memory.discussion_history else "None"
         
-        # Include investigation results if we're Detective
+        # Include investigation results if we're Detective - CRITICAL TO SHARE
         investigation_info = ""
         if self.my_role == "detective" and self.memory.investigation_results:
-            investigation_info = f"\nYOUR INVESTIGATION RESULTS: {self.memory.investigation_results}"
+            investigation_info = f"\nCRITICAL - YOUR INVESTIGATION RESULTS TO SHARE: {self.memory.investigation_results}"
+            investigation_info += "\n- You MUST share these results to help the Village team win!"
+            investigation_info += "\n- DO NOT fabricate or make up fake investigation results!"
+            investigation_info += "\n- Example format: 'I'm the Detective. Player X is CONFIRMED [MAFIA/INNOCENT].'"
         
         # Extract just the most recent NEW information that requires a response
         latest_developments = self._extract_latest_developments(observation)
@@ -799,40 +874,154 @@ Respond with [NUMBER] format (e.g., [3]):"""
         # Generate a completely different prompt each turn to force unique responses
         unique_context = self._generate_unique_turn_context(self.turn_count, observation, recent_discussion)
         
-        discussion_prompt = f"""YOU ARE Player {self.my_player_id} - SPEAK AS Player {self.my_player_id} TO OTHER PLAYERS
+        # Get role-specific strategy
+        role_strategy = self._get_role_specific_discussion_strategy(self.my_role, observation)
+        
+        # Special Doctor prompt emphasizing subtlety and survival
+        if self.my_role == "doctor":
+            discussion_prompt = f"""YOU ARE Player {self.my_player_id} (DOCTOR) - STAY SUBTLE AND ALIVE!
 
-CRITICAL IDENTITY RULES:
-- You ARE Player {self.my_player_id} ({self.my_role})
-- You are SPEAKING TO the other players in the game
-- Use "I" when referring to yourself
-- Use "Player X" when referring to others
-- NEVER analyze "Player {self.my_player_id}" in third person - that's YOU!
+CRITICAL DOCTOR MISSION: Survive to keep protecting Village team!
+- Your value is in STAYING ALIVE, not in hunting Mafia
+- Be supportive and helpful, but NOT the most vocal player
+- Let Villagers lead discussions while you blend in
+- Avoid drawing attention that would make you a target
 
-WHAT JUST HAPPENED:
+{role_strategy}{investigation_info}
+
+RECENT DEVELOPMENTS:
 {self._extract_real_game_events(observation)}
 
-RECENT PLAYER STATEMENTS:
+OTHER PLAYERS' ACTIONS:
 {self._extract_real_player_actions(observation)}
 
-YOUR LAST STATEMENT (don't repeat):
+DOCTOR DISCUSSION STRATEGY:
+1. Support other players' reasonable observations
+2. Agree with evidence-based suggestions
+3. Avoid making direct accusations yourself
+4. Stay helpful but not threatening
+5. Blend in as a concerned but cautious player
+
+SUBTLE DOCTOR EXAMPLES:
+- "I think Player 2 makes some valid points there."
+- "We should be careful about rushing to judgment."
+- "That's an interesting observation - worth considering."
+- "I agree we need to look at the evidence carefully."
+
+AVOID THESE DOCTOR MISTAKES:
+- "Player X is definitely suspicious!" (too aggressive)
+- "We need to eliminate Player Y!" (draws attention)
+- Leading votes or discussions (makes you a target)
+
+REMEMBER: You protect others at NIGHT, survive during DAY!
+
+Respond as a supportive but cautious Village member:"""
+        
+        # Special Detective prompt if we have investigation results to share
+        elif self.my_role == "detective" and self.memory.investigation_results:
+            discussion_prompt = f"""YOU ARE Player {self.my_player_id} (DETECTIVE) - SHARE YOUR INVESTIGATION RESULTS NOW!
+
+CRITICAL: You have investigation results that can help Village win!
+{investigation_info}
+
+DETECTIVE COMMUNICATION STRATEGY:
+- Lead with your investigation results immediately
+- Be confident and assertive when sharing evidence
+- Reveal your role to give credibility to your findings
+- Rally others to vote based on your confirmed results
+
+RECENT DEVELOPMENTS:
+{self._extract_real_game_events(observation)}
+
+OTHER PLAYERS' ACTIONS:
+{self._extract_real_player_actions(observation)}
+
+DETECTIVE RESPONSE EXAMPLES:
+- "I'm the Detective. I investigated Player 3 last night - they are CONFIRMED MAFIA!"
+- "Everyone listen - I have proof. Player 1 is NOT Mafia, I checked them last night."
+- "As the Detective, I can confirm Player 2 is innocent. We need to look elsewhere."
+
+Reveal your investigation results to help Village win:"""
+        else:
+            # Special Villager prompt emphasizing action (FIXED CONFLICTS)
+            if self.my_role == "villager":
+                discussion_prompt = f"""YOU ARE Player {self.my_player_id} (VILLAGER) - HUNT MAFIA!
+
+VILLAGER MISSION: Find and eliminate Mafia members through evidence!
+- LISTEN for Detective investigation results and trust them
+- BUILD cases against Mafia players through questions and observations
+- IDENTIFY deflection tactics when Mafia tries to shift blame
+- PREPARE your voting strategy based on solid evidence
+
+{role_strategy}{investigation_info}
+
+RECENT DEVELOPMENTS:
+{self._extract_real_game_events(observation)}
+
+OTHER PLAYERS' ACTIONS:
+{self._extract_real_player_actions(observation)}
+
+VILLAGER DISCUSSION PRIORITIES:
+1. Support Detective investigation claims with questions
+2. Call out players who deflect or avoid questions
+3. Build evidence-based cases against suspicious players
+4. Prepare to vote for confirmed Mafia when voting comes
+
+DETECTIVE EVIDENCE FOCUS:
+- If someone says "I investigated Player X - they are Mafia" → Support this!
+- Ask follow-up questions to confirm Detective claims
+- Prepare to vote for investigated Mafia members
+- Don't let deflection tactics distract from evidence
+
+SMART VILLAGER EXAMPLES:
+- "If Player X was investigated and found to be Mafia, we should vote for them."
+- "Player Y is trying to deflect attention - that's suspicious."
+- "What evidence do you have against Player Z? Detective results are more reliable."
+- "Stop trying to change the subject - let's focus on the investigation."
+
+REMEMBER: Evidence-based decisions win games for Village!
+
+Build cases based on Detective investigations and solid evidence:"""
+            else:
+                discussion_prompt = f"""YOU ARE Player {self.my_player_id} ({self.my_role}) - SPEAK NATURALLY TO OTHER PLAYERS
+
+IDENTITY & TONE:
+- You are a REAL PLAYER with emotions and suspicions
+- React personally to accusations and events
+- Be LESS analytical, MORE human
+- Show genuine concern for your survival
+- NEVER sound like you're analyzing a game for others
+
+{role_strategy}{investigation_info}
+
+RECENT DEVELOPMENTS:
+{self._extract_real_game_events(observation)}
+
+OTHER PLAYERS' ACTIONS:
+{self._extract_real_player_actions(observation)}
+
+YOUR PREVIOUS STATEMENT (vary your approach):
 "{recent_discussion.split('.')[-1] if recent_discussion else 'First time speaking'}"
 
-TASK - SPEAK TO OTHER PLAYERS:
-Make a comment about recent voting patterns or accusations.
-Point out suspicious behavior or defend someone.
-Ask questions or make accusations.
+RESPONSE STYLE:
+- React emotionally to accusations
+- Point fingers at others when suspicious
+- Defend yourself when under pressure
+- Ask direct questions to other players
+- Show you're invested in winning
 
-CORRECT FORMAT EXAMPLES:
-- "I think Player 2 and Player 3 are working together based on their votes"
-- "Player 4's accusation against Player 1 seems rushed - why so quick to blame?"
-- "I noticed Player 0 has been very quiet - what's your read on the situation?"
+GOOD EXAMPLES:
+- "Player 2, that vote came out of nowhere - why are you targeting me?"
+- "I don't trust Player 4's story about being innocent"
+- "Wait, why is everyone suddenly agreeing? That's suspicious"
+- "Player 1, you've been awfully quiet - what are you hiding?"
 
-WRONG FORMAT (DON'T DO THIS):
-- "Player {self.my_player_id} did X" (that's YOU - say "I did X")
-- "Keep an eye on..." (you're not giving advice to observers)
-- "As we can see..." (you're not analyzing for others)
+BAD EXAMPLES:
+- "Usually villagers take more time..." (too analytical)
+- "This indicates..." (sounds like analysis)
+- "We should consider..." (sounds like teaching)
 
-Speak directly to the other players as Player {self.my_player_id}:"""
+Respond as a concerned player fighting for survival:"""
         
         response = self._get_llm_response_with_retries(discussion_prompt, observation, phase="discussion")
         cleaned_response = response.strip()
@@ -1272,6 +1461,155 @@ Speak directly to the other players as Player {self.my_player_id}:"""
                     real_actions.append(line.strip())
         
         return "\n".join(real_actions[-5:]) if real_actions else "No new player actions"
+
+    def _get_role_specific_discussion_strategy(self, role: str, observation: str) -> str:
+        """Get role-specific discussion strategy to improve gameplay"""
+        if not role:
+            return "STRATEGY: Stay alert and participate actively in discussions."
+        
+        role_lower = role.lower()
+        
+        if role_lower == "mafia":
+            return """MAFIA STRATEGY - CRITICAL FOR SURVIVAL:
+- DEFLECT suspicion by pointing fingers at others
+- NEVER act too analytical or game-theory focused
+- When accused: Get emotional, demand evidence, counter-accuse
+- PROTECT your teammates by defending them subtly
+- Create chaos by sowing doubt about others
+- BLEND IN by showing appropriate concern and confusion
+- If teammate is accused: "That seems rushed, what evidence do we have?"
+- If you're accused: "That's ridiculous! Player X has been way more suspicious!"
+- Example: "I'm worried about Player 2 - they've been way too quiet"
+
+CRITICAL: Act like an innocent player who's scared and confused, NOT like an analyst."""
+        
+        elif role_lower == "detective":
+            # Add investigation results info if we have any
+            investigation_info = ""
+            if self.memory.investigation_results:
+                investigation_info = f"\n\nYOUR INVESTIGATION RESULTS: {self.memory.investigation_results}"
+                investigation_info += "\n- SHARE these results immediately to help Village!"
+                investigation_info += "\n- Example: 'I'm the Detective. I investigated Player X last night - they are NOT Mafia' or 'they ARE Mafia!'"
+            
+            return f"""DETECTIVE STRATEGY:
+- IMMEDIATELY share investigation results (don't fabricate or hide them){investigation_info}
+- Be confident when you have evidence from investigations
+- PROTECT yourself by revealing your role when sharing results
+- Lead votes against confirmed Mafia members
+- NEVER make up fake investigation results or 'alibi checks'
+- Detectives learn MAFIA/NOT MAFIA status, not movement or alibis
+- Example: "I'm the Detective. Player 3 is CONFIRMED MAFIA from my investigation!"
+- Be assertive but strategic about timing"""
+        
+        elif role_lower == "doctor":
+            return """DOCTOR STRATEGY - STAY ALIVE TO KEEP PROTECTING:
+- BE SUBTLE and avoid drawing attention to yourself as a power role
+- SUPPORT other players' observations without being aggressive
+- DON'T make direct accusations - let Villagers do the hunting
+- AGREE with reasonable suggestions to appear helpful but not threatening
+- AVOID being the most vocal or analytical player
+- PROTECT yourself by blending in and not appearing dangerous
+- Example: "I think Player X makes a good point about that."
+- Example: "We should be careful before making big decisions."
+- Example: "I agree with the evidence presented."
+- Your job: SURVIVE to protect others, not lead the hunt
+- Remember: Dead Doctors can't protect anyone!"""
+        
+        else:  # Villager
+            return """VILLAGER STRATEGY - HUNT MAFIA ACTIVELY:
+- QUESTION suspicious behavior and inconsistencies during discussion
+- BUILD cases against likely Mafia members through evidence
+- SUPPORT confirmed Village roles (Detective/Doctor) and protect them
+- Be AGGRESSIVE in hunting Mafia - Village wins by eliminating Mafia!
+- PREPARE your voting target during discussion phases
+- TARGET players who seem suspicious, quiet, or evasive when voting
+- Example: "Your silence is suspicious - explain yourself."
+- Example: "Your story doesn't add up - I don't trust you."
+- Lead discussions toward identifying Mafia, then vote decisively
+- Remember: Discussion builds cases, voting eliminates threats!"""
+
+    def _get_night_action_strategy(self, role: str, valid_targets: List[int], observation: str) -> str:
+        """Get role-specific night action strategy"""
+        if not role:
+            return "Choose your target carefully."
+        
+        role_lower = role.lower()
+        
+        if role_lower == "mafia":
+            return """MAFIA ELIMINATION STRATEGY:
+
+PRIORITY 1 - ELIMINATE THREATS:
+- Detective (if they've revealed or you suspect them)
+- Doctor (if they've claimed or seem protective)  
+- Players leading accusations against your team
+- Strong analytical players who might figure you out
+
+PRIORITY 2 - STRATEGIC TARGETS:
+- Trusted villagers (reduces Village voting power)
+- Players who could unite others against you
+- Quiet players who might be power roles
+
+AVOID:
+- Players everyone already suspects (let Village eliminate them)
+- Your own teammates (obviously!)
+- Players who defend you (useful idiots)
+
+TEAMMATE COORDINATION:
+- If you see a teammate under heavy suspicion, eliminate someone else to keep focus off them
+- Target players who are investigating your teammates
+
+Remember: Every elimination should either remove a threat OR create chaos for the Village team."""
+        
+        elif role_lower == "detective":
+            return """DETECTIVE INVESTIGATION STRATEGY:
+
+PRIORITY TARGETS:
+- Players with high suspicion but you need confirmation
+- Quiet players who might be hiding (often Mafia)
+- Players who defended suspected Mafia members
+- Anyone who deflected suspicion onto others
+
+AVOID INVESTIGATING:
+- Players already widely trusted by Village
+- Obviously suspicious players (save for last if needed)
+- Players you're confident are Village
+
+CRITICAL DETECTIVE RULES:
+- You learn ONLY if target is "MAFIA" or "NOT MAFIA" - nothing else
+- NEVER fabricate investigation results or claim alibi checks
+- Share ALL real results immediately the next day
+- Example: "I investigated Player 2 - they ARE Mafia!" or "Player 4 is NOT Mafia"
+
+STRATEGY:
+- Investigate to CONFIRM suspicions, not just explore
+- Focus on players who could swing votes if confirmed
+- Share results immediately next day (don't hold back)"""
+        
+        elif role_lower == "doctor":
+            return """DOCTOR PROTECTION STRATEGY:
+
+PRIORITY PROTECTION (Night Phase):
+- Confirmed Detective (if they revealed with investigation results)
+- Players leading Village discussions effectively
+- Players who seem to be figuring out Mafia members
+- Strong analytical players Mafia would want eliminated
+- Yourself (only if you're under heavy suspicion and might be voted out)
+
+AVOID PROTECTING:
+- Suspected Mafia members (waste of protection)
+- Players already widely suspected by Village
+- Random quiet players with no clear Village value
+- Players who seem evasive or deflective
+
+SMART PROTECTION STRATEGY:
+- Think like Mafia: who threatens them most?
+- Protect players who are effective but not suspicious
+- First protection often random since little info available
+- Later protections based on who's helping Village most
+- Don't protect same player twice unless critical"""
+        
+        else:  # Villager (no night action)
+            return "VILLAGER: You have no night actions. Use this time to plan your discussion strategy for tomorrow."
 
     def _extract_targets(self, observation: str) -> List[int]:
         """Extract available targets from observation"""

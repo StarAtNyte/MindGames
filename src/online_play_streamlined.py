@@ -5,7 +5,7 @@ import os
 from datetime import datetime
 from utils.streamlined_mafia_agent import StreamlinedMafiaAgent
 
-MODEL_NAME = "ZeroR-SecretMafia-Efficient-v2"
+MODEL_NAME = "ZeroR-SecretMafia-Efficient-v4"
 MODEL_DESCRIPTION = "Streamlined agent with Theory of Mind, Strategic Bidding, Rules Compliant - no heuristics for Track 1 - Social Detection (SecretMafia-v0)."
 team_hash = "MG25-3162A7F500" 
 

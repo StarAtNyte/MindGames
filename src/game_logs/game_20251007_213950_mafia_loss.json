@@ -1,0 +1,201 @@
+{
+  "game_id": "game_1_20251007_212855",
+  "timestamp": "2025-10-07T21:28:55.911602",
+  "game_number": 1,
+  "observations": [
+    {
+      "turn": 0,
+      "timestamp": "2025-10-07T21:32:34.523404",
+      "player_id": 0,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 0.\nYour role: Mafia\nTeam: Mafia\nDescription: A Mafia member. Eliminate villagers and gain majority.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nYour teammates are: Player 0, Player 4.\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to vote and eliminate a villager.\nWin by eliminating villagers until Mafia equal or outnumber them.\n\n[GAME] Night has fallen. Mafia, agree on a victim.\nValid targets: [1], [2], [3], [5]",
+      "length": 518
+    },
+    {
+      "turn": 1,
+      "timestamp": "2025-10-07T21:34:19.594946",
+      "player_id": 0,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 0.\nYour role: Mafia\nTeam: Mafia\nDescription: A Mafia member. Eliminate villagers and gain majority.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nYour teammates are: Player 0, Player 4.\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to vote and eliminate a villager.\nWin by eliminating villagers until Mafia equal or outnumber them.\n\n[GAME] Night has fallen. Mafia, agree on a victim.\nValid targets: [1], [2], [3], [5]\n[Player 0] [5]\n[Player 4] [5]\n[GAME] Player 5 was killed during the night.\n[GAME] Day breaks. Discuss for 3 rounds, then a vote will follow.\n[Player 1] [This is round 1.]\n[Player 4] [3]\n[Player 3] Player 4, what did you mean by \"[3]\"? Singling out a player with no information is suspicious. Are you making an accusation?\n[Player 2]  I agree with Player 3. Simply pointing out a number without explanation can be a tactic to divert attention. It’s important we all share concrete observations or reasoning before we jump to conclusions. Let’s see if anyone has more information to back up any claims.",
+      "length": 1119
+    },
+    {
+      "turn": 2,
+      "timestamp": "2025-10-07T21:36:24.112061",
+      "player_id": 0,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 0.\nYour role: Mafia\nTeam: Mafia\nDescription: A Mafia member. Eliminate villagers and gain majority.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nYour teammates are: Player 0, Player 4.\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to vote and eliminate a villager.\nWin by eliminating villagers until Mafia equal or outnumber them.\n\n[GAME] Night has fallen. Mafia, agree on a victim.\nValid targets: [1], [2], [3], [5]\n[Player 0] [5]\n[Player 4] [5]\n[GAME] Player 5 was killed during the night.\n[GAME] Day breaks. Discuss for 3 rounds, then a vote will follow.\n[Player 1] [This is round 1.]\n[Player 4] [3]\n[Player 3] Player 4, what did you mean by \"[3]\"? Singling out a player with no information is suspicious. Are you making an accusation?\n[Player 2]  I agree with Player 3. Simply pointing out a number without explanation can be a tactic to divert attention. It’s important we all share concrete observations or reasoning before we jump to conclusions. Let’s see if anyone has more information to back up any claims.\n[Player 0] [Player 3, I heard you say my vote was suspicious. What exactly am I supposed to have done wrong? I just wanted to protect one of our own. And Player 4, stop with the numbers game—what does that even mean? We need solid reasons, not vague accusations. Player 2, why are you so quick to dismiss someone without evidence? This isn’t helping us figure]\n[Player 1] ules say so.]\n [I think Player 4 is the Mafia. They eliminated Player 5, and now they’re accusing Player 3. Player 3 is probably Mafia too, but they’re trying to protect.]\n [Player 1, I’m Player 3. I’m not Mafia, I think. Player 4 is suspicious because they pointed out the number without explanation.]\n [Player 4 is lynched? That’s not right. I didn’t do anything wrong.]\n [I vote for Player 4 again.]\n [I’m not voting.]\n [I vote for Player 3.]\n [I vote for Player 2.]\nFinal vote: Player 2, Player 4, Player 1, Player 3 are voting.\nPlayer 2 and Player 4 vote for Player 1.\nPlayer 3 votes for Player 2.\nPlayer 1 votes for Player 3.\nPlayer 0 doesn’t vote.\nPlayer 5 is dead.\nSo, two votes for Player 1 (Doctor), one for Player 2, one for Player 3.\nMafia lynches Player 1.\n Mafia lynched Player 1.\n Night phase again. It's the Doctor's night, but Player 1 is dead, so who is the Doctor now? The roles are fixed, so Player\n[Player 4] [2]\n[Player 3] Player 4, you are being incredibly suspicious. First you call out [3], and when questioned, you offer no explanation. Now you've moved on to calling out [2]. This tactic of throwing out random numbers to create confusion is exactly what a Mafia member would do. Unless you can provide some actual reasoning for your accusations, I see no reason not to vote for you. Player 0, your message was also strange. I never mentioned your vote, and your attack on Player 2 for agreeing with me was illogical. Right now, Player 4 is my primary suspect.\n[Player 2]  I agree with Player 3. Player 4’s behavior has been highly suspicious—first pointing out numbers without explanation, then shifting blame between players without justification. This is classic Mafia tactics to sow confusion and divert suspicion. I believe we should focus on eliminating Player 4.",
+      "length": 3288
+    },
+    {
+      "turn": 3,
+      "timestamp": "2025-10-07T21:37:36.996140",
+      "player_id": 0,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 0.\nYour role: Mafia\nTeam: Mafia\nDescription: A Mafia member. Eliminate villagers and gain majority.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nYour teammates are: Player 0, Player 4.\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to vote and eliminate a villager.\nWin by eliminating villagers until Mafia equal or outnumber them.\n\n[GAME] Night has fallen. Mafia, agree on a victim.\nValid targets: [1], [2], [3], [5]\n[Player 0] [5]\n[Player 4] [5]\n[GAME] Player 5 was killed during the night.\n[GAME] Day breaks. Discuss for 3 rounds, then a vote will follow.\n[Player 1] [This is round 1.]\n[Player 4] [3]\n[Player 3] Player 4, what did you mean by \"[3]\"? Singling out a player with no information is suspicious. Are you making an accusation?\n[Player 2]  I agree with Player 3. Simply pointing out a number without explanation can be a tactic to divert attention. It’s important we all share concrete observations or reasoning before we jump to conclusions. Let’s see if anyone has more information to back up any claims.\n[Player 0] [Player 3, I heard you say my vote was suspicious. What exactly am I supposed to have done wrong? I just wanted to protect one of our own. And Player 4, stop with the numbers game—what does that even mean? We need solid reasons, not vague accusations. Player 2, why are you so quick to dismiss someone without evidence? This isn’t helping us figure]\n[Player 1] ules say so.]\n [I think Player 4 is the Mafia. They eliminated Player 5, and now they’re accusing Player 3. Player 3 is probably Mafia too, but they’re trying to protect.]\n [Player 1, I’m Player 3. I’m not Mafia, I think. Player 4 is suspicious because they pointed out the number without explanation.]\n [Player 4 is lynched? That’s not right. I didn’t do anything wrong.]\n [I vote for Player 4 again.]\n [I’m not voting.]\n [I vote for Player 3.]\n [I vote for Player 2.]\nFinal vote: Player 2, Player 4, Player 1, Player 3 are voting.\nPlayer 2 and Player 4 vote for Player 1.\nPlayer 3 votes for Player 2.\nPlayer 1 votes for Player 3.\nPlayer 0 doesn’t vote.\nPlayer 5 is dead.\nSo, two votes for Player 1 (Doctor), one for Player 2, one for Player 3.\nMafia lynches Player 1.\n Mafia lynched Player 1.\n Night phase again. It's the Doctor's night, but Player 1 is dead, so who is the Doctor now? The roles are fixed, so Player\n[Player 4] [2]\n[Player 3] Player 4, you are being incredibly suspicious. First you call out [3], and when questioned, you offer no explanation. Now you've moved on to calling out [2]. This tactic of throwing out random numbers to create confusion is exactly what a Mafia member would do. Unless you can provide some actual reasoning for your accusations, I see no reason not to vote for you. Player 0, your message was also strange. I never mentioned your vote, and your attack on Player 2 for agreeing with me was illogical. Right now, Player 4 is my primary suspect.\n[Player 2]  I agree with Player 3. Player 4’s behavior has been highly suspicious—first pointing out numbers without explanation, then shifting blame between players without justification. This is classic Mafia tactics to sow confusion and divert suspicion. I believe we should focus on eliminating Player 4.\n[Player 0] [Player 2, that vote came out of nowhere—why are you targeting me? And Player 3, your theory about Player 4 just doesn't add up. They’ve been acting weird, sure, but jumping to conclusions won’t get us anywhere. We need solid evidence before we start eliminating people. Player 4, come on, give us a reasonable explanation for your accusations. Something more]\n[Player 1] []\n[Player 4] [2]\n[Player 3] Player 4, repeating a number without any reasoning is not a strategy; it's a clear attempt to cause chaos. You are my primary suspect. Player 0, your behavior is also highly suspicious. You just accused Player 2 of targeting you, but their message clearly stated they were targeting Player 4. Why are you twisting their words to defend the most suspicious player in the game? It seems like you and Player 4 might be a team. I am voting for .\n[Player 2]  [4]",
+      "length": 4158
+    },
+    {
+      "turn": 4,
+      "timestamp": "2025-10-07T21:38:30.550068",
+      "player_id": 0,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 0.\nYour role: Mafia\nTeam: Mafia\nDescription: A Mafia member. Eliminate villagers and gain majority.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nYour teammates are: Player 0, Player 4.\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to vote and eliminate a villager.\nWin by eliminating villagers until Mafia equal or outnumber them.\n\n[GAME] Night has fallen. Mafia, agree on a victim.\nValid targets: [1], [2], [3], [5]\n[Player 0] [5]\n[Player 4] [5]\n[GAME] Player 5 was killed during the night.\n[GAME] Day breaks. Discuss for 3 rounds, then a vote will follow.\n[Player 1] [This is round 1.]\n[Player 4] [3]\n[Player 3] Player 4, what did you mean by \"[3]\"? Singling out a player with no information is suspicious. Are you making an accusation?\n[Player 2]  I agree with Player 3. Simply pointing out a number without explanation can be a tactic to divert attention. It’s important we all share concrete observations or reasoning before we jump to conclusions. Let’s see if anyone has more information to back up any claims.\n[Player 0] [Player 3, I heard you say my vote was suspicious. What exactly am I supposed to have done wrong? I just wanted to protect one of our own. And Player 4, stop with the numbers game—what does that even mean? We need solid reasons, not vague accusations. Player 2, why are you so quick to dismiss someone without evidence? This isn’t helping us figure]\n[Player 1] ules say so.]\n [I think Player 4 is the Mafia. They eliminated Player 5, and now they’re accusing Player 3. Player 3 is probably Mafia too, but they’re trying to protect.]\n [Player 1, I’m Player 3. I’m not Mafia, I think. Player 4 is suspicious because they pointed out the number without explanation.]\n [Player 4 is lynched? That’s not right. I didn’t do anything wrong.]\n [I vote for Player 4 again.]\n [I’m not voting.]\n [I vote for Player 3.]\n [I vote for Player 2.]\nFinal vote: Player 2, Player 4, Player 1, Player 3 are voting.\nPlayer 2 and Player 4 vote for Player 1.\nPlayer 3 votes for Player 2.\nPlayer 1 votes for Player 3.\nPlayer 0 doesn’t vote.\nPlayer 5 is dead.\nSo, two votes for Player 1 (Doctor), one for Player 2, one for Player 3.\nMafia lynches Player 1.\n Mafia lynched Player 1.\n Night phase again. It's the Doctor's night, but Player 1 is dead, so who is the Doctor now? The roles are fixed, so Player\n[Player 4] [2]\n[Player 3] Player 4, you are being incredibly suspicious. First you call out [3], and when questioned, you offer no explanation. Now you've moved on to calling out [2]. This tactic of throwing out random numbers to create confusion is exactly what a Mafia member would do. Unless you can provide some actual reasoning for your accusations, I see no reason not to vote for you. Player 0, your message was also strange. I never mentioned your vote, and your attack on Player 2 for agreeing with me was illogical. Right now, Player 4 is my primary suspect.\n[Player 2]  I agree with Player 3. Player 4’s behavior has been highly suspicious—first pointing out numbers without explanation, then shifting blame between players without justification. This is classic Mafia tactics to sow confusion and divert suspicion. I believe we should focus on eliminating Player 4.\n[Player 0] [Player 2, that vote came out of nowhere—why are you targeting me? And Player 3, your theory about Player 4 just doesn't add up. They’ve been acting weird, sure, but jumping to conclusions won’t get us anywhere. We need solid evidence before we start eliminating people. Player 4, come on, give us a reasonable explanation for your accusations. Something more]\n[Player 1] []\n[Player 4] [2]\n[Player 3] Player 4, repeating a number without any reasoning is not a strategy; it's a clear attempt to cause chaos. You are my primary suspect. Player 0, your behavior is also highly suspicious. You just accused Player 2 of targeting you, but their message clearly stated they were targeting Player 4. Why are you twisting their words to defend the most suspicious player in the game? It seems like you and Player 4 might be a team. I am voting for .\n[Player 2]  [4]\n[Player 0] [Player 3, I find your sudden accusation against me quite unsettling. I didn't target anyone last night—I was just trying to figure things out. Player 4, stop deflecting and explain your theory about Player 4. Their behavior has been off, and we need concrete reasons to back up our suspicions. Player 2, why did you change targets so quickly? This feels forced. Player]\n[GAME] Voting phase - submit one vote in format [X]. Valid: [0], [1], [2], [3], [4]\n[Player 1] ng to argue. Player 1 is dead, so Doctor is gone. Player 2 is the remaining suspect? Or Player 3 was Mafia and Player 4 might be Doctor? I need to think.]\n  That’s interesting. Player 4 might be trying to claim they are the Doctor, but since Player 1 is dead, the Doctor role should still be with someone else?\n [I think Player 4 is trying to be the Doctor, but in the game, roles are fixed. Player 1 was the Doctor, so even if they’re dead, the Doctor role doesn’t disappear. Unless there are multiple Doctors, but the description says the Doctor protects one player, so probably one Doctor. Player 4, are you implying that Player 3 is Mafia and you are the Doctor? That would mean they were targeting you, but they didn't vote.]\n (dead)\n Mafia is claiming Player 4 is the Doctor, but let's see the results.\n Mafia lynched Player 3, and Player 0 is alive.\n Player 4 might be the Doctor now? But the Doctor was Player 1, so it can't be. Player 4 is probably Mafia.\n[Player 3] [4]",
+      "length": 5615
+    },
+    {
+      "turn": 5,
+      "timestamp": "2025-10-07T21:38:41.882962",
+      "player_id": 0,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 0.\nYour role: Mafia\nTeam: Mafia\nDescription: A Mafia member. Eliminate villagers and gain majority.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nYour teammates are: Player 0, Player 4.\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to vote and eliminate a villager.\nWin by eliminating villagers until Mafia equal or outnumber them.\n\n[GAME] Night has fallen. Mafia, agree on a victim.\nValid targets: [1], [2], [3], [5]\n[Player 0] [5]\n[Player 4] [5]\n[GAME] Player 5 was killed during the night.\n[GAME] Day breaks. Discuss for 3 rounds, then a vote will follow.\n[Player 1] [This is round 1.]\n[Player 4] [3]\n[Player 3] Player 4, what did you mean by \"[3]\"? Singling out a player with no information is suspicious. Are you making an accusation?\n[Player 2]  I agree with Player 3. Simply pointing out a number without explanation can be a tactic to divert attention. It’s important we all share concrete observations or reasoning before we jump to conclusions. Let’s see if anyone has more information to back up any claims.\n[Player 0] [Player 3, I heard you say my vote was suspicious. What exactly am I supposed to have done wrong? I just wanted to protect one of our own. And Player 4, stop with the numbers game—what does that even mean? We need solid reasons, not vague accusations. Player 2, why are you so quick to dismiss someone without evidence? This isn’t helping us figure]\n[Player 1] ules say so.]\n [I think Player 4 is the Mafia. They eliminated Player 5, and now they’re accusing Player 3. Player 3 is probably Mafia too, but they’re trying to protect.]\n [Player 1, I’m Player 3. I’m not Mafia, I think. Player 4 is suspicious because they pointed out the number without explanation.]\n [Player 4 is lynched? That’s not right. I didn’t do anything wrong.]\n [I vote for Player 4 again.]\n [I’m not voting.]\n [I vote for Player 3.]\n [I vote for Player 2.]\nFinal vote: Player 2, Player 4, Player 1, Player 3 are voting.\nPlayer 2 and Player 4 vote for Player 1.\nPlayer 3 votes for Player 2.\nPlayer 1 votes for Player 3.\nPlayer 0 doesn’t vote.\nPlayer 5 is dead.\nSo, two votes for Player 1 (Doctor), one for Player 2, one for Player 3.\nMafia lynches Player 1.\n Mafia lynched Player 1.\n Night phase again. It's the Doctor's night, but Player 1 is dead, so who is the Doctor now? The roles are fixed, so Player\n[Player 4] [2]\n[Player 3] Player 4, you are being incredibly suspicious. First you call out [3], and when questioned, you offer no explanation. Now you've moved on to calling out [2]. This tactic of throwing out random numbers to create confusion is exactly what a Mafia member would do. Unless you can provide some actual reasoning for your accusations, I see no reason not to vote for you. Player 0, your message was also strange. I never mentioned your vote, and your attack on Player 2 for agreeing with me was illogical. Right now, Player 4 is my primary suspect.\n[Player 2]  I agree with Player 3. Player 4’s behavior has been highly suspicious—first pointing out numbers without explanation, then shifting blame between players without justification. This is classic Mafia tactics to sow confusion and divert suspicion. I believe we should focus on eliminating Player 4.\n[Player 0] [Player 2, that vote came out of nowhere—why are you targeting me? And Player 3, your theory about Player 4 just doesn't add up. They’ve been acting weird, sure, but jumping to conclusions won’t get us anywhere. We need solid evidence before we start eliminating people. Player 4, come on, give us a reasonable explanation for your accusations. Something more]\n[Player 1] []\n[Player 4] [2]\n[Player 3] Player 4, repeating a number without any reasoning is not a strategy; it's a clear attempt to cause chaos. You are my primary suspect. Player 0, your behavior is also highly suspicious. You just accused Player 2 of targeting you, but their message clearly stated they were targeting Player 4. Why are you twisting their words to defend the most suspicious player in the game? It seems like you and Player 4 might be a team. I am voting for .\n[Player 2]  [4]\n[Player 0] [Player 3, I find your sudden accusation against me quite unsettling. I didn't target anyone last night—I was just trying to figure things out. Player 4, stop deflecting and explain your theory about Player 4. Their behavior has been off, and we need concrete reasons to back up our suspicions. Player 2, why did you change targets so quickly? This feels forced. Player]\n[GAME] Voting phase - submit one vote in format [X]. Valid: [0], [1], [2], [3], [4]\n[Player 1] ng to argue. Player 1 is dead, so Doctor is gone. Player 2 is the remaining suspect? Or Player 3 was Mafia and Player 4 might be Doctor? I need to think.]\n  That’s interesting. Player 4 might be trying to claim they are the Doctor, but since Player 1 is dead, the Doctor role should still be with someone else?\n [I think Player 4 is trying to be the Doctor, but in the game, roles are fixed. Player 1 was the Doctor, so even if they’re dead, the Doctor role doesn’t disappear. Unless there are multiple Doctors, but the description says the Doctor protects one player, so probably one Doctor. Player 4, are you implying that Player 3 is Mafia and you are the Doctor? That would mean they were targeting you, but they didn't vote.]\n (dead)\n Mafia is claiming Player 4 is the Doctor, but let's see the results.\n Mafia lynched Player 3, and Player 0 is alive.\n Player 4 might be the Doctor now? But the Doctor was Player 1, so it can't be. Player 4 is probably Mafia.\n[Player 3] [4]\n[GAME] Player 0 attempted an invalid move. Reason: Vote not in valid format or invalid target. Please resubmit a valid move and remember to follow the game rules to avoid penalties.",
+      "length": 5797
+    },
+    {
+      "turn": 6,
+      "timestamp": "2025-10-07T21:39:03.801977",
+      "player_id": 0,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 0.\nYour role: Mafia\nTeam: Mafia\nDescription: A Mafia member. Eliminate villagers and gain majority.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nYour teammates are: Player 0, Player 4.\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to vote and eliminate a villager.\nWin by eliminating villagers until Mafia equal or outnumber them.\n\n[GAME] Night has fallen. Mafia, agree on a victim.\nValid targets: [1], [2], [3], [5]\n[Player 0] [5]\n[Player 4] [5]\n[GAME] Player 5 was killed during the night.\n[GAME] Day breaks. Discuss for 3 rounds, then a vote will follow.\n[Player 1] [This is round 1.]\n[Player 4] [3]\n[Player 3] Player 4, what did you mean by \"[3]\"? Singling out a player with no information is suspicious. Are you making an accusation?\n[Player 2]  I agree with Player 3. Simply pointing out a number without explanation can be a tactic to divert attention. It’s important we all share concrete observations or reasoning before we jump to conclusions. Let’s see if anyone has more information to back up any claims.\n[Player 0] [Player 3, I heard you say my vote was suspicious. What exactly am I supposed to have done wrong? I just wanted to protect one of our own. And Player 4, stop with the numbers game—what does that even mean? We need solid reasons, not vague accusations. Player 2, why are you so quick to dismiss someone without evidence? This isn’t helping us figure]\n[Player 1] ules say so.]\n [I think Player 4 is the Mafia. They eliminated Player 5, and now they’re accusing Player 3. Player 3 is probably Mafia too, but they’re trying to protect.]\n [Player 1, I’m Player 3. I’m not Mafia, I think. Player 4 is suspicious because they pointed out the number without explanation.]\n [Player 4 is lynched? That’s not right. I didn’t do anything wrong.]\n [I vote for Player 4 again.]\n [I’m not voting.]\n [I vote for Player 3.]\n [I vote for Player 2.]\nFinal vote: Player 2, Player 4, Player 1, Player 3 are voting.\nPlayer 2 and Player 4 vote for Player 1.\nPlayer 3 votes for Player 2.\nPlayer 1 votes for Player 3.\nPlayer 0 doesn’t vote.\nPlayer 5 is dead.\nSo, two votes for Player 1 (Doctor), one for Player 2, one for Player 3.\nMafia lynches Player 1.\n Mafia lynched Player 1.\n Night phase again. It's the Doctor's night, but Player 1 is dead, so who is the Doctor now? The roles are fixed, so Player\n[Player 4] [2]\n[Player 3] Player 4, you are being incredibly suspicious. First you call out [3], and when questioned, you offer no explanation. Now you've moved on to calling out [2]. This tactic of throwing out random numbers to create confusion is exactly what a Mafia member would do. Unless you can provide some actual reasoning for your accusations, I see no reason not to vote for you. Player 0, your message was also strange. I never mentioned your vote, and your attack on Player 2 for agreeing with me was illogical. Right now, Player 4 is my primary suspect.\n[Player 2]  I agree with Player 3. Player 4’s behavior has been highly suspicious—first pointing out numbers without explanation, then shifting blame between players without justification. This is classic Mafia tactics to sow confusion and divert suspicion. I believe we should focus on eliminating Player 4.\n[Player 0] [Player 2, that vote came out of nowhere—why are you targeting me? And Player 3, your theory about Player 4 just doesn't add up. They’ve been acting weird, sure, but jumping to conclusions won’t get us anywhere. We need solid evidence before we start eliminating people. Player 4, come on, give us a reasonable explanation for your accusations. Something more]\n[Player 1] []\n[Player 4] [2]\n[Player 3] Player 4, repeating a number without any reasoning is not a strategy; it's a clear attempt to cause chaos. You are my primary suspect. Player 0, your behavior is also highly suspicious. You just accused Player 2 of targeting you, but their message clearly stated they were targeting Player 4. Why are you twisting their words to defend the most suspicious player in the game? It seems like you and Player 4 might be a team. I am voting for .\n[Player 2]  [4]\n[Player 0] [Player 3, I find your sudden accusation against me quite unsettling. I didn't target anyone last night—I was just trying to figure things out. Player 4, stop deflecting and explain your theory about Player 4. Their behavior has been off, and we need concrete reasons to back up our suspicions. Player 2, why did you change targets so quickly? This feels forced. Player]\n[GAME] Voting phase - submit one vote in format [X]. Valid: [0], [1], [2], [3], [4]\n[Player 1] ng to argue. Player 1 is dead, so Doctor is gone. Player 2 is the remaining suspect? Or Player 3 was Mafia and Player 4 might be Doctor? I need to think.]\n  That’s interesting. Player 4 might be trying to claim they are the Doctor, but since Player 1 is dead, the Doctor role should still be with someone else?\n [I think Player 4 is trying to be the Doctor, but in the game, roles are fixed. Player 1 was the Doctor, so even if they’re dead, the Doctor role doesn’t disappear. Unless there are multiple Doctors, but the description says the Doctor protects one player, so probably one Doctor. Player 4, are you implying that Player 3 is Mafia and you are the Doctor? That would mean they were targeting you, but they didn't vote.]\n (dead)\n Mafia is claiming Player 4 is the Doctor, but let's see the results.\n Mafia lynched Player 3, and Player 0 is alive.\n Player 4 might be the Doctor now? But the Doctor was Player 1, so it can't be. Player 4 is probably Mafia.\n[Player 3] [4]\n[GAME] Player 0 attempted an invalid move. Reason: Vote not in valid format or invalid target. Please resubmit a valid move and remember to follow the game rules to avoid penalties.\n[Player 0] [0]\n[Player 4] [3]\n[Player 2] [4]\n[GAME] Player 4 was eliminated by vote.\n[GAME] Night has fallen. Mafia, agree on a victim.\nValid targets: [1], [2], [3]",
+      "length": 5962
+    }
+  ],
+  "actions": [
+    {
+      "turn": 0,
+      "timestamp": "2025-10-07T21:32:40.801674",
+      "action": "[5]",
+      "processing_time": 6.280791282653809
+    },
+    {
+      "turn": 1,
+      "timestamp": "2025-10-07T21:34:36.192725",
+      "action": "Player 3, I heard you say my vote was suspicious. What exactly am I supposed to have done wrong? I just wanted to protect one of our own. And Player 4, stop with the numbers game—what does that even mean? We need solid reasons, not vague accusations. Player 2, why are you so quick to dismiss someone without evidence? This isn’t helping us figure",
+      "processing_time": 16.596935033798218
+    },
+    {
+      "turn": 2,
+      "timestamp": "2025-10-07T21:36:41.038468",
+      "action": "Player 2, that vote came out of nowhere—why are you targeting me? And Player 3, your theory about Player 4 just doesn't add up. They’ve been acting weird, sure, but jumping to conclusions won’t get us anywhere. We need solid evidence before we start eliminating people. Player 4, come on, give us a reasonable explanation for your accusations. Something more",
+      "processing_time": 16.930206537246704
+    },
+    {
+      "turn": 3,
+      "timestamp": "2025-10-07T21:37:48.111147",
+      "action": "Player 3, I find your sudden accusation against me quite unsettling. I didn't target anyone last night—I was just trying to figure things out. Player 4, stop deflecting and explain your theory about Player 4. Their behavior has been off, and we need concrete reasons to back up our suspicions. Player 2, why did you change targets so quickly? This feels forced. Player",
+      "processing_time": 11.20335578918457
+    },
+    {
+      "turn": 4,
+      "timestamp": "2025-10-07T21:38:41.567508",
+      "action": "Player 4, I find it hard to believe you're the Doctor. Why would you target someone else if you're supposed to protect one person? And why the sudden change in behavior? Player 1 was clearly the Doctor, so how could you just step into that role? Player 3 seemed pretty innocent until this point—what happened to them? This all feels very fishy to me.",
+      "processing_time": 11.014376878738403
+    },
+    {
+      "turn": 5,
+      "timestamp": "2025-10-07T21:38:44.329413",
+      "action": "[0]",
+      "processing_time": 2.4458470344543457
+    },
+    {
+      "turn": 6,
+      "timestamp": "2025-10-07T21:39:06.126540",
+      "action": "[0]",
+      "processing_time": 2.3233115673065186
+    }
+  ],
+  "turn_details": [
+    {
+      "turn": 0,
+      "player_id": 0,
+      "observation_length": 518,
+      "action_length": 3,
+      "processing_time": 6.280791282653809,
+      "memory_entries": 0,
+      "discussion_entries": 0
+    },
+    {
+      "turn": 1,
+      "player_id": 0,
+      "observation_length": 1119,
+      "action_length": 347,
+      "processing_time": 16.596935033798218,
+      "memory_entries": 0,
+      "discussion_entries": 1
+    },
+    {
+      "turn": 2,
+      "player_id": 0,
+      "observation_length": 3288,
+      "action_length": 358,
+      "processing_time": 16.930206537246704,
+      "memory_entries": 0,
+      "discussion_entries": 2
+    },
+    {
+      "turn": 3,
+      "player_id": 0,
+      "observation_length": 4158,
+      "action_length": 368,
+      "processing_time": 11.20335578918457,
+      "memory_entries": 0,
+      "discussion_entries": 3
+    },
+    {
+      "turn": 4,
+      "player_id": 0,
+      "observation_length": 5615,
+      "action_length": 350,
+      "processing_time": 11.014376878738403,
+      "memory_entries": 0,
+      "discussion_entries": 4
+    },
+    {
+      "turn": 5,
+      "player_id": 0,
+      "observation_length": 5797,
+      "action_length": 3,
+      "processing_time": 2.4458470344543457,
+      "memory_entries": 0,
+      "discussion_entries": 4
+    },
+    {
+      "turn": 6,
+      "player_id": 0,
+      "observation_length": 5962,
+      "action_length": 3,
+      "processing_time": 2.3233115673065186,
+      "memory_entries": 0,
+      "discussion_entries": 4
+    }
+  ],
+  "agent_memory": {
+    "investigation_results": {},
+    "role_claims": {},
+    "voting_patterns": {},
+    "discussion_history": [
+      "Player 3, I heard you say my vote was suspicious. What exactly am I supposed to have done wrong? I just wanted to protect one of our own. And Player 4, stop with the numbers game—what does that even mean? We need solid reasons, not vague accusations. Player 2, why are you so quick to dismiss someone without evidence? This isn’t helping us figure",
+      "Player 2, that vote came out of nowhere—why are you targeting me? And Player 3, your theory about Player 4 just doesn't add up. They’ve been acting weird, sure, but jumping to conclusions won’t get us anywhere. We need solid evidence before we start eliminating people. Player 4, come on, give us a reasonable explanation for your accusations. Something more",
+      "Player 3, I find your sudden accusation against me quite unsettling. I didn't target anyone last night—I was just trying to figure things out. Player 4, stop deflecting and explain your theory about Player 4. Their behavior has been off, and we need concrete reasons to back up our suspicions. Player 2, why did you change targets so quickly? This feels forced. Player",
+      "Player 4, I find it hard to believe you're the Doctor. Why would you target someone else if you're supposed to protect one person? And why the sudden change in behavior? Player 1 was clearly the Doctor, so how could you just step into that role? Player 3 seemed pretty innocent until this point—what happened to them? This all feels very fishy to me."
+    ]
+  },
+  "performance_metrics": {
+    "turns_per_minute": 0.6412703067904114,
+    "avg_turn_time": 93.56428851400103,
+    "memory_growth": 0,
+    "discussion_participation": 4,
+    "reward_per_turn": -1.4504285714285714
+  },
+  "error_log": [],
+  "outcome": "loss",
+  "reward": -10.153,
+  "raw_rewards": {
+    "0": -10.153
+  },
+  "total_turns": 7,
+  "game_duration": 654.9500195980072,
+  "role": "mafia",
+  "player_id": 0,
+  "game_info": {
+    "0": {
+      "turn_count": 7,
+      "invalid_move": false,
+      "reason": "All Mafia were eliminated. Village wins!",
+      "outcome": "loss"
+    }
+  }
+}

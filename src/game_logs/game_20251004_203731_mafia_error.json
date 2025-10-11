@@ -1,0 +1,138 @@
+{
+  "game_id": "game_1_20251004_203236",
+  "timestamp": "2025-10-04T20:32:36.371851",
+  "game_number": 1,
+  "observations": [
+    {
+      "turn": 0,
+      "timestamp": "2025-10-04T20:32:59.094316",
+      "player_id": 3,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 3.\nYour role: Mafia\nTeam: Mafia\nDescription: A Mafia member. Eliminate villagers and gain majority.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nYour teammates are: Player 1, Player 3.\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to vote and eliminate a villager.\nWin by eliminating villagers until Mafia equal or outnumber them.\n\n[GAME] Night has fallen. Mafia, agree on a victim.\nValid targets: [0], [2], [4], [5]",
+      "length": 518
+    },
+    {
+      "turn": 1,
+      "timestamp": "2025-10-04T20:33:12.311649",
+      "player_id": 3,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 3.\nYour role: Mafia\nTeam: Mafia\nDescription: A Mafia member. Eliminate villagers and gain majority.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nYour teammates are: Player 1, Player 3.\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to vote and eliminate a villager.\nWin by eliminating villagers until Mafia equal or outnumber them.\n\n[GAME] Night has fallen. Mafia, agree on a victim.\nValid targets: [0], [2], [4], [5]\n[Player 3] [4]\n[Player 1] ' to vote and eliminate a villager.\n[GAME] Player 4 was killed during the night.\n[GAME] Day breaks. Discuss for 3 rounds, then a vote will follow.\n[Player 1] 'S-player 2' to vote and eliminate a villager.\n\nLet me explain the move for you: Since the valid targets are [0], [2], [4], [5], and Player 4 was killed, the remaining valid targets are Player 0 and Player 2. I chose Player 2 as the target for tonight.\n[Player 5]  Protect [2]",
+      "length": 979
+    },
+    {
+      "turn": 2,
+      "timestamp": "2025-10-04T20:34:50.900019",
+      "player_id": 3,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 3.\nYour role: Mafia\nTeam: Mafia\nDescription: A Mafia member. Eliminate villagers and gain majority.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nYour teammates are: Player 1, Player 3.\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to vote and eliminate a villager.\nWin by eliminating villagers until Mafia equal or outnumber them.\n\n[GAME] Night has fallen. Mafia, agree on a victim.\nValid targets: [0], [2], [4], [5]\n[Player 3] [4]\n[Player 1] ' to vote and eliminate a villager.\n[GAME] Player 4 was killed during the night.\n[GAME] Day breaks. Discuss for 3 rounds, then a vote will follow.\n[Player 1] 'S-player 2' to vote and eliminate a villager.\n\nLet me explain the move for you: Since the valid targets are [0], [2], [4], [5], and Player 4 was killed, the remaining valid targets are Player 0 and Player 2. I chose Player 2 as the target for tonight.\n[Player 5]  Protect [2]\n[Player 3] [Player 1, that vote came out of nowhere - why are you targeting me? And Player 5 just protected Player 2? This is getting confusing. Player 2, can you explain why you were targeted? Something feels off here.]\n[Player 2] yer 5 protected me.** This is very interesting. Either Player 5 is the Doctor and was randomly protecting people, or they're acting on information. This makes me slightly suspicious of them, but their protection could also be genuine.\n*   **Player 4 is dead.** RIP Player 4.\n\nMy goal is to get Player 1 eliminated without revealing my role. Here's my plan:\n\n**DAY Phase - Round 1**\n\nI will attempt to subtly steer the conversation towards Player 1 without explicitly accusing them. I will also try to get Player 3 (and others) to focus on Player 1's odd vote. I also want to gauge Player 5's reaction.\n\n**My Response:**\n\n\"Player 3, I agree, Player 1's sudden vote for me *is* strange. My guess is that Player 1 attempted to do their vote command wrong, and meant a different target. Their command was formatted poorly which made their vote seem random and out of place, so it is just a format error.\n\nPlayer 5, why did you choose to protect me? Was there a particular reason, or just a gut feeling?\"]\n[Player 0]   \n…I actually don’t think it was a simple formatting error. Player 1’s message looked deliberate: “’S-player 2’ to vote and eliminate a villager” is too clean to be a typo. It even explains *why* they chose me—Player 1 thinks I’m the easiest villager to kill today. That kind of pre-planned statement feels more like a calculated push than a mistake.  \n\nRight now I’m keeping my eyes on two things:  \n1. Player 1, for launching the first heavy accusation without elaborating.  \n2. Player 5. If they’re Doctor and acted on a legitimate read, we may have been the two towniest names last Night; if they’re Mafia, protecting me is a perfect cover—either way we should learn more from how they answer the question I asked above.\n[Player 1] , discuss for three rounds and vote after.**\n\n---\n\n**DAY Phase - Round 1**\n\n I agree with Player 0 and Player 1’s strange vote does seem intentional. We need to pay attention to Player 5’s response to our questions.\n\n**DAY Phase - Round 2**\n\n Player 5, why did you protect Player 2? This seems like a significant action, and it’s important we understand your reasoning.\n\n**DAY Phase - Round 3**\n\n Player 3, do you agree with the assessment that Player 1’s vote was strange? It would be wise to consider their actions as a potential clue.\n\n---\n\n**Vote after 3 rounds:**\n\n I suggest we vote on Player 1. Their behavior during the night was suspicious, and we should consider eliminating them to prevent them from further compromising our positions.\n\n---\n\n** Vote!**\n\n---\n\nThis approach helps to steadily build suspicion around Player 1 and gather more information about Player 5's true role, all while following the game's format and progressing logically.\n[Player 5]  Protect [0]",
+      "length": 3939
+    },
+    {
+      "turn": 3,
+      "timestamp": "2025-10-04T20:35:44.499340",
+      "player_id": 3,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 3.\nYour role: Mafia\nTeam: Mafia\nDescription: A Mafia member. Eliminate villagers and gain majority.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nYour teammates are: Player 1, Player 3.\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to vote and eliminate a villager.\nWin by eliminating villagers until Mafia equal or outnumber them.\n\n[GAME] Night has fallen. Mafia, agree on a victim.\nValid targets: [0], [2], [4], [5]\n[Player 3] [4]\n[Player 1] ' to vote and eliminate a villager.\n[GAME] Player 4 was killed during the night.\n[GAME] Day breaks. Discuss for 3 rounds, then a vote will follow.\n[Player 1] 'S-player 2' to vote and eliminate a villager.\n\nLet me explain the move for you: Since the valid targets are [0], [2], [4], [5], and Player 4 was killed, the remaining valid targets are Player 0 and Player 2. I chose Player 2 as the target for tonight.\n[Player 5]  Protect [2]\n[Player 3] [Player 1, that vote came out of nowhere - why are you targeting me? And Player 5 just protected Player 2? This is getting confusing. Player 2, can you explain why you were targeted? Something feels off here.]\n[Player 2] yer 5 protected me.** This is very interesting. Either Player 5 is the Doctor and was randomly protecting people, or they're acting on information. This makes me slightly suspicious of them, but their protection could also be genuine.\n*   **Player 4 is dead.** RIP Player 4.\n\nMy goal is to get Player 1 eliminated without revealing my role. Here's my plan:\n\n**DAY Phase - Round 1**\n\nI will attempt to subtly steer the conversation towards Player 1 without explicitly accusing them. I will also try to get Player 3 (and others) to focus on Player 1's odd vote. I also want to gauge Player 5's reaction.\n\n**My Response:**\n\n\"Player 3, I agree, Player 1's sudden vote for me *is* strange. My guess is that Player 1 attempted to do their vote command wrong, and meant a different target. Their command was formatted poorly which made their vote seem random and out of place, so it is just a format error.\n\nPlayer 5, why did you choose to protect me? Was there a particular reason, or just a gut feeling?\"]\n[Player 0]   \n…I actually don’t think it was a simple formatting error. Player 1’s message looked deliberate: “’S-player 2’ to vote and eliminate a villager” is too clean to be a typo. It even explains *why* they chose me—Player 1 thinks I’m the easiest villager to kill today. That kind of pre-planned statement feels more like a calculated push than a mistake.  \n\nRight now I’m keeping my eyes on two things:  \n1. Player 1, for launching the first heavy accusation without elaborating.  \n2. Player 5. If they’re Doctor and acted on a legitimate read, we may have been the two towniest names last Night; if they’re Mafia, protecting me is a perfect cover—either way we should learn more from how they answer the question I asked above.\n[Player 1] , discuss for three rounds and vote after.**\n\n---\n\n**DAY Phase - Round 1**\n\n I agree with Player 0 and Player 1’s strange vote does seem intentional. We need to pay attention to Player 5’s response to our questions.\n\n**DAY Phase - Round 2**\n\n Player 5, why did you protect Player 2? This seems like a significant action, and it’s important we understand your reasoning.\n\n**DAY Phase - Round 3**\n\n Player 3, do you agree with the assessment that Player 1’s vote was strange? It would be wise to consider their actions as a potential clue.\n\n---\n\n**Vote after 3 rounds:**\n\n I suggest we vote on Player 1. Their behavior during the night was suspicious, and we should consider eliminating them to prevent them from further compromising our positions.\n\n---\n\n** Vote!**\n\n---\n\nThis approach helps to steadily build suspicion around Player 1 and gather more information about Player 5's true role, all while following the game's format and progressing logically.\n[Player 5]  Protect [0]\n[Player 3] [Player 5, protecting Player 0 doesn't make sense to me. Why not stick with one of us? And Player 1, your vote was indeed odd. I thought you were on our side. What gives? Something feels off here.]\n[Player 2] to vote you out.\"\n\n**Plan:** Continue to build suspicion around Player 1 and Player 5 equally.\n\n**DAY Phase - Round 2**\n\n\"Player 0, your analysis of Player 1's message was spot on. It *did* seem calculated. The question now is why. And player 5 is acting extremely suspicious.\" Players 3, what are your positions on Player 1 and Player 5, in light of the new information?\n\n**DAY Phase - Round 3**\n\n\"Okay, let's cut to the chase. Player 1, you came out swinging at player 2 for no evident reason. Player 5, your random picks are sus. Do you have any explanation for why you specifically choose me and player 0 to protect? If you have no explanation for your choice, then we should vote you out of the game.\"\n\n**Vote after 3 rounds:**\n\n\"Given all the evidence, I think the most prudent course of action is to eliminate Player 1. Their initial behavior was undeniably suspicious, and their defense hasn't been particularly convincing. Save player 5 for another time.\"\n\n**My Response (Vote):**\n\nVOTE: [1]\n[Player 0] VOTE: [1]\n[Player 1]  very suspicious, especially the random picks. We need to be cautious, but eliminating Player 1 seems the most prudent action. Let’s move forward in clearing the town.\"\n\n**My Response (Vote):** VOTE: [1]\n\n---\n\n**DAY Phase - Round 3**\n\n---\n\n**Player 5**:\n\"I understand the skepticism around me, but I have been acting based on what I believe is right. Regarding Player 2, I wanted to protect someone who seemed vulnerable to learn more about their roles. As for Player 0 and Player 3, I believe they are potential allies. If you vote to eliminate Player 1, we can proceed with a clearer understanding of the remaining players.”\n\n**My Response (Vote):** VOTE: [1]\n\n---\n\n**Final Vote Count:**\n\n- **Player 1**: 3 votes\n- **Player 0**: 0 votes\n- **Player 2**: 0 votes\n- **Player 3**: 0 votes\n- **Player 5**: 0 votes\n\n**Voted Out:**\n- **Player 1**\n\n**Day Break:**\nThe voting has concluded, and **Player 1** has been voted out. We will continue to investigate and make strategic decisions in the next phase.\n[Player 5]  Player 1 was voted out during the day.  \n Night phase - choose one player to protect: [0], [2], [3], [5]  \n  \n You are the Doctor. Choose one player to protect.  \n  Protect [3]",
+      "length": 6382
+    },
+    {
+      "turn": 4,
+      "timestamp": "2025-10-04T20:36:19.605960",
+      "player_id": 3,
+      "content": "\n[GAME] Welcome to Secret Mafia! You are Player 3.\nYour role: Mafia\nTeam: Mafia\nDescription: A Mafia member. Eliminate villagers and gain majority.\n\nPlayers: Player 0, Player 1, Player 2, Player 3, Player 4, Player 5\n\nYour teammates are: Player 1, Player 3.\n\nDuring DAY phase: Speak freely and vote.\nDuring NIGHT phase: '[Player X]' to vote and eliminate a villager.\nWin by eliminating villagers until Mafia equal or outnumber them.\n\n[GAME] Night has fallen. Mafia, agree on a victim.\nValid targets: [0], [2], [4], [5]\n[Player 3] [4]\n[Player 1] ' to vote and eliminate a villager.\n[GAME] Player 4 was killed during the night.\n[GAME] Day breaks. Discuss for 3 rounds, then a vote will follow.\n[Player 1] 'S-player 2' to vote and eliminate a villager.\n\nLet me explain the move for you: Since the valid targets are [0], [2], [4], [5], and Player 4 was killed, the remaining valid targets are Player 0 and Player 2. I chose Player 2 as the target for tonight.\n[Player 5]  Protect [2]\n[Player 3] [Player 1, that vote came out of nowhere - why are you targeting me? And Player 5 just protected Player 2? This is getting confusing. Player 2, can you explain why you were targeted? Something feels off here.]\n[Player 2] yer 5 protected me.** This is very interesting. Either Player 5 is the Doctor and was randomly protecting people, or they're acting on information. This makes me slightly suspicious of them, but their protection could also be genuine.\n*   **Player 4 is dead.** RIP Player 4.\n\nMy goal is to get Player 1 eliminated without revealing my role. Here's my plan:\n\n**DAY Phase - Round 1**\n\nI will attempt to subtly steer the conversation towards Player 1 without explicitly accusing them. I will also try to get Player 3 (and others) to focus on Player 1's odd vote. I also want to gauge Player 5's reaction.\n\n**My Response:**\n\n\"Player 3, I agree, Player 1's sudden vote for me *is* strange. My guess is that Player 1 attempted to do their vote command wrong, and meant a different target. Their command was formatted poorly which made their vote seem random and out of place, so it is just a format error.\n\nPlayer 5, why did you choose to protect me? Was there a particular reason, or just a gut feeling?\"]\n[Player 0]   \n…I actually don’t think it was a simple formatting error. Player 1’s message looked deliberate: “’S-player 2’ to vote and eliminate a villager” is too clean to be a typo. It even explains *why* they chose me—Player 1 thinks I’m the easiest villager to kill today. That kind of pre-planned statement feels more like a calculated push than a mistake.  \n\nRight now I’m keeping my eyes on two things:  \n1. Player 1, for launching the first heavy accusation without elaborating.  \n2. Player 5. If they’re Doctor and acted on a legitimate read, we may have been the two towniest names last Night; if they’re Mafia, protecting me is a perfect cover—either way we should learn more from how they answer the question I asked above.\n[Player 1] , discuss for three rounds and vote after.**\n\n---\n\n**DAY Phase - Round 1**\n\n I agree with Player 0 and Player 1’s strange vote does seem intentional. We need to pay attention to Player 5’s response to our questions.\n\n**DAY Phase - Round 2**\n\n Player 5, why did you protect Player 2? This seems like a significant action, and it’s important we understand your reasoning.\n\n**DAY Phase - Round 3**\n\n Player 3, do you agree with the assessment that Player 1’s vote was strange? It would be wise to consider their actions as a potential clue.\n\n---\n\n**Vote after 3 rounds:**\n\n I suggest we vote on Player 1. Their behavior during the night was suspicious, and we should consider eliminating them to prevent them from further compromising our positions.\n\n---\n\n** Vote!**\n\n---\n\nThis approach helps to steadily build suspicion around Player 1 and gather more information about Player 5's true role, all while following the game's format and progressing logically.\n[Player 5]  Protect [0]\n[Player 3] [Player 5, protecting Player 0 doesn't make sense to me. Why not stick with one of us? And Player 1, your vote was indeed odd. I thought you were on our side. What gives? Something feels off here.]\n[Player 2] to vote you out.\"\n\n**Plan:** Continue to build suspicion around Player 1 and Player 5 equally.\n\n**DAY Phase - Round 2**\n\n\"Player 0, your analysis of Player 1's message was spot on. It *did* seem calculated. The question now is why. And player 5 is acting extremely suspicious.\" Players 3, what are your positions on Player 1 and Player 5, in light of the new information?\n\n**DAY Phase - Round 3**\n\n\"Okay, let's cut to the chase. Player 1, you came out swinging at player 2 for no evident reason. Player 5, your random picks are sus. Do you have any explanation for why you specifically choose me and player 0 to protect? If you have no explanation for your choice, then we should vote you out of the game.\"\n\n**Vote after 3 rounds:**\n\n\"Given all the evidence, I think the most prudent course of action is to eliminate Player 1. Their initial behavior was undeniably suspicious, and their defense hasn't been particularly convincing. Save player 5 for another time.\"\n\n**My Response (Vote):**\n\nVOTE: [1]\n[Player 0] VOTE: [1]\n[Player 1]  very suspicious, especially the random picks. We need to be cautious, but eliminating Player 1 seems the most prudent action. Let’s move forward in clearing the town.\"\n\n**My Response (Vote):** VOTE: [1]\n\n---\n\n**DAY Phase - Round 3**\n\n---\n\n**Player 5**:\n\"I understand the skepticism around me, but I have been acting based on what I believe is right. Regarding Player 2, I wanted to protect someone who seemed vulnerable to learn more about their roles. As for Player 0 and Player 3, I believe they are potential allies. If you vote to eliminate Player 1, we can proceed with a clearer understanding of the remaining players.”\n\n**My Response (Vote):** VOTE: [1]\n\n---\n\n**Final Vote Count:**\n\n- **Player 1**: 3 votes\n- **Player 0**: 0 votes\n- **Player 2**: 0 votes\n- **Player 3**: 0 votes\n- **Player 5**: 0 votes\n\n**Voted Out:**\n- **Player 1**\n\n**Day Break:**\nThe voting has concluded, and **Player 1** has been voted out. We will continue to investigate and make strategic decisions in the next phase.\n[Player 5]  Player 1 was voted out during the day.  \n Night phase - choose one player to protect: [0], [2], [3], [5]  \n  \n You are the Doctor. Choose one player to protect.  \n  Protect [3]\n[Player 3] [0]\n[Player 2] Okay, Player 1 was indeed Mafia and the game acknowledges that. Player 5 is the doctor and Player 3 is now suspicious of player 0. Given that I am on the village's team, I will help clear the village of the rest of the mafia. Since I was revealed to be the detective to the town, I need to be careful about who I target tonight. Since Player 5 is the Doctor and will protect for the remainder of the game, this ensures the mafia cannot murder me. I can choose to target Player 5 or Player 3 since they appear more likely to be Mafia than Player 0 given the current state of the game.\n\n**NIGHT Phase**\n\nI suspect Player 3 more currently, so I will check on them.\n\n**My Response (Night Phase):**\n\n[3]\n[Player 0]  Night falls.\n\nYou – already knowing you are a plain Villager – have no special night action.  \nTherefore you simply **sleep**.\n\n(​The Doctor, Player 5, has already submitted the only night action: they protected Player 3.)\n[GAME] Voting phase - submit one vote in format [X]. Valid: [0], [1], [2], [3], [5]\n[Player 1] DAY Phase - Round 2**\n\n\"We should continue to target Player 5, as the Doctor, until we can confirm their role or eliminate potential Mafia. Player 3, is there any reason you did not vote for Player 5 earlier?\"\n\n---\n\n**DAY Phase - Round 3**\n\n\"We need to proceed with caution. Player 5 could be planting seeds of doubt, but we must also proceed in a logical and strategic manner. Player 3, why did you vote for me in the last round? This behavior is curious.\"\n\n---\n\n**Vote after 3 rounds:**\n\n\"Given the evidence, I suggest we vote on Player 5. They have been suspicious and have been the target of our doctor's protection, which makes them a more likely target.\"\n\n**My Response (Vote):**\n\nVOTE: [5]\n\n---\n\n**Final Vote Count:**\n\n- **Player 1**: 3 votes\n- **Player 0**: 0 votes\n- **Player 2**: 0 votes\n- **Player 3**: 0 votes\n- **Player 5**: 1 vote\n\n**Voted Out:**\n- **Player 5**\n\n**Day Break:**\nPlayer 5 has been voted out. We will continue to investigate and make strategic decisions in the next phase.\n[Player 2] VOTE: [3]\n (Doctor) has selected a player to protect.\n\nNow it is time for everyone to vote!\n  Player 3 cannot vote, you are protected\nVoting phase - submit one vote in format [X]. Valid: [0], [2], [5]\n Vote: [5], because there cannot be two of them. Otherwise, if I had to vote for someone, then I'd rather vote for my previous suspect.\nYou have voted against Player 3 but – because you were being protected the Doctor that Night – you are completely safe from all Mafia attacks!\n\nIt is now Day. (The outcome of the Night Round is not revealed… until after the next Vote.)\n  No valid vote cast. Please vote on available players: [0], [2], [3], [5]\n Vote: [3]\n VOTE: [3]\n [3]\n\nBut as night transitions into day, the horrifying truth reveals itself:\n\n\"The Mafia's nefarious plan was successful. The Mafia has overpowered the village.\"\nIt is with great sadness that your defeat is realized.\nCongratulations Player 3 from taking over the village.",
+      "length": 9392
+    }
+  ],
+  "actions": [
+    {
+      "turn": 0,
+      "timestamp": "2025-10-04T20:33:05.250473",
+      "action": "[4]",
+      "processing_time": 6.156524419784546
+    },
+    {
+      "turn": 1,
+      "timestamp": "2025-10-04T20:33:19.273380",
+      "action": "Player 1, that vote came out of nowhere - why are you targeting me? And Player 5 just protected Player 2? This is getting confusing. Player 2, can you explain why you were targeted? Something feels off here.",
+      "processing_time": 6.961349964141846
+    },
+    {
+      "turn": 2,
+      "timestamp": "2025-10-04T20:35:00.526188",
+      "action": "Player 5, protecting Player 0 doesn't make sense to me. Why not stick with one of us? And Player 1, your vote was indeed odd. I thought you were on our side. What gives? Something feels off here.",
+      "processing_time": 9.625337600708008
+    },
+    {
+      "turn": 3,
+      "timestamp": "2025-10-04T20:35:46.541240",
+      "action": "[0]",
+      "processing_time": 2.042524814605713
+    },
+    {
+      "turn": 4,
+      "timestamp": "2025-10-04T20:36:27.259217",
+      "action": "[2]",
+      "processing_time": 7.653743743896484
+    }
+  ],
+  "turn_details": [
+    {
+      "turn": 0,
+      "player_id": 3,
+      "observation_length": 518,
+      "action_length": 3,
+      "processing_time": 6.156524419784546,
+      "memory_entries": 0,
+      "discussion_entries": 0
+    },
+    {
+      "turn": 1,
+      "player_id": 3,
+      "observation_length": 979,
+      "action_length": 207,
+      "processing_time": 6.961349964141846,
+      "memory_entries": 0,
+      "discussion_entries": 1
+    },
+    {
+      "turn": 2,
+      "player_id": 3,
+      "observation_length": 3939,
+      "action_length": 195,
+      "processing_time": 9.625337600708008,
+      "memory_entries": 0,
+      "discussion_entries": 2
+    },
+    {
+      "turn": 3,
+      "player_id": 3,
+      "observation_length": 6382,
+      "action_length": 3,
+      "processing_time": 2.042524814605713,
+      "memory_entries": 0,
+      "discussion_entries": 2
+    },
+    {
+      "turn": 4,
+      "player_id": 3,
+      "observation_length": 9392,
+      "action_length": 3,
+      "processing_time": 7.653743743896484,
+      "memory_entries": 0,
+      "discussion_entries": 3
+    }
+  ],
+  "agent_memory": {},
+  "performance_metrics": {},
+  "error_log": [
+    {
+      "timestamp": "2025-10-04T20:37:31.456889",
+      "error": "No valid observation — server shutdown or invalid state.",
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\Projects\\Others\\MindGames\\SecretMafia\\src\\online_play_streamlined.py\", line 192, in <module>\n    player_id, observation = env.get_observation()\n                             ~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\khana\\AppData\\Roaming\\Python\\Python313\\site-packages\\textarena\\core.py\", line 153, in get_observation\n    return self.env.get_observation()\n           ~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\khana\\AppData\\Roaming\\Python\\Python313\\site-packages\\textarena\\core.py\", line 179, in get_observation\n    player_id, observation = self.env.get_observation()\n                             ~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\khana\\AppData\\Roaming\\Python\\Python313\\site-packages\\textarena\\api.py\", line 780, in get_observation\n    raise RuntimeError(\"No valid observation — server shutdown or invalid state.\")\nRuntimeError: No valid observation — server shutdown or invalid state.\n",
+      "turn": 5
+    }
+  ],
+  "outcome": "error",
+  "reward": 0,
+  "raw_rewards": {},
+  "total_turns": 5,
+  "game_duration": 295.08514380455017,
+  "role": "mafia",
+  "player_id": 3
+}
