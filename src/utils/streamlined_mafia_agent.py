@@ -45,25 +45,29 @@ class StreamlinedMafiaAgent(ModalAgent):
     
     def __init__(self, modal_endpoint_url: str):
         super().__init__(modal_endpoint_url)
-        
+
         # Core strategic components (keep the valuable ones)
         self.tom_engine = AdvancedToMEngine()
         self.bidding_system = StrategicBiddingSystem()
-        
+
         # Simplified memory
         self.memory = SimpleGameMemory()
-        
+
         # Game state tracking
         self.my_role: Optional[str] = None
         self.my_player_id: int = -1
         self.alive_players: List[int] = []
         self.turn_count: int = 0
-        
+
         # Performance tracking
         self.total_rewards = 0.0
         self.strategic_decisions = 0
-        
-        print("Agent initialized")
+
+        # TRM-inspired enhancement: Two-step reasoning for discussion
+        self.enable_two_step_reasoning = True  # Set to False to disable
+        self.reasoning_cache = {}  # Store internal reasoning for debugging
+
+        print("Agent initialized (Two-Step Reasoning: ENABLED)" if self.enable_two_step_reasoning else "Agent initialized")
 
     def __call__(self, observation: str) -> str:
         """Main agent decision with logical phase detection and response extraction"""
@@ -283,9 +287,9 @@ class StreamlinedMafiaAgent(ModalAgent):
 
     def _call_modal_with_enhanced_timeout(self, user_prompt: str, phase: str = "discussion", timeout: int = 30) -> str:
         """Call Modal with proper system prompts per phase"""
-        
+
         # Create phase-specific system prompts with Qwen recommendation
-        base_system = "You are Qwen, created by Alibaba Cloud. You are a helpful assistant."
+        base_system = "You are Qwen, created by Alibaba Cloud. You are a helpful assistant. ALWAYS respond in ENGLISH language, never in Chinese (不要用中文)."
         
         if phase == "action":
             # For voting and night actions
@@ -839,10 +843,40 @@ Respond with ONLY [NUMBER] format (e.g., [3]):"""
         return self._extract_move(response, observation)
     
     def _handle_discussion_action(self, observation: str, game_context) -> str:
-        """Handle discussion phase"""
+        """Handle discussion phase with optional two-step reasoning"""
+
+        # ENHANCEMENT: Two-step reasoning (Reason → Act)
+        # Step 1: Generate internal strategic reasoning (private)
+        # Step 2: Generate public action based on reasoning
+        # Falls back to original behavior if disabled or fails
+
+        if self.enable_two_step_reasoning:
+            try:
+                # Step 1: Internal reasoning
+                internal_reasoning = self._generate_internal_reasoning(observation, game_context)
+
+                if internal_reasoning and len(internal_reasoning.strip()) >= 10:
+                    # Store for debugging
+                    self.reasoning_cache[self.turn_count] = internal_reasoning
+
+                    # Step 2: Generate action from reasoning
+                    response = self._generate_action_from_reasoning(observation, game_context, internal_reasoning)
+
+                    # Store in memory
+                    self.memory.discussion_history.append(response)
+                    if len(self.memory.discussion_history) > 5:
+                        self.memory.discussion_history = self.memory.discussion_history[-5:]
+
+                    return response
+                else:
+                    print("⚠️ Reasoning step failed, using original method")
+            except Exception as e:
+                print(f"⚠️ Two-step reasoning failed: {e}, falling back to original")
+
+        # ORIGINAL METHOD (fallback or when two-step disabled)
         tom_insights = self._generate_tom_insights(game_context)
         strategic_context = self._generate_strategic_context(game_context)
-        
+
         # Get advanced ToM analysis for discussion
         advanced_tom = ""
         if hasattr(self.tom_engine, 'get_comprehensive_strategic_insights'):
@@ -853,13 +887,13 @@ Respond with ONLY [NUMBER] format (e.g., [3]):"""
             except Exception as e:
                 print(f"⚠️ Advanced ToM failed: {e}")
                 advanced_tom = ""
-        
+
         # Extract recent player statements to avoid repetitive responses
         recent_statements = self._extract_recent_player_statements(observation)
-        
+
         # Check if we recently said something similar
         recent_discussion = "\n".join(self.memory.discussion_history[-3:]) if self.memory.discussion_history else "None"
-        
+
         # Include investigation results if we're Detective - CRITICAL TO SHARE
         investigation_info = ""
         if self.my_role == "detective" and self.memory.investigation_results:
@@ -867,13 +901,13 @@ Respond with ONLY [NUMBER] format (e.g., [3]):"""
             investigation_info += "\n- You MUST share these results to help the Village team win!"
             investigation_info += "\n- DO NOT fabricate or make up fake investigation results!"
             investigation_info += "\n- Example format: 'I'm the Detective. Player X is CONFIRMED [MAFIA/INNOCENT].'"
-        
+
         # Extract just the most recent NEW information that requires a response
         latest_developments = self._extract_latest_developments(observation)
-        
+
         # Generate a completely different prompt each turn to force unique responses
         unique_context = self._generate_unique_turn_context(self.turn_count, observation, recent_discussion)
-        
+
         # Get role-specific strategy
         role_strategy = self._get_role_specific_discussion_strategy(self.my_role, observation)
         
@@ -1635,14 +1669,133 @@ SMART PROTECTION STRATEGY:
 
     def _is_repetitive_response(self, response: str) -> bool:
         """Check if response is repetitive compared to recent responses"""
-        
+
         if len(self.memory.discussion_history) < 2:
             return False
-        
+
         # Check against last few responses
         recent_responses = self.memory.discussion_history[-3:]
         for past_response in recent_responses:
             if len(set(response.split()) & set(past_response.split())) > len(response.split()) * 0.6:
                 return True
-        
+
         return False
+
+    # =========================================================================
+    # TRM-INSPIRED TWO-STEP REASONING ENHANCEMENT
+    # =========================================================================
+
+    def _generate_internal_reasoning(self, observation: str, game_context) -> str:
+        """
+        Step 1: Generate internal strategic reasoning (inspired by TRM's 'z' latent feature)
+
+        This is the agent's private strategic analysis before speaking publicly.
+        Returns empty string on failure (triggers fallback to original method).
+        """
+
+        # Get investigation info if Detective
+        investigation_info = ""
+        if self.my_role == "detective" and self.memory.investigation_results:
+            investigation_info = f"\nYour investigation results: {self.memory.investigation_results}"
+
+        reasoning_prompt = f"""RESPOND IN ENGLISH ONLY. DO NOT USE CHINESE OR ANY OTHER LANGUAGE.
+
+You are Player {self.my_player_id} ({self.my_role}) - INTERNAL STRATEGIC ANALYSIS
+
+THIS IS YOUR PRIVATE THINKING - NOT WHAT YOU WILL SAY PUBLICLY.
+
+CRITICAL: Your response must be in ENGLISH language, not Chinese (不要用中文).
+
+CURRENT SITUATION:
+{observation[-600:]}
+
+YOUR ROLE: {self.my_role}{investigation_info}
+ALIVE PLAYERS: {self.alive_players}
+
+STRATEGIC ANALYSIS - Think through these questions IN ENGLISH:
+1. What are the most likely roles of other players based on their behavior?
+2. Who poses the biggest threat to your team (Village or Mafia)?
+3. What is your primary strategic goal for this turn?
+4. What information should you reveal vs. conceal?
+5. How can you advance your team's win condition this turn?
+
+ROLE-SPECIFIC INTERNAL THINKING:
+- Mafia: Who should you deflect suspicion toward? How do you protect teammates?
+- Detective: Should you reveal investigation results now? Who needs to know?
+- Doctor: How do you stay subtle while supporting Village?
+- Villager: Who is most suspicious? What evidence supports this?
+
+Provide your step-by-step internal analysis IN ENGLISH (2-5 sentences).
+This is your PRIVATE strategic thinking BEFORE deciding what to say.
+RESPOND IN ENGLISH ONLY:"""
+
+        try:
+            # Shorter timeout for reasoning (it's just internal analysis)
+            reasoning = self._call_modal_with_enhanced_timeout(
+                reasoning_prompt,
+                phase="discussion",
+                timeout=30
+            )
+
+            print(f"💭 Internal reasoning: {reasoning[:80]}...")
+            return reasoning.strip()
+
+        except Exception as e:
+            print(f"⚠️ Internal reasoning generation failed: {e}")
+            return ""  # Triggers fallback
+
+    def _generate_action_from_reasoning(
+        self,
+        observation: str,
+        game_context,
+        internal_reasoning: str
+    ) -> str:
+        """
+        Step 2: Generate public action based on internal reasoning (inspired by TRM's 'y' answer)
+
+        This converts private strategic analysis into a public-facing response.
+        Falls back to original method on failure.
+        """
+
+        # Get role-specific strategy
+        role_strategy = self._get_role_specific_discussion_strategy(self.my_role, observation)
+
+        action_prompt = f"""RESPOND IN ENGLISH ONLY. DO NOT USE CHINESE OR ANY OTHER LANGUAGE.
+
+You are Player {self.my_player_id} ({self.my_role}) - PUBLIC RESPONSE
+
+CRITICAL: Your response must be in ENGLISH language, not Chinese (不要用中文).
+
+YOUR INTERNAL STRATEGIC ANALYSIS:
+"{internal_reasoning}"
+
+CURRENT GAME SITUATION:
+{observation[-500:]}
+
+ROLE STRATEGY:
+{role_strategy[:300]}
+
+CRITICAL: Based on your internal analysis above, what do you say publicly to other players?
+
+RESPONSE REQUIREMENTS:
+- MUST be in ENGLISH language
+- Natural conversation (20-100 words)
+- Stay in character as Player {self.my_player_id}
+- Align with your internal strategic analysis
+- Advance your team's goals (Mafia team or Village team)
+- Sound like a real player having a conversation, NOT like an analyst
+
+Generate your public statement IN ENGLISH now:"""
+
+        try:
+            response = self._call_modal_with_enhanced_timeout(
+                action_prompt,
+                phase="discussion",
+                timeout=40
+            )
+
+            return response.strip()
+
+        except Exception as e:
+            print(f"⚠️ Action generation from reasoning failed: {e}")
+            raise  # Re-raise to trigger fallback in _handle_discussion_action

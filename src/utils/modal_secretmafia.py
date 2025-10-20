@@ -1,8 +1,3 @@
-"""
-Enhanced Modal Labs deployment for SecretMafia with social deduction improvements
-This serves the model with enhanced prompting and strategic reasoning
-"""
-
 import modal
 import re
 import time
@@ -19,6 +14,12 @@ logger = logging.getLogger(__name__)
 # Create Modal app
 app = modal.App("enhanced-secretmafia")
 
+# Create volume for fine-tuned model (same as training volume)
+finetuned_volume = modal.Volume.from_name("mafia-data", create_if_missing=True)
+
+# Model selection - change this variable to switch models
+USE_FINETUNED_MODEL = False  # Set to True for fine-tuned, False for base model
+
 # Define the image with required dependencies
 image = (
     modal.Image.debian_slim()
@@ -26,7 +27,7 @@ image = (
         "git"
     ])
     .pip_install([
-        "git+https://github.com/huggingface/transformers@4970b23cedaf745f963779b4eae68da281e8c6ca",
+        "transformers>=4.51.0",
         "torch>=2.0.0",
         "accelerate>=0.21.0",
         "bitsandbytes>=0.41.0",
@@ -60,10 +61,11 @@ class GenerateResponse(BaseModel):
     timeout=1200,
     scaledown_window=1800,
     secrets=[modal.Secret.from_name("huggingface-secret")],
+    volumes={"/finetuned": finetuned_volume},  # Mount volume for fine-tuned model
 )
 @modal.concurrent(max_inputs=10)
 class EnhancedSecretMafiaModel:
-    model_name: str = modal.parameter(default="Qwen/Qwen2.5-7B-Instruct")
+    model_name: str = modal.parameter(default="Qwen/Qwen3-8B")
     
     @modal.enter()
     def load_model(self):
@@ -78,9 +80,22 @@ class EnhancedSecretMafiaModel:
         hf_token = os.getenv("HUGGINGFACE_TOKEN")
         
         try:
+            # Determine model path
+            if USE_FINETUNED_MODEL:
+                finetuned_path = "/finetuned/qwen3-mafia-merged"
+                if os.path.exists(finetuned_path):
+                    model_path = finetuned_path
+                    logger.info(f"🎯 Using fine-tuned model: {model_path}")
+                else:
+                    logger.warning(f"Fine-tuned model not found at {finetuned_path}, falling back to base model")
+                    model_path = self.model_name
+            else:
+                model_path = self.model_name
+                logger.info(f"🔤 Using base model: {model_path}")
+            
             # Load tokenizer
             self.tokenizer = AutoTokenizer.from_pretrained(
-                self.model_name,
+                model_path if not model_path.startswith('/') else self.model_name,  # Use base for tokenizer if local path
                 trust_remote_code=True,
                 token=hf_token
             )
@@ -89,13 +104,13 @@ class EnhancedSecretMafiaModel:
             
             # Load model
             self.model = AutoModelForCausalLM.from_pretrained(
-                self.model_name,
+                model_path,
                 torch_dtype=torch.float16,
                 device_map="auto",
                 trust_remote_code=True,
                 load_in_8bit=True,
                 low_cpu_mem_usage=True,
-                token=hf_token
+                token=hf_token if not model_path.startswith('/') else None  # No token needed for local path
             )
             
             # Create pipeline
@@ -114,7 +129,8 @@ class EnhancedSecretMafiaModel:
             )
             
             total_time = time.time() - start_time
-            logger.info(f"Enhanced model loaded in {total_time:.2f} seconds")
+            model_type = "Fine-tuned" if USE_FINETUNED_MODEL and model_path.startswith('/') else "Base"
+            logger.info(f"Enhanced {model_type} model loaded in {total_time:.2f} seconds")
             
         except Exception as e:
             logger.error(f"Error loading enhanced model: {e}")
@@ -338,11 +354,29 @@ class EnhancedSecretMafiaModel:
         return info
     
     def _parse_qwen_output(self, response: str) -> str:
-        """Parse Qwen model output - direct response without XML tags"""
-        # Qwen 2.5 generates direct responses, no special parsing needed
-        # Just clean up any potential formatting artifacts
+        """Parse Qwen3-8B model output - handle thinking mode"""
+        # Qwen3-8B with thinking mode generates <think>...</think> content
+        # Extract the final response after thinking
         
-        # Remove any XML-style tags if they somehow appear
+        # Check if thinking mode was used (contains </think> marker)
+        if '</think>' in response:
+            try:
+                # Split at </think> and take the content after
+                parts = response.split('</think>')
+                if len(parts) > 1:
+                    # Get the response part (after thinking)
+                    actual_response = parts[-1].strip()
+                    if actual_response:
+                        response = actual_response
+                    else:
+                        # If no content after </think>, use the thinking content
+                        thinking_part = parts[0].replace('<think>', '').strip()
+                        if thinking_part:
+                            response = thinking_part
+            except Exception as e:
+                logger.warning(f"Error parsing thinking content: {e}")
+        
+        # Remove any remaining XML-style tags if they somehow appear
         response = re.sub(r'</?[^>]*>', '', response).strip()
         
         # Remove excessive whitespace
@@ -759,9 +793,10 @@ Valid targets: {game_info['valid_targets']}"""
                     top_p = 0.6
             
             try:
-                # Disable thinking mode for faster responses in game context
+                # Use thinking mode for Qwen3-8B enhanced reasoning in complex scenarios
+                enable_thinking = phase != "action"  # Enable thinking for discussion, disable for actions
                 formatted_prompt = self.tokenizer.apply_chat_template(
-                    messages, tokenize=False, add_generation_prompt=True, enable_thinking=False
+                    messages, tokenize=False, add_generation_prompt=True, enable_thinking=enable_thinking
                 )
             except:
                 # Fallback to simple concatenation if chat template fails
@@ -866,14 +901,20 @@ def fastapi_app():
     @web_app.get("/health")
     async def health_check():
         """Enhanced health check"""
+        model_type = "Fine-tuned Qwen3-8B" if USE_FINETUNED_MODEL else "Base Qwen3-8B"
+        
         return {
             "status": "healthy",
-            "model": "Enhanced SecretMafia Agent",
+            "model": f"Enhanced SecretMafia Agent ({model_type})",
+            "model_type": model_type,
+            "use_finetuned": USE_FINETUNED_MODEL,
             "features": [
                 "Strategic role-based reasoning",
                 "Phase-aware response generation", 
                 "Enhanced prompt engineering",
-                "Behavioral pattern analysis"
+                "Behavioral pattern analysis",
+                "DPO preference learning" if USE_FINETUNED_MODEL else "Inference-time optimization",
+                "Self-consistency training" if USE_FINETUNED_MODEL else "Theory of Mind reasoning"
             ],
             "timestamp": datetime.now().isoformat()
         }
