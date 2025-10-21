@@ -1,9 +1,3 @@
-#!/usr/bin/env python3
-"""
-Comprehensive Edge Case Testing Suite
-Tests every possible failure mode and edge case
-"""
-
 import sys
 import os
 import time

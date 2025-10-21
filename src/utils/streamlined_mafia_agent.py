@@ -1,9 +1,3 @@
-"""
-Streamlined Mafia Agent - Theory of Mind + Strategic Components
-Removes overcomplication while keeping core strategic reasoning
-Rules compliant - all decisions through LLM reasoning
-"""
-
 import re
 import time
 import json
