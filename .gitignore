@@ -1,0 +1,77 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs (keep directory structure but ignore contents)
+game_logs/*.json
+!game_logs/.gitkeep
+
+# Model checkpoints and data
+*.pth
+*.bin
+*.safetensors
+training/data/*.json
+!training/data/.gitignore
+
+# Secrets
+.env
+*.key
+*.pem
+secrets/
+
+# Temporary files
+*.tmp
+*.bak
+*.backup
+.cache/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Modal
+.modal/
+
+# Test outputs
+test_outputs/
+experiments/
+
+# Large files
+*.tar.gz
+*.zip
+*.h5

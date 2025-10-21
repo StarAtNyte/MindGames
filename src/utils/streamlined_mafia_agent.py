@@ -12,7 +12,28 @@ from typing import Dict, List, Optional
 from dataclasses import dataclass
 from .agent import ModalAgent
 from .theory_of_mind import AdvancedToMEngine
-from .bidding_system import StrategicBiddingSystem, GameContext, UrgencyLevel
+
+class BoundedList(list):
+    """List that automatically caps itself at a maximum size"""
+    def __init__(self, maxlen=5, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.maxlen = maxlen
+        # Trim to maxlen if initialized with too many items
+        if len(self) > self.maxlen:
+            self[:] = self[-self.maxlen:]
+
+    def append(self, item):
+        """Append item and maintain max length"""
+        super().append(item)
+        if len(self) > self.maxlen:
+            # Remove oldest items to maintain maxlen
+            del self[0:len(self) - self.maxlen]
+
+    def extend(self, items):
+        """Extend list and maintain max length"""
+        super().extend(items)
+        if len(self) > self.maxlen:
+            del self[0:len(self) - self.maxlen]
 
 @dataclass
 class SimpleGameMemory:
@@ -20,8 +41,12 @@ class SimpleGameMemory:
     investigation_results: Dict[int, str] = None
     role_claims: Dict[int, str] = None
     voting_patterns: Dict[int, List[int]] = None
-    discussion_history: List[str] = None
-    
+    discussion_history: BoundedList = None
+
+    # LLM-based summarization cache
+    observation_summaries: BoundedList = None  # Cache of recent summaries
+    last_observation_hash: str = None  # Track if observation changed
+
     def __post_init__(self):
         if self.investigation_results is None:
             self.investigation_results = {}
@@ -30,7 +55,11 @@ class SimpleGameMemory:
         if self.voting_patterns is None:
             self.voting_patterns = {}
         if self.discussion_history is None:
-            self.discussion_history = []
+            self.discussion_history = BoundedList(maxlen=5)
+        if self.observation_summaries is None:
+            self.observation_summaries = BoundedList(maxlen=10)
+        if self.last_observation_hash is None:
+            self.last_observation_hash = ""
 
 @dataclass
 class SimpleGameContext:
@@ -46,9 +75,8 @@ class StreamlinedMafiaAgent(ModalAgent):
     def __init__(self, modal_endpoint_url: str):
         super().__init__(modal_endpoint_url)
 
-        # Core strategic components (keep the valuable ones)
+        # Core strategic components
         self.tom_engine = AdvancedToMEngine()
-        self.bidding_system = StrategicBiddingSystem()
 
         # Simplified memory
         self.memory = SimpleGameMemory()
@@ -166,6 +194,63 @@ class StreamlinedMafiaAgent(ModalAgent):
             if player_match:
                 player_id = int(player_match.group(1))
                 self.memory.investigation_results[player_id] = "MAFIA"
+
+    def _summarize_observation(self, observation: str) -> str:
+        """
+        Use LLM to summarize observation into key events and statements.
+        Caches result to avoid re-summarizing identical observations.
+        """
+        import hashlib
+
+        # Check if observation changed
+        obs_hash = hashlib.md5(observation.encode()).hexdigest()
+        if obs_hash == self.memory.last_observation_hash and self.memory.observation_summaries:
+            # Return cached summary
+            return self.memory.observation_summaries[-1]
+
+        # Skip summarization if observation is short enough
+        if len(observation) < 1000:
+            self.memory.last_observation_hash = obs_hash
+            return observation
+
+        # Use LLM to summarize
+        summary_prompt = f"""/no_think
+
+Summarize this Mafia game observation into key events and recent statements.
+
+OBSERVATION:
+{observation}
+
+Extract:
+1. Deaths/eliminations (who died and how)
+2. Role claims (who claimed what role)
+3. Investigation results (if any)
+4. Voting information (who voted for whom)
+5. Recent accusations and key statements (last 2-3 per player)
+
+Provide a concise summary (200-400 words) focusing on actionable information.
+Format: Clear bullet points or short paragraphs."""
+
+        try:
+            summary = self._call_modal_with_enhanced_timeout(
+                summary_prompt,
+                phase="discussion",
+                timeout=30
+            )
+
+            # Cache the summary
+            self.memory.observation_summaries.append(summary)
+            self.memory.last_observation_hash = obs_hash
+
+            print(f"📝 Observation summarized: {len(observation)} chars → {len(summary)} chars")
+            return summary
+
+        except Exception as e:
+            print(f"⚠️ Summarization failed: {e}, using truncated observation")
+            # Fallback: use last 2000 characters
+            truncated = observation[-2000:] if len(observation) > 2000 else observation
+            self.memory.last_observation_hash = obs_hash
+            return truncated
 
     def _extract_player_statements(self, observation: str) -> List[Dict]:
         """Extract player statements from observation for ToM analysis"""
@@ -286,62 +371,48 @@ class StreamlinedMafiaAgent(ModalAgent):
         return "\n".join(context)
 
     def _call_modal_with_enhanced_timeout(self, user_prompt: str, phase: str = "discussion", timeout: int = 30) -> str:
-        """Call Modal with proper system prompts per phase"""
+        """Call Modal with proper system prompts per phase (Qwen3-8B optimized)"""
 
-        # Create phase-specific system prompts with Qwen recommendation
-        base_system = "You are Qwen, created by Alibaba Cloud. You are a helpful assistant. ALWAYS respond in ENGLISH language, never in Chinese (不要用中文)."
-        
+        # Qwen3-8B best practice: No default system prompt, concise role assignment
+
         if phase == "action":
-            # For voting and night actions
-            system_prompt = f"""{base_system}
+            # For voting and night actions - use /no_think for direct responses
+            system_prompt = f"""You are Player {getattr(self, 'my_player_id', 'X')}, role: {getattr(self, 'my_role', 'Unknown')}.
 
-You are Player {getattr(self, 'my_player_id', 'X')} in a Mafia game. Your role: {getattr(self, 'my_role', 'Unknown')}.
+ACTION PHASE - Respond with [NUMBER] only.
 
-CRITICAL: YOU ARE PLAYER {getattr(self, 'my_player_id', 'X')} - DO NOT TARGET YOURSELF!
+DO NOT target yourself (Player {getattr(self, 'my_player_id', 'X')}).
 
-ROLE-SPECIFIC STRATEGY:
-- Villager: Vote to eliminate suspected Mafia members
-- Mafia: Eliminate Village power roles (Doctor/Detective) or strong Village players  
-- Doctor: Protect confirmed Village roles (NOT yourself unless desperate)
-- Detective: Investigate suspicious players to confirm Mafia status
+STRATEGY:
+- Villager: Eliminate suspected Mafia
+- Mafia: Eliminate Village power roles (Doctor/Detective)
+- Doctor: Protect Village roles (not yourself unless desperate)
+- Detective: Investigate suspicious players
 
-ACTION PHASE REQUIREMENTS:
-- ALWAYS respond with EXACTLY [NUMBER] format (e.g., [3], [5])
-- Choose from the valid targets provided in the user prompt
-- Do NOT add any explanation or extra text
-- CRITICAL: Do NOT vote/target yourself (Player {getattr(self, 'my_player_id', 'X')})
-- Prioritize strategic targets based on your role
-- Example response: [3] (just the number in brackets, nothing else)"""
+Response format: [3] (number in brackets only, no explanation)"""
 
         else:
-            # For discussion phases
-            system_prompt = f"""{base_system}
+            # For discussion phases - simple role assignment
+            system_prompt = f"""You are Player {getattr(self, 'my_player_id', 'X')}, role: {getattr(self, 'my_role', 'Unknown')}.
 
-You are Player {getattr(self, 'my_player_id', 'X')} in a Mafia game. Your role: {getattr(self, 'my_role', 'Unknown')}.
+DISCUSSION PHASE - Natural conversation with other players.
 
-DISCUSSION PHASE IDENTITY:
-- You are Player {getattr(self, 'my_player_id', 'X')} speaking directly to other players
-- Use "I" when referring to yourself and your actions
-- Address other players by their Player numbers (Player 0, Player 1, etc.)
-- You are having a real conversation with other living players
+IDENTITY:
+- Speak as Player {getattr(self, 'my_player_id', 'X')}
+- Use "I" for yourself
+- Address others by player number (Player 0, Player 1, etc.)
 
-DISCUSSION PHASE RULES:
-- Respond with natural conversation (20-100 words)
-- Use natural language only - no [number] voting format during discussion
-- Ask questions, make accusations, defend yourself
-- Build suspicion and cases against likely Mafia players
+STYLE:
+- Natural conversation (20-100 words)
+- Make accusations, defend yourself, ask questions
+- Build cases against suspected Mafia
 
-CONVERSATION STYLE:
-- "I think you're suspicious because..."
-- "Player 2, why did you act that way?"
-- "Your story doesn't make sense to me."
-- "I don't trust Player 3's explanation."
+Examples:
+- "Player 2, why did you vote that way?"
+- "I don't trust your explanation."
+- "That doesn't make sense to me."
 
-PURPOSE: Build cases and suspicion during discussion, vote during voting phase.
-
-YOUR MISSION AS A PLAYER:
-Participate in the discussion by making accusations, defending yourself/others, or asking questions.
-You are trying to win the game for your team."""
+Goal: Win for your team through discussion and deduction."""
 
         # Send proper system/user message structure to Modal
         
@@ -695,14 +766,17 @@ Respond appropriately for your role:"""
     
     def _handle_night_action(self, observation: str, game_context) -> str:
         """Handle night action phase - give LLM clear context with valid choices"""
-        
+
+        # LLM-BASED SUMMARIZATION: Compress observation if needed
+        summarized_obs = self._summarize_observation(observation)
+
         # Extract valid targets and include in prompt for LLM context
         valid_targets = self._extract_valid_targets_from_observation(observation)
-        
+
         # Generate strategic context with ToM insights
         tom_insights = self._generate_tom_insights(game_context)
         strategic_context = self._generate_strategic_context(game_context)
-        
+
         # Get advanced ToM analysis for better decision making
         advanced_tom = ""
         if hasattr(self.tom_engine, 'get_comprehensive_strategic_insights'):
@@ -713,16 +787,16 @@ Respond appropriately for your role:"""
             except Exception as e:
                 print(f"⚠️ Advanced ToM failed: {e}")
                 advanced_tom = ""
-        
+
         # Get role-specific night strategy
-        night_strategy = self._get_night_action_strategy(self.my_role, valid_targets, observation)
-        
+        night_strategy = self._get_night_action_strategy(self.my_role, valid_targets, summarized_obs)
+
         night_prompt = f"""You are Player {self.my_player_id} ({self.my_role}) - Night Phase
 
 {night_strategy}
 
 CURRENT SITUATION:
-{observation}
+{summarized_obs}
 
 Available targets: {valid_targets}
 
@@ -742,7 +816,10 @@ Choose strategically. Respond with [NUMBER] format (e.g., [3]):"""
     
     def _handle_voting_action(self, observation: str, game_context) -> str:
         """Handle voting phase - give LLM clear context with valid choices"""
-        
+
+        # LLM-BASED SUMMARIZATION: Compress observation if needed
+        summarized_obs = self._summarize_observation(observation)
+
         # Extract valid targets and include in prompt for LLM context
         valid_targets = self._extract_valid_targets_from_observation(observation)
         
@@ -770,7 +847,7 @@ DOCTOR VOTING STRATEGY: Support the Village consensus safely!
 Don't lead votes, but support reasonable elimination choices.
 
 CURRENT GAME SITUATION:
-{observation}
+{summarized_obs}
 
 Available players to vote for: {valid_targets}
 
@@ -795,7 +872,7 @@ Respond with ONLY [NUMBER] format (e.g., [3]):"""
 VILLAGER VOTING MISSION: Eliminate Mafia members to win!
 
 CURRENT GAME SITUATION:
-{observation}
+{summarized_obs}
 
 Available players to vote for: {valid_targets}
 
@@ -826,7 +903,7 @@ CRITICAL: This is the VOTING phase - you must eliminate one player!
 Based on the discussion, choose who to vote for elimination.
 
 CURRENT GAME SITUATION:
-{observation}
+{summarized_obs}
 
 Available players to vote for: {valid_targets}
 
@@ -845,6 +922,9 @@ Respond with ONLY [NUMBER] format (e.g., [3]):"""
     def _handle_discussion_action(self, observation: str, game_context) -> str:
         """Handle discussion phase with optional two-step reasoning"""
 
+        # LLM-BASED SUMMARIZATION: Compress observation if needed
+        summarized_obs = self._summarize_observation(observation)
+
         # ENHANCEMENT: Two-step reasoning (Reason → Act)
         # Step 1: Generate internal strategic reasoning (private)
         # Step 2: Generate public action based on reasoning
@@ -852,20 +932,18 @@ Respond with ONLY [NUMBER] format (e.g., [3]):"""
 
         if self.enable_two_step_reasoning:
             try:
-                # Step 1: Internal reasoning
-                internal_reasoning = self._generate_internal_reasoning(observation, game_context)
+                # Step 1: Internal reasoning (use summarized observation)
+                internal_reasoning = self._generate_internal_reasoning(summarized_obs, game_context)
 
                 if internal_reasoning and len(internal_reasoning.strip()) >= 10:
                     # Store for debugging
                     self.reasoning_cache[self.turn_count] = internal_reasoning
 
-                    # Step 2: Generate action from reasoning
-                    response = self._generate_action_from_reasoning(observation, game_context, internal_reasoning)
+                    # Step 2: Generate action from reasoning (use summarized observation)
+                    response = self._generate_action_from_reasoning(summarized_obs, game_context, internal_reasoning)
 
-                    # Store in memory
+                    # Store in memory (BoundedList automatically caps at 5)
                     self.memory.discussion_history.append(response)
-                    if len(self.memory.discussion_history) > 5:
-                        self.memory.discussion_history = self.memory.discussion_history[-5:]
 
                     return response
                 else:
@@ -874,6 +952,7 @@ Respond with ONLY [NUMBER] format (e.g., [3]):"""
                 print(f"⚠️ Two-step reasoning failed: {e}, falling back to original")
 
         # ORIGINAL METHOD (fallback or when two-step disabled)
+        # Use summarized observation for efficiency
         tom_insights = self._generate_tom_insights(game_context)
         strategic_context = self._generate_strategic_context(game_context)
 
@@ -888,7 +967,7 @@ Respond with ONLY [NUMBER] format (e.g., [3]):"""
                 print(f"⚠️ Advanced ToM failed: {e}")
                 advanced_tom = ""
 
-        # Extract recent player statements to avoid repetitive responses
+        # Extract recent player statements to avoid repetitive responses (use original for extraction)
         recent_statements = self._extract_recent_player_statements(observation)
 
         # Check if we recently said something similar
@@ -902,14 +981,14 @@ Respond with ONLY [NUMBER] format (e.g., [3]):"""
             investigation_info += "\n- DO NOT fabricate or make up fake investigation results!"
             investigation_info += "\n- Example format: 'I'm the Detective. Player X is CONFIRMED [MAFIA/INNOCENT].'"
 
-        # Extract just the most recent NEW information that requires a response
-        latest_developments = self._extract_latest_developments(observation)
+        # Extract just the most recent NEW information that requires a response (use summarized)
+        latest_developments = self._extract_latest_developments(summarized_obs)
 
-        # Generate a completely different prompt each turn to force unique responses
-        unique_context = self._generate_unique_turn_context(self.turn_count, observation, recent_discussion)
+        # Generate a completely different prompt each turn to force unique responses (use summarized)
+        unique_context = self._generate_unique_turn_context(self.turn_count, summarized_obs, recent_discussion)
 
-        # Get role-specific strategy
-        role_strategy = self._get_role_specific_discussion_strategy(self.my_role, observation)
+        # Get role-specific strategy (use summarized)
+        role_strategy = self._get_role_specific_discussion_strategy(self.my_role, summarized_obs)
         
         # Special Doctor prompt emphasizing subtlety and survival
         if self.my_role == "doctor":
@@ -924,10 +1003,10 @@ CRITICAL DOCTOR MISSION: Survive to keep protecting Village team!
 {role_strategy}{investigation_info}
 
 RECENT DEVELOPMENTS:
-{self._extract_real_game_events(observation)}
+{self._extract_real_game_events(summarized_obs)}
 
 OTHER PLAYERS' ACTIONS:
-{self._extract_real_player_actions(observation)}
+{self._extract_real_player_actions(summarized_obs)}
 
 DOCTOR DISCUSSION STRATEGY:
 1. Support other players' reasonable observations
@@ -965,10 +1044,10 @@ DETECTIVE COMMUNICATION STRATEGY:
 - Rally others to vote based on your confirmed results
 
 RECENT DEVELOPMENTS:
-{self._extract_real_game_events(observation)}
+{self._extract_real_game_events(summarized_obs)}
 
 OTHER PLAYERS' ACTIONS:
-{self._extract_real_player_actions(observation)}
+{self._extract_real_player_actions(summarized_obs)}
 
 DETECTIVE RESPONSE EXAMPLES:
 - "I'm the Detective. I investigated Player 3 last night - they are CONFIRMED MAFIA!"
@@ -990,10 +1069,10 @@ VILLAGER MISSION: Find and eliminate Mafia members through evidence!
 {role_strategy}{investigation_info}
 
 RECENT DEVELOPMENTS:
-{self._extract_real_game_events(observation)}
+{self._extract_real_game_events(summarized_obs)}
 
 OTHER PLAYERS' ACTIONS:
-{self._extract_real_player_actions(observation)}
+{self._extract_real_player_actions(summarized_obs)}
 
 VILLAGER DISCUSSION PRIORITIES:
 1. Support Detective investigation claims with questions
@@ -1029,10 +1108,10 @@ IDENTITY & TONE:
 {role_strategy}{investigation_info}
 
 RECENT DEVELOPMENTS:
-{self._extract_real_game_events(observation)}
+{self._extract_real_game_events(summarized_obs)}
 
 OTHER PLAYERS' ACTIONS:
-{self._extract_real_player_actions(observation)}
+{self._extract_real_player_actions(summarized_obs)}
 
 YOUR PREVIOUS STATEMENT (vary your approach):
 "{recent_discussion.split('.')[-1] if recent_discussion else 'First time speaking'}"
@@ -1060,13 +1139,9 @@ Respond as a concerned player fighting for survival:"""
         response = self._get_llm_response_with_retries(discussion_prompt, observation, phase="discussion")
         cleaned_response = response.strip()
         
-        # Store in discussion history to track repetition
+        # Store in discussion history to track repetition (BoundedList automatically caps at 5)
         self.memory.discussion_history.append(cleaned_response)
-        
-        # Keep only last 5 discussion entries to avoid memory bloat
-        if len(self.memory.discussion_history) > 5:
-            self.memory.discussion_history = self.memory.discussion_history[-5:]
-        
+
         return cleaned_response
     
     def _extract_move(self, response: str, observation: str = "") -> str:
@@ -1684,6 +1759,8 @@ SMART PROTECTION STRATEGY:
     # =========================================================================
     # TRM-INSPIRED TWO-STEP REASONING ENHANCEMENT
     # =========================================================================
+    # Pure LLM reasoning - no heuristic post-processing
+    # All output cleaning is done via prompt engineering
 
     def _generate_internal_reasoning(self, observation: str, game_context) -> str:
         """
@@ -1698,13 +1775,11 @@ SMART PROTECTION STRATEGY:
         if self.my_role == "detective" and self.memory.investigation_results:
             investigation_info = f"\nYour investigation results: {self.memory.investigation_results}"
 
-        reasoning_prompt = f"""RESPOND IN ENGLISH ONLY. DO NOT USE CHINESE OR ANY OTHER LANGUAGE.
+        reasoning_prompt = f"""/think
 
-You are Player {self.my_player_id} ({self.my_role}) - INTERNAL STRATEGIC ANALYSIS
+You are Player {self.my_player_id}, role: {self.my_role}.
 
-THIS IS YOUR PRIVATE THINKING - NOT WHAT YOU WILL SAY PUBLICLY.
-
-CRITICAL: Your response must be in ENGLISH language, not Chinese (不要用中文).
+PRIVATE STRATEGIC ANALYSIS (not what you'll say publicly):
 
 CURRENT SITUATION:
 {observation[-600:]}
@@ -1712,22 +1787,20 @@ CURRENT SITUATION:
 YOUR ROLE: {self.my_role}{investigation_info}
 ALIVE PLAYERS: {self.alive_players}
 
-STRATEGIC ANALYSIS - Think through these questions IN ENGLISH:
-1. What are the most likely roles of other players based on their behavior?
-2. Who poses the biggest threat to your team (Village or Mafia)?
-3. What is your primary strategic goal for this turn?
+Analyze:
+1. What are the most likely roles of other players based on behavior?
+2. Who threatens your team (Village or Mafia) most?
+3. What is your strategic goal this turn?
 4. What information should you reveal vs. conceal?
-5. How can you advance your team's win condition this turn?
+5. How can you advance your win condition?
 
-ROLE-SPECIFIC INTERNAL THINKING:
-- Mafia: Who should you deflect suspicion toward? How do you protect teammates?
-- Detective: Should you reveal investigation results now? Who needs to know?
-- Doctor: How do you stay subtle while supporting Village?
+ROLE-SPECIFIC:
+- Mafia: Who to deflect suspicion toward? How to protect teammates?
+- Detective: Should you reveal investigation results now?
+- Doctor: How to stay subtle while supporting Village?
 - Villager: Who is most suspicious? What evidence supports this?
 
-Provide your step-by-step internal analysis IN ENGLISH (2-5 sentences).
-This is your PRIVATE strategic thinking BEFORE deciding what to say.
-RESPOND IN ENGLISH ONLY:"""
+Provide step-by-step internal analysis (2-5 sentences)."""
 
         try:
             # Shorter timeout for reasoning (it's just internal analysis)
@@ -1760,32 +1833,38 @@ RESPOND IN ENGLISH ONLY:"""
         # Get role-specific strategy
         role_strategy = self._get_role_specific_discussion_strategy(self.my_role, observation)
 
-        action_prompt = f"""RESPOND IN ENGLISH ONLY. DO NOT USE CHINESE OR ANY OTHER LANGUAGE.
+        action_prompt = f"""/no_think
 
-You are Player {self.my_player_id} ({self.my_role}) - PUBLIC RESPONSE
+You are Player {self.my_player_id}, role: {self.my_role}.
 
-CRITICAL: Your response must be in ENGLISH language, not Chinese (不要用中文).
+YOUR INTERNAL ANALYSIS:
+{internal_reasoning}
 
-YOUR INTERNAL STRATEGIC ANALYSIS:
-"{internal_reasoning}"
-
-CURRENT GAME SITUATION:
+CURRENT SITUATION:
 {observation[-500:]}
 
-ROLE STRATEGY:
+STRATEGY:
 {role_strategy[:300]}
 
-CRITICAL: Based on your internal analysis above, what do you say publicly to other players?
+Based on your analysis, what do you say publicly to other players?
 
-RESPONSE REQUIREMENTS:
-- MUST be in ENGLISH language
+REQUIREMENTS:
 - Natural conversation (20-100 words)
 - Stay in character as Player {self.my_player_id}
-- Align with your internal strategic analysis
-- Advance your team's goals (Mafia team or Village team)
-- Sound like a real player having a conversation, NOT like an analyst
+- Speak directly - NO meta-commentary
+- Real player having a conversation
 
-Generate your public statement IN ENGLISH now:"""
+CORRECT (direct):
+- "Player 2, your behavior is suspicious."
+- "I don't trust Player 3's explanation."
+- "We need to vote for Player 1."
+
+INCORRECT (meta-commentary):
+- "Okay, let me analyze..."
+- "I need to..."
+- "Okay, so I'm going to..."
+
+Generate your direct, in-character statement now:"""
 
         try:
             response = self._call_modal_with_enhanced_timeout(
@@ -1794,6 +1873,8 @@ Generate your public statement IN ENGLISH now:"""
                 timeout=40
             )
 
+            # Pure LLM output - no heuristic post-processing
+            # Prompt engineering ensures clean responses
             return response.strip()
 
         except Exception as e:

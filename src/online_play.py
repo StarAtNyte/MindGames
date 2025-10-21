@@ -17,17 +17,12 @@ LOGS_DIR = "game_logs"
 os.makedirs(LOGS_DIR, exist_ok=True)
 
 def print_banner():
-    """Print beautiful startup banner"""
-    print("\n" + "═" * 70)
-    print("🎭" + " " * 20 + "STREAMLINED MAFIA AGENT" + " " * 20 + "🎭")
-    print("═" * 70)
-    print("┌─ 🧠 Advanced Theory of Mind Engine")
-    print("├─ 💰 Strategic Bidding System")
-    print("├─ 🧩 Simplified Memory System")
-    print("├─ ⚡ Pure LLM Decision Making")
-    print("├─ 🛡️  Rules Compliant (No Heuristics)")
-    print("└─ 🎯 Streamlined Architecture")
-    print("═" * 70 + "\n")
+    """Print startup banner"""
+    print("\n" + "=" * 70)
+    print("SecretMafia Agent - Stage 2 Submission")
+    print("Model: " + MODEL_NAME)
+    print("Team: " + team_hash)
+    print("=" * 70 + "\n")
 
 print_banner()
 
