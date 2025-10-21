@@ -8,17 +8,17 @@
 
 ## Overview
 
-This is our submission for the MindGames Challenge 2025, Stage 2 (Small Model Track). Our agent plays Secret Mafia using a fine-tuned Qwen3-8B model with advanced Theory of Mind reasoning and strategic decision-making capabilities.
+MindGames Challenge 2025, Stage 2 submission for the Social Detection track (Small Model). This agent uses a fine-tuned Qwen3-8B model with Theory of Mind reasoning for strategic social deduction gameplay.
 
 ## Model Description
 
 - **Base Model:** Qwen/Qwen3-8B (8 billion parameters)
-- **Architecture:** Streamlined agent with:
-  - Advanced Theory of Mind (ToM) engine for belief modeling
-  - Strategic bidding system for turn-taking optimization
-  - Two-step reasoning (internal analysis → public action)
-  - Phase-aware decision making (discussion/voting/night actions)
-  - Rules-compliant pure LLM decision making (no heuristics)
+- **Architecture:**
+  - Theory of Mind engine for multi-level belief modeling
+  - Two-step reasoning: internal analysis followed by public action generation
+  - Phase-aware decision making (discussion, voting, night actions)
+  - Pure LLM decision making with no heuristic post-processing
+  - All strategic reasoning performed by the language model
 
 ## Installation
 
@@ -50,36 +50,45 @@ This will install:
 ### Step 3: Verify Installation
 
 ```bash
-python3 --version  # Should be 3.12+
-python3 -c "import textarena; print('textarena installed successfully')"
+python --version  # Should be 3.12+
+python -c "import textarena; print('textarena installed successfully')"
 ```
 
 ## Running Matches
 
-### Method 1
+### Step 1: Warm Up Endpoint (Recommended)
 
-You can also run directly from the source directory:
+To avoid cold start delays (30-60s), warm up the Modal endpoint first:
+
+```bash
+python warmup_endpoint.py
+```
+
+This takes 30-90 seconds but ensures all subsequent games start immediately.
+
+### Step 2: Run a Game
+
+**Method 1: Direct execution**
 
 ```bash
 cd src
-python3 online_play.py
+python online_play.py
 ```
 
-### Alternative Method
-
-Use the single entry point script:
+**Method 2: Entry point script**
 
 ```bash
-python3 run_match.py
+python run_match.py
 ```
 
-This will:
+
+Both methods:
 1. Connect to the Modal endpoint at `https://nitizkhanal000--enhanced-secretmafia-fastapi-app.modal.run`
 2. Join online matchmaking
 3. Play one game
 4. Save game log to `src/game_logs/` directory
 
-Both methods are equivalent and play one game per run.
+**Note:** First turn may take 30-60s if endpoint is cold (skip warmup). After warmup: ~2-5s per turn.
 
 ### Configuration
 
@@ -87,7 +96,7 @@ The main configuration is in `src/online_play.py`:
 
 ```python
 MODEL_NAME = "ZeroR-SecretMafia-Efficient-v4"
-MODEL_DESCRIPTION = "Streamlined agent with Theory of Mind, Strategic Bidding, Rules Compliant"
+MODEL_DESCRIPTION = "Qwen3-8B with Theory of Mind reasoning and two-step decision making. Pure LLM agent with no heuristics."
 team_hash = "MG25-3162A7F500"
 modal_endpoint_url = "https://nitizkhanal000--enhanced-secretmafia-fastapi-app.modal.run"
 ```

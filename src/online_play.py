@@ -6,7 +6,7 @@ from datetime import datetime
 from utils.streamlined_mafia_agent import StreamlinedMafiaAgent
 
 MODEL_NAME = "ZeroR-SecretMafia-Efficient-v4"
-MODEL_DESCRIPTION = "Streamlined agent with Theory of Mind, Strategic Bidding, Rules Compliant - no heuristics for Track 1 - Social Detection (SecretMafia-v0)."
+MODEL_DESCRIPTION = "Qwen3-8B with Theory of Mind reasoning and two-step decision making. Pure LLM agent with no heuristics."
 team_hash = "MG25-3162A7F500" 
 
 modal_endpoint_url = "https://nitizkhanal000--enhanced-secretmafia-fastapi-app.modal.run"
