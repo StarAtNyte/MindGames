@@ -32,7 +32,7 @@ This is our submission for the MindGames Challenge 2025, Stage 2 (Small Model Tr
 ### Step 1: Clone the Repository
 
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/StarAtNyte/MindGames.git
 cd SecretMafia
 ```
 
