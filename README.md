@@ -1,7 +1,9 @@
 # SecretMafia Agent - Stage 2 Submission
 
 **Team:** MG25-3162A7F500
+
 **Model:** ZeroR-SecretMafia-Efficient-v4
+
 **Track:** Social Detection (Small Model Track)
 
 ## Overview
