@@ -1,4 +1,4 @@
-# SecretMafia Agent - Stage 2 Submission
+# SecretMafia Agent - Stage 2
 
 **Team:** MG25-3162A7F500
 
