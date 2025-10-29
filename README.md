@@ -19,7 +19,7 @@ cd SecretMafia
 pip install -r requirements.txt
 
 # That's it! No extra configuration needed.
-
+```
 
 ### Run Instructions (Single Entry Point)
 
