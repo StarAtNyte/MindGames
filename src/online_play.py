@@ -17,7 +17,6 @@ LOGS_DIR = "game_logs"
 os.makedirs(LOGS_DIR, exist_ok=True)
 
 def print_banner():
-    """Print startup banner"""
     print("\n" + "=" * 70)
     print("SecretMafia Agent - Stage 2 Submission")
     print("Model: " + MODEL_NAME)
