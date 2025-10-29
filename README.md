@@ -10,7 +10,13 @@
 
 ### Installation (No Extra Steps)
 
+Recommended python version: 3.12
+
 ```bash
+# Create an environment (optional)
+conda create -n zeror python=3.12
+conda activate zeror
+
 # Clone repository
 git clone https://github.com/StarAtNyte/MindGames.git
 cd SecretMafia
